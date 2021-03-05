@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WorldEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Sample\res\ambience_distance.bmp" />
+    <Image Include="..\Sample\res\bitmap1.bmp" />
+    <Image Include="..\Sample\res\bmp00001.bmp" />
+    <Image Include="..\Sample\res\bmp00002.bmp" />
+    <Image Include="..\Sample\res\bmp00003.bmp" />
+    <Image Include="..\Sample\res\bmp00004.bmp" />
+    <Image Include="..\Sample\res\bmp00005.bmp" />
+    <Image Include="..\Sample\res\bmp00006.bmp" />
+    <Image Include="..\Sample\res\bmp00007.bmp" />
+    <Image Include="..\Sample\res\effect_light.bmp" />
+    <Image Include="..\Sample\res\effect_m.bmp" />
+    <Image Include="..\Sample\res\effect_maximize.bmp" />
+    <Image Include="..\Sample\res\effect_mesh.bmp" />
+    <Image Include="..\Sample\res\effect_minimize.bmp" />
+    <Image Include="..\Sample\res\effect_p.bmp" />
+    <Image Include="..\Sample\res\effect_particle.bmp" />
+    <Image Include="..\Sample\res\effect_play.bmp" />
+    <Image Include="..\Sample\res\effect_play_loop.bmp" />
+    <Image Include="..\Sample\res\effect_stop.bmp" />
+    <Image Include="..\Sample\res\effect_timebar_enable.bmp" />
+    <Image Include="..\Sample\res\effect_xyyzzx.bmp" />
+    <Image Include="..\Sample\res\effect_xyz.bmp" />
+    <Image Include="..\Sample\res\effect_z.bmp" />
+    <Image Include="..\Sample\res\effect_zoom_in_horizon.bmp" />
+    <Image Include="..\Sample\res\effect_zoom_out_horizon.bmp" />
+    <Image Include="..\Sample\res\fly_effect.bmp" />
+    <Image Include="..\Sample\res\fly_object.bmp" />
+    <Image Include="..\Sample\res\fly_type_exp.bmp" />
+    <Image Include="..\Sample\res\fly_type_line.bmp" />
+    <Image Include="..\Sample\res\fly_type_multi_line.bmp" />
+    <Image Include="..\Sample\res\fly_type_sine.bmp" />
+    <Image Include="..\Sample\res\icon1.ico" />
+    <Image Include="..\Sample\res\mainframe_large.bmp" />
+    <Image Include="..\Sample\res\mainframe_small.bmp" />
+    <Image Include="..\Sample\res\map_attribute.bmp" />
+    <Image Include="..\Sample\res\map_edit.bmp" />
+    <Image Include="..\Sample\res\map_envi.bmp" />
+    <Image Include="..\Sample\res\map_environment.bmp" />
+    <Image Include="..\Sample\res\map_file.bmp" />
+    <Image Include="..\Sample\res\map_object.bmp" />
+    <Image Include="..\Sample\res\map_terrain.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_down.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_noise.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_plateau.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_shape_circle.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_shape_square.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_smooth.bmp" />
+    <Image Include="..\Sample\res\map_terrain_brush_up.bmp" />
+    <Image Include="..\Sample\res\object_a.bmp" />
+    <Image Include="..\Sample\res\Object_Animation.bmp" />
+    <Image Include="..\Sample\res\object_m.bmp" />
+    <Image Include="..\Sample\res\Object_Model.bmp" />
+    <Image Include="..\Sample\res\Toolbar.bmp" />
+    <Image Include="..\Sample\res\toolbar1.bmp" />
+    <Image Include="..\Sample\res\TreeItemImageList.bmp" />
+    <Image Include="..\Sample\res\WorldEditor.ico" />
+    <Image Include="..\Sample\res\WorldEditorDoc.ico" />
+    <Image Include="..\Sample\res\WorldEditor_0.ico" />
+    <Image Include="..\Sample\res\WorldEditor_1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Sample\res\cursor1.cur" />
+    <None Include="..\Sample\res\WorldEditor.rc2" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{23DBCB1B-035A-4CE9-864C-6CF0395BE37E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>WorldEditorRemixTL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>WorldEditorRemix_IT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>WorldEditorRemix_IT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;WORLDEDITORREMIXENGTL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalOptions>/NOENTRY %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;WORLDEDITORREMIXENGTL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;WORLDEDITORREMIXENGTL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalOptions>/NOENTRY %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;WORLDEDITORREMIXENGTL_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

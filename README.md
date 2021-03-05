@@ -10,3 +10,6 @@ Future versions of the program could make the previous generated .dll files usel
 - DE/ => DE
 
 We will use different branches for different RC versions, but the same branch for each language.
+
+### Downloadable Translations
+Check the [Releases](https://github.com/martysama0134/WorldEditorRemixTL/releases)

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{0621ac29-6b6d-45ec-8a6f-8d5604d4933a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WorldEditor.rc">
+      <Filter>File di risorse</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\icon1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\mainframe_large.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\mainframe_small.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_attribute.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_edit.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_envi.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_environment.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_file.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_object.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_down.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_noise.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_plateau.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_shape_circle.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_shape_square.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_smooth.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\map_terrain_brush_up.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\object_a.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\Object_Animation.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\object_m.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\Object_Model.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\toolbar1.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\TreeItemImageList.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\WorldEditor.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\WorldEditor_0.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\WorldEditor_1.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\WorldEditorDoc.ico">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\ambience_distance.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00001.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00002.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00003.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00004.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00005.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00006.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\bmp00007.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_light.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_m.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_maximize.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_mesh.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_minimize.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_p.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_particle.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_play.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_play_loop.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_stop.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_timebar_enable.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_xyyzzx.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_xyz.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_z.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_zoom_in_horizon.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\effect_zoom_out_horizon.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\fly_effect.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\fly_object.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\fly_type_exp.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\fly_type_line.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\fly_type_multi_line.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="res\fly_type_sine.bmp">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\WorldEditor.rc2">
+      <Filter>Resources</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

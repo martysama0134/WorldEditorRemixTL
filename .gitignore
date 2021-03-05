@@ -1,0 +1,80 @@
+### custom
+Extern*/
+__test*/
+__trash*/
+
+### vs data binaries
+*.ncb
+*.opensdf
+*.sdf
+##unskipped:
+#*.suo
+
+### vs compile binaries
+*.bsc
+*.exe
+*.ilk
+*.map
+*.pdb
+*.idb
+*.aps
+
+### vs folders
+obj/
+ipch/
+Debug/
+Release/
+MfcDebug/
+MfcRelease/
+Distribute/
+## vs out:
+bin/
+## vs server-side:
+OBJDIR/
+.obj/
+
+*Win32_MfcDebug/
+*Win32_MfcRelease/
+
+### gcc depend (old)
+Depend
+Depend.bak
+
+### libs
+*.a
+*.dll
+*.lib
+*.o
+*.so
+
+### compiled games
+db_r*
+game_r*
+## related symlinks
+db_symlink
+game_symlink
+
+### python stuff
+pre_qc
+*.pyc
+
+### backups and git conflicts
+*.bak
+*.orig
+*.rej
+
+### archives
+*.rar
+*.7z
+*.zip
+*.gz
+*.bz
+*.tar
+*.tgz
+*.txz
+
+### vs2017 workspace
+.vs/
+
+### giteye (eclipse egit)
+/.project

@@ -227,6 +227,205 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
+            VALUE "FileDescription", "WorldEditorRemix"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WorldEditorRemix.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2021"
+            VALUE "OriginalFilename", "WorldEditorRemix.exe"
+            VALUE "ProductName", "WorldEditorRemix"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_VIEWMOVE            CURSOR                  "..\\Sample\\res\\cursor1.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_VIEW_MAP
+    BUTTON      ID_VIEW_OBJECT
+    BUTTON      ID_VIEW_EFFECT
+    BUTTON      ID_VIEW_FLY
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WorldEditor"
+    AFX_IDS_IDLEMESSAGE     "Idle"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Nuovo File"
+    ID_FILE_OPEN            "Apri File"
+    ID_FILE_CLOSE           "Chiudi File"
+    ID_FILE_SAVE            "Salva File"
+    ID_FILE_SAVE_AS         "Salva File come"
+    ID_FILE_PAGE_SETUP      "Opzioni Stampa"
+    ID_FILE_PRINT_SETUP     "Opzioni Stampa"
+    ID_FILE_PRINT           "Stampa"
+    ID_FILE_PRINT_PREVIEW   "Anteprima Stampa"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Info programma, info versione, info copyright. N Information"
+    ID_APP_EXIT             "Salva Documento?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Apri Documento:"
+    ID_FILE_MRU_FILE2       "Apri Documento:"
+    ID_FILE_MRU_FILE3       "Apri Documento:"
+    ID_FILE_MRU_FILE4       "Apri Documento:"
+    ID_FILE_MRU_FILE5       "Apri Documento:"
+    ID_FILE_MRU_FILE6       "Apri Documento:"
+    ID_FILE_MRU_FILE7       "Apri Documento:"
+    ID_FILE_MRU_FILE8       "Apri Documento:"
+    ID_FILE_MRU_FILE9       "Apri Documento:"
+    ID_FILE_MRU_FILE10      "Apri Documento:"
+    ID_FILE_MRU_FILE11      "Apri Documento:"
+    ID_FILE_MRU_FILE12      "Apri Documento:"
+    ID_FILE_MRU_FILE13      "Apri Documento:"
+    ID_FILE_MRU_FILE14      "Apri Documento:"
+    ID_FILE_MRU_FILE15      "Apri Documento:"
+    ID_FILE_MRU_FILE16      "Apri Documento:"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Passa a finestra successiva"
+    ID_PREV_PANE            "Passa a finestra precedente"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Dividi Finestre"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Canc. Selezione"
+    ID_EDIT_CLEAR_ALL       "Canc. Tutto"
+    ID_EDIT_COPY            "Copia Selezione"
+    ID_EDIT_CUT             "Taglia Selezione"
+    ID_EDIT_FIND            "Cerca/Trova"
+    ID_EDIT_PASTE           "Incolla"
+    ID_EDIT_REPEAT          "Ripeti Ultima Azione"
+    ID_EDIT_REPLACE         "Rimpiazza"
+    ID_EDIT_SELECT_ALL      "Seleziona Tutto"
+    ID_EDIT_UNDO            "Annulla"
+    ID_EDIT_REDO            "Ripeti"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Per mostrare o nascondere la barra \n toolbar"
+    ID_VIEW_STATUS_BAR      "Per mostrare o nascondere la Status Bar \n Status Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Cambia la dimensione della Finestra"
+    AFX_IDS_SCMOVE          "Muovi la Finestra"
+    AFX_IDS_SCMINIMIZE      "Minimizza"
+    AFX_IDS_SCMAXIMIZE      "Massimizza"
+    AFX_IDS_SCNEXTWINDOW    "Finestra Successiva"
+    AFX_IDS_SCPREVWINDOW    "Ultima Finestra"
+    AFX_IDS_SCCLOSE         "Chiudi Finestra"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Ripristina Finestra"
+    AFX_IDS_SCTASKLIST      "Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Chiudi Anteprima"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_INFO_BOX        "Mostra job info per mostrare o nascondere il box."
+END
+
+#endif    // Coreano (Corea del Sud) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Dialog
 //
 
@@ -238,8 +437,8 @@ BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
     LTEXT           "WorldEditor ReMIX v40",IDC_STATIC,35,6,76,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2003-2021",IDC_STATIC,35,16,119,8
-    LTEXT           "Author martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
-    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, and to all the guinea pigs! (such as CryPrime|iAce, Raiard, LeRenard and so on)",IDC_STATIC,35,36,159,29
+    LTEXT           "Autore martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
+    LTEXT           "Un grazie speciale a Xunil, Inya, Sophie Williams, e a tutte le cavie! (come CryPrime|iAce, Raiard, LeRenard e così via)",IDC_STATIC,35,36,159,29
     DEFPUSHBUTTON   "Ok",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -280,7 +479,7 @@ BEGIN
     CONTROL         "Combo Mozione",IDC_OBJECT_ANIMATION_COMBO_MOTION_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,565,63,10
     GROUPBOX        "Opzione",IDC_STATIC,3,552,114,49
-    GROUPBOX        "Velocita' Mozione",IDC_STATIC,7,502,106,38
+    GROUPBOX        "Velocità Mozione",IDC_STATIC,7,502,106,38
     CTEXT           "Static",IDC_OBJECT_ANIMATION_SPEED_BAR_PRINT,39,525,42,10,0,WS_EX_STATICEDGE
     LTEXT           "Veloce",IDC_STATIC,96,527,15,8
     LTEXT           "Lento",IDC_STATIC,9,527,17,8
@@ -294,7 +493,7 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,451,46,10
     LTEXT           "Tipo Mozione",IDC_STATIC,7,622,42,8
     COMBOBOX        IDC_OBJECT_ANIMATION_MOTION_TYPE,56,620,57,224,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "Rimuovi Attivi (Per Abilita')",IDC_OBJECT_ANIMATION_CANCEL_ENABLE_SKILL,
+    CONTROL         "Rimuovi Attivi (Per Abilità)",IDC_OBJECT_ANIMATION_CANCEL_ENABLE_SKILL,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,587,97,10
     GROUPBOX        "",IDC_STATIC,8,755,104,81
     COMBOBOX        IDC_OBJECT_ANIMATION_HIT_DATA_LIST,22,753,75,231,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
@@ -441,7 +640,7 @@ BEGIN
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_SCALE_X,27,843,30,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,61,846,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_SCALE_Y,69,843,30,12,ES_AUTOHSCROLL
-    GROUPBOX        "Velocita'",IDC_STATIC,14,865,91,27
+    GROUPBOX        "Velocità",IDC_STATIC,14,865,91,27
     LTEXT           "X",IDC_STATIC,19,878,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_SPEED_X,27,875,30,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,61,878,8,8
@@ -452,7 +651,7 @@ BEGIN
     CONTROL         "",IDC_MAP_ENVIRONMENT_GRADIENT_SECOND_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,15,491,27,27
     GROUPBOX        "Riflesso Lenti",IDC_STATIC,4,935,114,117
     CONTROL         "Attiva",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,72,939,38,10
-    GROUPBOX        "Luminosita'",IDC_STATIC,8,946,102,38
+    GROUPBOX        "Luminosità",IDC_STATIC,8,946,102,38
     LTEXT           "Colore",IDC_STATIC,18,958,21,8
     LTEXT           "Massimo",IDC_STATIC,17,971,25,8
     CONTROL         "Slider2",IDC_MAP_ENVIRONMENT_LENSFLARE_MAX_BRIGHTNESS,
@@ -579,7 +778,8 @@ BEGIN
     LTEXT           "Evento Tempo",IDC_STATIC,8,368,38,8
     LTEXT           "Static",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_DELAY_PRINT,87,98,20,10,SS_SUNKEN
     GROUPBOX        "Opzioni",IDC_STATIC,8,321,103,39
-    CONTROL         "Abilita Stretch",IDC_EFFECT_PARTICLE_STRETCH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,333,63,10
+    CONTROL         "Abilita Stretch",IDC_EFFECT_PARTICLE_STRETCH_FLAG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,333,63,10
     GROUPBOX        "Rotazione",IDC_STATIC,8,230,103,87
     LTEXT           "Tipo",IDC_STATIC,17,241,18,8
     COMBOBOX        IDC_EFFECT_PARTICLE_ROTATION_TYPE,43,239,63,437,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
@@ -599,7 +799,7 @@ BEGIN
     LTEXT           "Lunghezza",IDC_STATIC,21,513,23,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LENGTH,54,511,42,13,ES_AUTOHSCROLL
     CONTROL         "Ciclo",IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,527,32,10
-    GROUPBOX        "Velocita' Casuale",IDC_STATIC,9,678,102,39
+    GROUPBOX        "Velocità Casuale",IDC_STATIC,9,678,102,39
     LTEXT           "X",IDC_STATIC,29,689,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_DIRECTION_X,23,700,20,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,60,689,8,8
@@ -721,7 +921,7 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
     CONTROL         "Pennello Su",IDC_MAP_TERRAIN_BRUSH_UP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,17,121,17,19
-    CONTROL         "Pennello Giu'",IDC_MAP_TERRAIN_BRUSH_DOWN,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,34,121,17,19
+    CONTROL         "Pennello Giù",IDC_MAP_TERRAIN_BRUSH_DOWN,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,34,121,17,19
     CONTROL         "Pennello Plateau",IDC_MAP_TERRAIN_BRUSH_PLATEAU,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,52,121,17,19
     CONTROL         "Pennello Rumore",IDC_MAP_TERRAIN_BRUSH_NOISE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,69,121,17,19
     CONTROL         "Pennello Alliscia",IDC_MAP_TERRAIN_BRUSH_SMOOTH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,86,121,17,19
@@ -1357,8 +1557,8 @@ BEGIN
     PUSHBUTTON      "Carica",IDC_FLY_LOAD_SCRIPT,9,31,31,12,BS_FLAT
     PUSHBUTTON      "Fondi",IDC_FLY_MERGE_SCRIPT,44,31,31,12,BS_FLAT | WS_DISABLED
     PUSHBUTTON      "Salva",IDC_FLY_SAVE_SCRIPT,79,31,31,12,BS_FLAT
-    GROUPBOX        "Proprieta' Principali",IDC_STATIC,3,53,114,344
-    LTEXT           "Velocita' iniziale",IDC_STATIC,12,92,48,8
+    GROUPBOX        "Proprietà Principali",IDC_STATIC,3,53,114,344
+    LTEXT           "Velocità iniziale",IDC_STATIC,12,92,48,8
     EDITTEXT        IDC_FLY_INIT_VEL,65,91,41,12,ES_AUTOHSCROLL
     LTEXT           "Diffusione(0-180)",IDC_STATIC,12,106,59,8
     EDITTEXT        IDC_FLY_CONE_ANGLE,65,105,41,12,ES_AUTOHSCROLL
@@ -1370,7 +1570,7 @@ BEGIN
     CONTROL         "Induzione",IDC_FLY_HOMING_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,157,57,10
     LTEXT           "Rotazione Max",IDC_STATIC,12,181,45,8
     EDITTEXT        IDC_FLY_HOMING_MAX_ANGLE,65,180,41,12,ES_AUTOHSCROLL
-    LTEXT           "Gravita'",IDC_STATIC,12,200,23,8
+    LTEXT           "Gravità",IDC_STATIC,12,200,23,8
     EDITTEXT        IDC_FLY_GRAVITY,65,198,41,12,ES_AUTOHSCROLL
     LTEXT           "Dir.Frontale",IDC_STATIC,6,225,45,8
     EDITTEXT        IDC_FLY_ACCEL_FRONT,45,223,29,12,ES_AUTOHSCROLL
@@ -1381,7 +1581,7 @@ BEGIN
     LTEXT           "Dir.Basso",IDC_STATIC,7,251,28,8
     EDITTEXT        IDC_FLY_ACCEL_GRAVITY,45,249,29,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_FLY_ANGLE_GRAVITY,78,249,29,12,ES_AUTOHSCROLL
-    GROUPBOX        "Accel. e velocita' correnti",IDC_STATIC,6,212,107,54
+    GROUPBOX        "Accel. e velocità correnti",IDC_STATIC,6,212,107,54
     GROUPBOX        "Imposta Effetto Esplosione",IDC_STATIC,6,345,107,45
     EDITTEXT        IDC_FLY_BOMB_RANGE,10,357,26,13,ES_AUTOHSCROLL
     LTEXT           "avvicina sotto cm",IDC_STATIC,37,359,66,8
@@ -1644,71 +1844,7 @@ BEGIN
     EDITTEXT        IDC_EDITHEX,211,145,40,12,ES_AUTOHSCROLL
     LTEXT           "%",IDC_STATIC,247,112,8,8
     LTEXT           "%",IDC_STATIC,247,127,8,8
-    LTEXT           "¡Æ",IDC_STATIC,248,97,8,8
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Version
-//
-
-VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
- FILEFLAGSMASK 0x3fL
-#ifdef _DEBUG
- FILEFLAGS 0x1L
-#else
- FILEFLAGS 0x0L
-#endif
- FILEOS 0x4L
- FILETYPE 0x1L
- FILESUBTYPE 0x0L
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "041204b0"
-        BEGIN
-            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
-            VALUE "FileDescription", "WorldEditorRemix"
-            VALUE "FileVersion", "1.0.0.1"
-            VALUE "InternalName", "WorldEditorRemix.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2021"
-            VALUE "OriginalFilename", "WorldEditorRemix.exe"
-            VALUE "ProductName", "WorldEditorRemix"
-            VALUE "ProductVersion", "1.0.0.1"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x412, 1200
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Cursor
-//
-
-IDC_VIEWMOVE            CURSOR                  "..\\Sample\\res\\cursor1.cur"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Toolbar
-//
-
-IDR_MAINFRAME TOOLBAR 16, 15
-BEGIN
-    BUTTON      ID_VIEW_MAP
-    BUTTON      ID_VIEW_OBJECT
-    BUTTON      ID_VIEW_EFFECT
-    BUTTON      ID_VIEW_FLY
-    SEPARATOR
-    BUTTON      ID_EDIT_UNDO
-    BUTTON      ID_EDIT_REDO
+    LTEXT           "°",IDC_STATIC,248,97,8,8
 END
 
 
@@ -2262,132 +2398,7 @@ BEGIN
     0
 END
 
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
-END
-
-STRINGTABLE
-BEGIN
-    ID_INDICATOR_EXT        "EXT"
-    ID_INDICATOR_CAPS       "CAP"
-    ID_INDICATOR_NUM        "NUM"
-    ID_INDICATOR_SCRL       "SCRL"
-    ID_INDICATOR_OVR        "OVR"
-    ID_INDICATOR_REC        "REC"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_NEW             "Nuovo File"
-    ID_FILE_OPEN            "Apri File"
-    ID_FILE_CLOSE           "Chiudi File"
-    ID_FILE_SAVE            "Salva File"
-    ID_FILE_SAVE_AS         "Salva File come"
-    ID_FILE_PAGE_SETUP      "Opzioni Stampa"
-    ID_FILE_PRINT_SETUP     "Opzioni Stampa"
-    ID_FILE_PRINT           "Stampa"
-    ID_FILE_PRINT_PREVIEW   "Anteprima Stampa"
-END
-
-STRINGTABLE
-BEGIN
-    ID_APP_ABOUT            "Info programma, info versione, info copyright. N Information"
-    ID_APP_EXIT             "Salva Documento?"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_MRU_FILE1       "Apri Documento:"
-    ID_FILE_MRU_FILE2       "Apri Documento:"
-    ID_FILE_MRU_FILE3       "Apri Documento:"
-    ID_FILE_MRU_FILE4       "Apri Documento:"
-    ID_FILE_MRU_FILE5       "Apri Documento:"
-    ID_FILE_MRU_FILE6       "Apri Documento:"
-    ID_FILE_MRU_FILE7       "Apri Documento:"
-    ID_FILE_MRU_FILE8       "Apri Documento:"
-    ID_FILE_MRU_FILE9       "Apri Documento:"
-    ID_FILE_MRU_FILE10      "Apri Documento:"
-    ID_FILE_MRU_FILE11      "Apri Documento:"
-    ID_FILE_MRU_FILE12      "Apri Documento:"
-    ID_FILE_MRU_FILE13      "Apri Documento:"
-    ID_FILE_MRU_FILE14      "Apri Documento:"
-    ID_FILE_MRU_FILE15      "Apri Documento:"
-    ID_FILE_MRU_FILE16      "Apri Documento:"
-END
-
-STRINGTABLE
-BEGIN
-    ID_NEXT_PANE            "Passa a finestra successiva"
-    ID_PREV_PANE            "Passa a finestra precedente"
-END
-
-STRINGTABLE
-BEGIN
-    ID_WINDOW_SPLIT         "Dividi Finestre"
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_CLEAR           "Canc. Selezione"
-    ID_EDIT_CLEAR_ALL       "Canc. Tutto"
-    ID_EDIT_COPY            "Copia Selezione"
-    ID_EDIT_CUT             "Taglia Selezione"
-    ID_EDIT_FIND            "Cerca/Trova"
-    ID_EDIT_PASTE           "Incolla"
-    ID_EDIT_REPEAT          "Ripeti Ultima Azione"
-    ID_EDIT_REPLACE         "Rimpiazza"
-    ID_EDIT_SELECT_ALL      "Seleziona Tutto"
-    ID_EDIT_UNDO            "Annulla"
-    ID_EDIT_REDO            "Ripeti"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_TOOLBAR         "Per mostrare o nascondere la barra \n toolbar"
-    ID_VIEW_STATUS_BAR      "Per mostrare o nascondere la Status Bar \n Status Toolbar"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCSIZE          "Cambia la dimensione della Finestra"
-    AFX_IDS_SCMOVE          "Muovi la Finestra"
-    AFX_IDS_SCMINIMIZE      "Minimizza"
-    AFX_IDS_SCMAXIMIZE      "Massimizza"
-    AFX_IDS_SCNEXTWINDOW    "Finestra Successiva"
-    AFX_IDS_SCPREVWINDOW    "Ultima Finestra"
-    AFX_IDS_SCCLOSE         "Chiudi Finestra"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCRESTORE       "Ripristina Finestra"
-    AFX_IDS_SCTASKLIST      "Task List"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Chiudi Anteprima"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_INFO_BOX        "Mostra job info per mostrare o nascondere il box."
-END
-
-#endif    // Coreano (Corea del Sud) resources
+#endif    // Italiano (Italia) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

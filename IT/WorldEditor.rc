@@ -418,10 +418,10 @@ END
 
 
 /////////////////////////////////////////////////////////////////////////////
-// Italiano (Italia) resources
+// Italiano resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
-LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+LANGUAGE LANG_ITALIAN, SUBLANG_NEUTRAL
 #pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
@@ -2398,7 +2398,7 @@ BEGIN
     0
 END
 
-#endif    // Italiano (Italia) resources
+#endif    // Italiano resources
 /////////////////////////////////////////////////////////////////////////////
 
 

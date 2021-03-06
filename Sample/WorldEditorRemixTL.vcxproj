@@ -93,7 +93,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{23DBCB1B-035A-4CE9-864C-6CF0395BE37E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>WorldEditorRemixEngTL</RootNamespace>
+    <RootNamespace>WorldEditorRemixTL</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -168,6 +168,9 @@
       <EnableUAC>false</EnableUAC>
       <AdditionalOptions>/NOENTRY %(AdditionalOptions)</AdditionalOptions>
     </Link>
+    <ResourceCompile>
+      <Culture>0x0009</Culture>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -181,6 +184,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <ResourceCompile>
+      <Culture>0x0009</Culture>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -199,6 +205,9 @@
       <EnableUAC>false</EnableUAC>
       <AdditionalOptions>/NOENTRY %(AdditionalOptions)</AdditionalOptions>
     </Link>
+    <ResourceCompile>
+      <Culture>0x0009</Culture>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -216,6 +225,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
     </Link>
+    <ResourceCompile>
+      <Culture>0x0009</Culture>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

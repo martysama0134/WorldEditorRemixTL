@@ -227,6 +227,205 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
+            VALUE "FileDescription", "WorldEditorRemix"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WorldEditorRemix.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2021"
+            VALUE "OriginalFilename", "WorldEditorRemix.exe"
+            VALUE "ProductName", "WorldEditorRemix"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_VIEWMOVE            CURSOR                  "..\\Sample\\res\\cursor1.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_VIEW_MAP
+    BUTTON      ID_VIEW_OBJECT
+    BUTTON      ID_VIEW_EFFECT
+    BUTTON      ID_VIEW_FLY
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WorldEditor"
+    AFX_IDS_IDLEMESSAGE     "Idle"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "New File"
+    ID_FILE_OPEN            "Redo"
+    ID_FILE_CLOSE           "Close File"
+    ID_FILE_SAVE            "Save File"
+    ID_FILE_SAVE_AS         "Save File as"
+    ID_FILE_PAGE_SETUP      "Print Settings"
+    ID_FILE_PRINT_SETUP     "Print Settings"
+    ID_FILE_PRINT           "Print"
+    ID_FILE_PRINT_PREVIEW   "Print Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
+    ID_APP_EXIT             "Save Document?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open Document:"
+    ID_FILE_MRU_FILE2       "Open Document:"
+    ID_FILE_MRU_FILE3       "Open Document:"
+    ID_FILE_MRU_FILE4       "Open Document:"
+    ID_FILE_MRU_FILE5       "Open Document:"
+    ID_FILE_MRU_FILE6       "Open Document:"
+    ID_FILE_MRU_FILE7       "Open Document:"
+    ID_FILE_MRU_FILE8       "Open Document:"
+    ID_FILE_MRU_FILE9       "Open Document:"
+    ID_FILE_MRU_FILE10      "Open Document:"
+    ID_FILE_MRU_FILE11      "Open Document:"
+    ID_FILE_MRU_FILE12      "Open Document:"
+    ID_FILE_MRU_FILE13      "Open Document:"
+    ID_FILE_MRU_FILE14      "Open Document:"
+    ID_FILE_MRU_FILE15      "Open Document:"
+    ID_FILE_MRU_FILE16      "Open Document:"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to next Window"
+    ID_PREV_PANE            "Switch to last Window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split Windows"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Clear Selection"
+    ID_EDIT_CLEAR_ALL       "Clear All"
+    ID_EDIT_COPY            "Copy Selection"
+    ID_EDIT_CUT             "Cut Selection"
+    ID_EDIT_FIND            "Search/Find"
+    ID_EDIT_PASTE           "Paste"
+    ID_EDIT_REPEAT          "Repeat Last Action"
+    ID_EDIT_REPLACE         "Replace"
+    ID_EDIT_SELECT_ALL      "Select All"
+    ID_EDIT_UNDO            "Undo"
+    ID_EDIT_REDO            "Redo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
+    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the Size of the Window"
+    AFX_IDS_SCMOVE          "Move the WIndow"
+    AFX_IDS_SCMINIMIZE      "Minimize"
+    AFX_IDS_SCMAXIMIZE      "Maximize"
+    AFX_IDS_SCNEXTWINDOW    "Next Window"
+    AFX_IDS_SCPREVWINDOW    "Last Window"
+    AFX_IDS_SCCLOSE         "Close Window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore Window"
+    AFX_IDS_SCTASKLIST      "Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
+END
+
+#endif    // Coreano (Corea del Sud) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ungherese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HUN)
+LANGUAGE LANG_HUNGARIAN, SUBLANG_NEUTRAL
+#pragma code_page(1250)
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Dialog
 //
 
@@ -1645,71 +1844,7 @@ BEGIN
     EDITTEXT        IDC_EDITHEX,211,145,40,12,ES_AUTOHSCROLL
     LTEXT           "%",IDC_STATIC,247,112,8,8
     LTEXT           "%",IDC_STATIC,247,127,8,8
-    LTEXT           "¡Æ",IDC_STATIC,248,97,8,8
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Version
-//
-
-VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
- FILEFLAGSMASK 0x3fL
-#ifdef _DEBUG
- FILEFLAGS 0x1L
-#else
- FILEFLAGS 0x0L
-#endif
- FILEOS 0x4L
- FILETYPE 0x1L
- FILESUBTYPE 0x0L
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "041204b0"
-        BEGIN
-            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
-            VALUE "FileDescription", "WorldEditorRemix"
-            VALUE "FileVersion", "1.0.0.1"
-            VALUE "InternalName", "WorldEditorRemix.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2021"
-            VALUE "OriginalFilename", "WorldEditorRemix.exe"
-            VALUE "ProductName", "WorldEditorRemix"
-            VALUE "ProductVersion", "1.0.0.1"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x412, 1200
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Cursor
-//
-
-IDC_VIEWMOVE            CURSOR                  "..\\Sample\\res\\cursor1.cur"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Toolbar
-//
-
-IDR_MAINFRAME TOOLBAR 16, 15
-BEGIN
-    BUTTON      ID_VIEW_MAP
-    BUTTON      ID_VIEW_OBJECT
-    BUTTON      ID_VIEW_EFFECT
-    BUTTON      ID_VIEW_FLY
-    SEPARATOR
-    BUTTON      ID_EDIT_UNDO
-    BUTTON      ID_EDIT_REDO
+    LTEXT           "°",IDC_STATIC,248,97,8,8
 END
 
 
@@ -2099,132 +2234,7 @@ BEGIN
     0
 END
 
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
-END
-
-STRINGTABLE
-BEGIN
-    ID_INDICATOR_EXT        "EXT"
-    ID_INDICATOR_CAPS       "CAP"
-    ID_INDICATOR_NUM        "NUM"
-    ID_INDICATOR_SCRL       "SCRL"
-    ID_INDICATOR_OVR        "OVR"
-    ID_INDICATOR_REC        "REC"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_NEW             "New File"
-    ID_FILE_OPEN            "Redo"
-    ID_FILE_CLOSE           "Close File"
-    ID_FILE_SAVE            "Save File"
-    ID_FILE_SAVE_AS         "Save File as"
-    ID_FILE_PAGE_SETUP      "Print Settings"
-    ID_FILE_PRINT_SETUP     "Print Settings"
-    ID_FILE_PRINT           "Print"
-    ID_FILE_PRINT_PREVIEW   "Print Preview"
-END
-
-STRINGTABLE
-BEGIN
-    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
-    ID_APP_EXIT             "Save Document?"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_MRU_FILE1       "Open Document:"
-    ID_FILE_MRU_FILE2       "Open Document:"
-    ID_FILE_MRU_FILE3       "Open Document:"
-    ID_FILE_MRU_FILE4       "Open Document:"
-    ID_FILE_MRU_FILE5       "Open Document:"
-    ID_FILE_MRU_FILE6       "Open Document:"
-    ID_FILE_MRU_FILE7       "Open Document:"
-    ID_FILE_MRU_FILE8       "Open Document:"
-    ID_FILE_MRU_FILE9       "Open Document:"
-    ID_FILE_MRU_FILE10      "Open Document:"
-    ID_FILE_MRU_FILE11      "Open Document:"
-    ID_FILE_MRU_FILE12      "Open Document:"
-    ID_FILE_MRU_FILE13      "Open Document:"
-    ID_FILE_MRU_FILE14      "Open Document:"
-    ID_FILE_MRU_FILE15      "Open Document:"
-    ID_FILE_MRU_FILE16      "Open Document:"
-END
-
-STRINGTABLE
-BEGIN
-    ID_NEXT_PANE            "Switch to next Window"
-    ID_PREV_PANE            "Switch to last Window"
-END
-
-STRINGTABLE
-BEGIN
-    ID_WINDOW_SPLIT         "Split Windows"
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_CLEAR           "Clear Selection"
-    ID_EDIT_CLEAR_ALL       "Clear All"
-    ID_EDIT_COPY            "Copy Selection"
-    ID_EDIT_CUT             "Cut Selection"
-    ID_EDIT_FIND            "Search/Find"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REPEAT          "Repeat Last Action"
-    ID_EDIT_REPLACE         "Replace"
-    ID_EDIT_SELECT_ALL      "Select All"
-    ID_EDIT_UNDO            "Undo"
-    ID_EDIT_REDO            "Redo"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
-    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCSIZE          "Change the Size of the Window"
-    AFX_IDS_SCMOVE          "Move the WIndow"
-    AFX_IDS_SCMINIMIZE      "Minimize"
-    AFX_IDS_SCMAXIMIZE      "Maximize"
-    AFX_IDS_SCNEXTWINDOW    "Next Window"
-    AFX_IDS_SCPREVWINDOW    "Last Window"
-    AFX_IDS_SCCLOSE         "Close Window"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCRESTORE       "Restore Window"
-    AFX_IDS_SCTASKLIST      "Task List"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
-END
-
-#endif    // Coreano (Corea del Sud) resources
+#endif    // Ungherese resources
 /////////////////////////////////////////////////////////////////////////////
 
 

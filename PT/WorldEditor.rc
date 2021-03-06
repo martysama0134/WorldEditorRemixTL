@@ -1390,7 +1390,7 @@ BEGIN
     PUSHBUTTON      "Load",IDC_FLY_LOAD_BOMB_EFFECT,88,374,21,12,BS_FLAT
     CONTROL         "-_-",IDC_FLY_TAB_NEW_EFFECT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,409,14,15
     CONTROL         "-_-",IDC_FLY_TAB_NEW_OBJECT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,427,14,15
-    CONTROL         "-_",IDC_FLY_TAB_3,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,445,14,15
+    CONTROL         "-_-",IDC_FLY_TAB_3,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,445,14,15
     LISTBOX         IDC_FLY_LIST,23,403,94,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "Clear One",IDC_FLY_CLEAR_ONE,3,468,36,12,BS_NOTIFY | BS_FLAT
     PUSHBUTTON      "Clear All",IDC_FLY_CLEAR_ALL,42,468,36,12,BS_NOTIFY | BS_FLAT
@@ -1421,7 +1421,7 @@ BEGIN
     CONTROL         "Slider1",IDC_FLY_TAB_TAIL_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,70,559,43,12
     CONTROL         "Random spreaded at start-up",IDC_FLY_TAB_SPREADING_CHECK,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,65,111,10
-    LTEXT           "Stat time",IDC_STATIC,12,170,29,8
+    LTEXT           "Start time",IDC_STATIC,12,170,29,8
     EDITTEXT        IDC_FLY_HOMING_START_TIME,65,167,41,12,ES_AUTOHSCROLL
     GROUPBOX        "Additional Collision Information",IDC_STATIC,6,267,107,74
     CONTROL         "when collision w/ background",IDC_FLY_TAB_HIT_ON_BACKGROUND,
@@ -1432,7 +1432,7 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,289,99,20
     CONTROL         "Maintain Z axis parallelly",IDC_FLY_TAB_MAINTAIN_PARALLEL,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,77,98,10
-    LTEXT           "Expectional sphere size",IDC_STATIC,0,326,79,8
+    LTEXT           "Exceptional sphere size",IDC_STATIC,0,326,79,8
     EDITTEXT        IDC_FLY_TAB_COLLISION_SPHERE_RADIUS,82,323,27,12,ES_AUTOHSCROLL
 END
 
@@ -2193,7 +2193,7 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar n toolbar"
+    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
     ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
 END
 

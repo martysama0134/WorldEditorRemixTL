@@ -1,6 +1,6 @@
 // Microsoft Visual C++ generated resource script.
 //
-#include "../Sample/resource.h"
+#include "resource.h"
 
 #define APSTUDIO_READONLY_SYMBOLS
 /////////////////////////////////////////////////////////////////////////////
@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Coreano (Corea del Sud) resources
+// Coréen (Corée) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
@@ -159,41 +159,41 @@ IDB_AMBIENCE_DISTANCE   BITMAP                  "..\\Sample\\res\\ambience_dista
 
 IDR_MAINFRAME MENU
 BEGIN
-    POPUP "File"
+    POPUP "Fichier"
     BEGIN
-        MENUITEM "Exit",                        ID_APP_EXIT
+        MENUITEM "Quitter",                     ID_APP_EXIT
     END
-    POPUP "Edit"
+    POPUP "Edition"
     BEGIN
-        MENUITEM "Undo...\tCtrl+Z",             ID_EDIT_UNDO
-        MENUITEM "Redo...\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM "Annuler...\tCtrl+Z",          ID_EDIT_UNDO
+        MENUITEM "Refaire...\tCtrl+Y",          ID_EDIT_REDO
         MENUITEM SEPARATOR
-        MENUITEM "Cut...\tCtrl+X",              ID_EDIT_CUT
-        MENUITEM "Copy...\tCtrl+C",             ID_EDIT_COPY
-        MENUITEM "Paste...\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "Couper...\tCtrl+X",           ID_EDIT_CUT
+        MENUITEM "Copier...\tCtrl+C",           ID_EDIT_COPY
+        MENUITEM "Coller...\tCtrl+V",           ID_EDIT_PASTE
     END
-    POPUP "View"
+    POPUP "Vue"
     BEGIN
-        MENUITEM "Toolbar",                     ID_VIEW_TOOLBAR
-        MENUITEM "Statusbar",                   ID_VIEW_STATUS_BAR
+        MENUITEM "Barre d'outil",               ID_VIEW_TOOLBAR
+        MENUITEM "Barre de status",             ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        POPUP "Render Mode"
+        POPUP "Mode de rendu"
         BEGIN
-            MENUITEM "Solid",                       ID_VIEW_RENDERING_MODE_SOLID
-            MENUITEM "Wire Frame",                  ID_VIEW_RENDERING_MODE_WIRE_FRAME
+            MENUITEM "Solide",                      ID_VIEW_RENDERING_MODE_SOLID
+            MENUITEM "Fil de fer",                  ID_VIEW_RENDERING_MODE_WIRE_FRAME
         END
-        MENUITEM "About Box(F11)",              ID_VIEW_INFO_BOX
+        MENUITEM "A propos (F11)",              ID_VIEW_INFO_BOX
         MENUITEM SEPARATOR
-        MENUITEM "Toolbar(&T)",                 ID_VIEW_TOOLBAR
-        MENUITEM "Map Control Bar",             ID_VIEW_MAP
-        MENUITEM "Objects Control Bar",         ID_VIEW_OBJECT
-        MENUITEM "Effect Control Bar",          ID_VIEW_EFFECT
+        MENUITEM "Barre d'outil (&T)",          ID_VIEW_TOOLBAR
+        MENUITEM "Barre de controle de la carte", ID_VIEW_MAP
+        MENUITEM "Barre de controle des objets", ID_VIEW_OBJECT
+        MENUITEM "Barre de controle des effets", ID_VIEW_EFFECT
         MENUITEM SEPARATOR
-        MENUITEM "Perspective Adjust",          ID_VIEW_DLG_PERSPECTIVE
+        MENUITEM "Ajuster la perspective",      ID_VIEW_DLG_PERSPECTIVE
     END
     POPUP "Info"
     BEGIN
-        MENUITEM "WorldEditor About...",        ID_APP_ABOUT
+        MENUITEM "A propos du WorldEditor...",  ID_APP_ABOUT
     END
 END
 
@@ -302,7 +302,7 @@ END
 STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
+    AFX_IDS_IDLEMESSAGE     "Inactif"
 END
 
 STRINGTABLE
@@ -317,95 +317,95 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_FILE_NEW             "New File"
-    ID_FILE_OPEN            "Redo"
-    ID_FILE_CLOSE           "Close File"
-    ID_FILE_SAVE            "Save File"
-    ID_FILE_SAVE_AS         "Save File as"
-    ID_FILE_PAGE_SETUP      "Print Settings"
-    ID_FILE_PRINT_SETUP     "Print Settings"
-    ID_FILE_PRINT           "Print"
-    ID_FILE_PRINT_PREVIEW   "Print Preview"
+    ID_FILE_NEW             "Nouveau fichier"
+    ID_FILE_OPEN            "Refaire action"
+    ID_FILE_CLOSE           "Fermer"
+    ID_FILE_SAVE            "Enregistrer"
+    ID_FILE_SAVE_AS         "Enregistrer sous"
+    ID_FILE_PAGE_SETUP      "Imprimer les parametres"
+    ID_FILE_PRINT_SETUP     "Imprimer les parametres"
+    ID_FILE_PRINT           "Imprimer"
+    ID_FILE_PRINT_PREVIEW   "Imprimer l'apercu"
 END
 
 STRINGTABLE
 BEGIN
-    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
-    ID_APP_EXIT             "Save Document?"
+    ID_APP_ABOUT            "Informations sur le programme, informations sur la version, informations sur les droits d'auteur. N Informations "
+    ID_APP_EXIT             "Sauvegarder le fichier ?"
 END
 
 STRINGTABLE
 BEGIN
-    ID_FILE_MRU_FILE1       "Open Document:"
-    ID_FILE_MRU_FILE2       "Open Document:"
-    ID_FILE_MRU_FILE3       "Open Document:"
-    ID_FILE_MRU_FILE4       "Open Document:"
-    ID_FILE_MRU_FILE5       "Open Document:"
-    ID_FILE_MRU_FILE6       "Open Document:"
-    ID_FILE_MRU_FILE7       "Open Document:"
-    ID_FILE_MRU_FILE8       "Open Document:"
-    ID_FILE_MRU_FILE9       "Open Document:"
-    ID_FILE_MRU_FILE10      "Open Document:"
-    ID_FILE_MRU_FILE11      "Open Document:"
-    ID_FILE_MRU_FILE12      "Open Document:"
-    ID_FILE_MRU_FILE13      "Open Document:"
-    ID_FILE_MRU_FILE14      "Open Document:"
-    ID_FILE_MRU_FILE15      "Open Document:"
-    ID_FILE_MRU_FILE16      "Open Document:"
+    ID_FILE_MRU_FILE1       "Ouvrir le document:"
+    ID_FILE_MRU_FILE2       "Ouvrir le document:"
+    ID_FILE_MRU_FILE3       "Ouvrir le document:"
+    ID_FILE_MRU_FILE4       "Ouvrir le document:"
+    ID_FILE_MRU_FILE5       "Ouvrir le document:"
+    ID_FILE_MRU_FILE6       "Ouvrir le document:"
+    ID_FILE_MRU_FILE7       "Ouvrir le document:"
+    ID_FILE_MRU_FILE8       "Ouvrir le document:"
+    ID_FILE_MRU_FILE9       "Ouvrir le document:"
+    ID_FILE_MRU_FILE10      "Ouvrir le document:"
+    ID_FILE_MRU_FILE11      "Ouvrir le document:"
+    ID_FILE_MRU_FILE12      "Ouvrir le document:"
+    ID_FILE_MRU_FILE13      "Ouvrir le document:"
+    ID_FILE_MRU_FILE14      "Ouvrir le document:"
+    ID_FILE_MRU_FILE15      "Ouvrir le document:"
+    ID_FILE_MRU_FILE16      "Ouvrir le document:"
 END
 
 STRINGTABLE
 BEGIN
-    ID_NEXT_PANE            "Switch to next Window"
-    ID_PREV_PANE            "Switch to last Window"
+    ID_NEXT_PANE            "Aller a la prochaine fenetre"
+    ID_PREV_PANE            "Aller a la derniere fenetre"
 END
 
 STRINGTABLE
 BEGIN
-    ID_WINDOW_SPLIT         "Split Windows"
+    ID_WINDOW_SPLIT         "Fractionner les fenetres "
 END
 
 STRINGTABLE
 BEGIN
-    ID_EDIT_CLEAR           "Clear Selection"
-    ID_EDIT_CLEAR_ALL       "Clear All"
-    ID_EDIT_COPY            "Copy Selection"
-    ID_EDIT_CUT             "Cut Selection"
-    ID_EDIT_FIND            "Search/Find"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REPEAT          "Repeat Last Action"
-    ID_EDIT_REPLACE         "Replace"
-    ID_EDIT_SELECT_ALL      "Select All"
-    ID_EDIT_UNDO            "Undo"
-    ID_EDIT_REDO            "Redo"
+    ID_EDIT_CLEAR           "Nettoyer la selection"
+    ID_EDIT_CLEAR_ALL       "Nettoyer tout"
+    ID_EDIT_COPY            "Copier la selection"
+    ID_EDIT_CUT             "Couper la selection"
+    ID_EDIT_FIND            "Chercher/Trouver"
+    ID_EDIT_PASTE           "Coller"
+    ID_EDIT_REPEAT          "Refaire la derniere action"
+    ID_EDIT_REPLACE         "Remplacer"
+    ID_EDIT_SELECT_ALL      "Tout selectionner"
+    ID_EDIT_UNDO            "Annuler"
+    ID_EDIT_REDO            "Refaire"
 END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
-    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
+    ID_VIEW_TOOLBAR         "Afficher ou cacher la barre d'outils \n barre d'outils"
+    ID_VIEW_STATUS_BAR      "Afficher ou cacher la barre de status \n barre de status"
 END
 
 STRINGTABLE
 BEGIN
-    AFX_IDS_SCSIZE          "Change the Size of the Window"
-    AFX_IDS_SCMOVE          "Move the WIndow"
-    AFX_IDS_SCMINIMIZE      "Minimize"
-    AFX_IDS_SCMAXIMIZE      "Maximize"
-    AFX_IDS_SCNEXTWINDOW    "Next Window"
-    AFX_IDS_SCPREVWINDOW    "Last Window"
-    AFX_IDS_SCCLOSE         "Close Window"
+    AFX_IDS_SCSIZE          "Changer la taille de la fenetre"
+    AFX_IDS_SCMOVE          "Bouger la fenetre"
+    AFX_IDS_SCMINIMIZE      "Minimiser"
+    AFX_IDS_SCMAXIMIZE      "Maximiser"
+    AFX_IDS_SCNEXTWINDOW    "Prochaine fenetre"
+    AFX_IDS_SCPREVWINDOW    "Derniere fenetre"
+    AFX_IDS_SCCLOSE         "Fermer la fenetre"
 END
 
 STRINGTABLE
 BEGIN
-    AFX_IDS_SCRESTORE       "Restore Window"
-    AFX_IDS_SCTASKLIST      "Task List"
+    AFX_IDS_SCRESTORE       "Restorer la fenetre"
+    AFX_IDS_SCTASKLIST      "Liste des taches"
 END
 
 STRINGTABLE
 BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
+    AFX_IDS_PREVIEW_CLOSE   "Fermer l'apercu"
 END
 
 STRINGTABLE
@@ -413,12 +413,12 @@ BEGIN
     ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
 END
 
-#endif    // Coreano (Corea del Sud) resources
+#endif    // Coréen (Corée) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
 /////////////////////////////////////////////////////////////////////////////
-// Francese resources
+// Français resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
 LANGUAGE LANG_FRENCH, SUBLANG_NEUTRAL
@@ -450,8 +450,8 @@ BEGIN
     PUSHBUTTON      "Charger",IDC_OBJECT_ANIMATION_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
     GROUPBOX        "Script d'animation",IDC_STATIC,3,3,114,61
     PUSHBUTTON      "Sauvegarder",IDC_OBJECT_ANIMATION_SAVE_SCRIPT,60,46,43,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_OBJECT_ANIMATION_SCRIPT_NAME,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
-    CTEXT           "Script Version",IDC_OBJECT_ANIMATION_SCRIPT_VERSION,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Nom du script",IDC_OBJECT_ANIMATION_SCRIPT_NAME,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Version du script",IDC_OBJECT_ANIMATION_SCRIPT_VERSION,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "Nom",IDC_STATIC,13,17,20,8
     LTEXT           "Version",IDC_STATIC,10,31,26,8
     CONTROL         "Slider1",IDC_OBJECT_ANIMATION_TIME_BAR,
@@ -567,8 +567,8 @@ BEGIN
     PUSHBUTTON      "Charger",IDC_MAP_ENVIRONMENT_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
     GROUPBOX        "Script d'environnement",IDC_STATIC,3,3,114,61
     PUSHBUTTON      "Sauvegarder",IDC_MAP_ENVIRONMENT_SAVE_SCRIPT,60,46,44,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_MAP_ENVIRONMENT_SCRIPT_NAME_PRINT,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
-    CTEXT           "Script Version",IDC_MAP_ENVIRONMENT_SCRIPT_VERSION_PRINT,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Nom du script",IDC_MAP_ENVIRONMENT_SCRIPT_NAME_PRINT,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Version du script",IDC_MAP_ENVIRONMENT_SCRIPT_VERSION_PRINT,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "Nom",IDC_STATIC,13,17,20,8
     LTEXT           "Version",IDC_STATIC,10,31,26,8
     CONTROL         "",IDC_MAP_ENVIRONMENT_MATERIAL_DIFFUSE,"Static",SS_BLACKFRAME | SS_NOTIFY,47,94,60,10
@@ -716,7 +716,7 @@ BEGIN
     PUSHBUTTON      "Charger",IDC_EFFECT_LOAD_SCRIPT,10,28,45,12,BS_NOTIFY | BS_FLAT
     GROUPBOX        "Script d'effet",IDC_STATIC,3,3,114,55
     PUSHBUTTON      "Sauvegarder",IDC_EFFECT_SAVE_SCRIPT,63,28,45,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_EFFECT_SCRIPT_NAME,9,14,100,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Nom du script",IDC_EFFECT_SCRIPT_NAME,9,14,100,11,SS_CENTERIMAGE | SS_SUNKEN
     LISTBOX         IDC_EFFECT_LIST,41,61,60,65,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "Nettoy. 1",IDC_EFFECT_CLEAR_ONE,3,62,36,12,BS_NOTIFY | BS_FLAT
     PUSHBUTTON      "Net. Tout",IDC_EFFECT_CLEAR_ALL,3,75,36,12,BS_NOTIFY | BS_FLAT
@@ -1552,7 +1552,7 @@ FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     GROUPBOX        "Script d'Orbe",IDC_STATIC,3,4,114,45
     LTEXT           "Nom",IDC_STATIC,14,16,20,8
-    CTEXT           "Script Name",IDC_FLY_SCRIPT_NAME,39,15,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Nom du script",IDC_FLY_SCRIPT_NAME,39,15,70,11,SS_CENTERIMAGE | SS_SUNKEN
     PUSHBUTTON      "Charger",IDC_FLY_LOAD_SCRIPT,5,31,31,12,BS_FLAT
     PUSHBUTTON      "Mélanger",IDC_FLY_MERGE_SCRIPT,37,31,34,12,BS_FLAT | WS_DISABLED
     PUSHBUTTON      "Enregistrer",IDC_FLY_SAVE_SCRIPT,73,31,40,12,BS_FLAT
@@ -1795,7 +1795,7 @@ BEGIN
     CONTROL         "Progress1",IDC_MAP_ARRANGE_HEIGHT_PROGRESS,
                     "msctls_progress32",WS_BORDER,3,85,181,10
     PUSHBUTTON      "Annuler",IDC_CANCEL,73,98,40,12
-    LTEXT           "Static",IDC_MAP_ARRANGE_HEIGHT_PROGRESS_NOTIFY,3,3,181,77,0,WS_EX_CLIENTEDGE
+    LTEXT           "Statique",IDC_MAP_ARRANGE_HEIGHT_PROGRESS_NOTIFY,3,3,181,77,0,WS_EX_CLIENTEDGE
 END
 
 IDD_INPUT_NUMBER DIALOGEX 0, 0, 111, 33
@@ -1858,6 +1858,10 @@ BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
         BOTTOMMARGIN, 73
+    END
+
+    IDD_OBJECT_ANIMATION, DIALOG
+    BEGIN
     END
 
     IDD_OBJECT_MODEL, DIALOG
@@ -2233,7 +2237,32 @@ BEGIN
     0
 END
 
-#endif    // Francese resources
+IDD_EFFECT_TAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FLY_TAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAP_ARRANGE_HEIGHT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAP_ENVIRONMENT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OBJECT_ANIMATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Français resources
 /////////////////////////////////////////////////////////////////////////////
 
 

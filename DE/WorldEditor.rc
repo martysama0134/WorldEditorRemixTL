@@ -62,6 +62,141 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WorldEditor"
+    AFX_IDS_IDLEMESSAGE     "Idle"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Neue Datei"
+    ID_FILE_OPEN            "Datei Öffnen"
+    ID_FILE_CLOSE           "Datei Schließen"
+    ID_FILE_SAVE            "Datei Speichern"
+    ID_FILE_SAVE_AS         "Datei Speichern Als"
+    ID_FILE_PAGE_SETUP      "Datei Einstellung"
+    ID_FILE_PRINT_SETUP     "Drucker Einstellung"
+    ID_FILE_PRINT           "Drucken"
+    ID_FILE_PRINT_PREVIEW   "Drucker Vorschau"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Allgemeine Information über WorldEditor ReMIX, Version, Copyright etc."
+    ID_APP_EXIT             "Dokument Speichern?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE2       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE3       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE4       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE5       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE6       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE7       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE8       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE9       "Dokument Öffnen:"
+    ID_FILE_MRU_FILE10      "Dokument Öffnen:"
+    ID_FILE_MRU_FILE11      "Dokument Öffnen:"
+    ID_FILE_MRU_FILE12      "Dokument Öffnen:"
+    ID_FILE_MRU_FILE13      "Dokument Öffnen:"
+    ID_FILE_MRU_FILE14      "Dokument Öffnen:"
+    ID_FILE_MRU_FILE15      "Dokument Öffnen:"
+    ID_FILE_MRU_FILE16      "Dokument Öffnen:"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Zum nächsten Fenster wechseln"
+    ID_PREV_PANE            "Zum nächsten Fenster wechseln"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Fenster teilen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Auswahl löschen"
+    ID_EDIT_CLEAR_ALL       "Zurücksetzen"
+    ID_EDIT_COPY            "Auswahl kopieren"
+    ID_EDIT_CUT             "Auswahl ausschneiden"
+    ID_EDIT_FIND            "Suche/Finde"
+    ID_EDIT_PASTE           "Einfügen"
+    ID_EDIT_REPEAT          "Letzte Aktion wiederholen"
+    ID_EDIT_REPLACE         "Ersetzen"
+    ID_EDIT_SELECT_ALL      "Alles Auswählen"
+    ID_EDIT_UNDO            "Rückgängig"
+    ID_EDIT_REDO            "Wiederholen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Toolbar Anzeigen oder Verstecken \n toolbar"
+    ID_VIEW_STATUS_BAR      "Statusbar Anzeigen oder Verstecken \n Status Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Fenster Größe ändern"
+    AFX_IDS_SCMOVE          "Fenster bewegen"
+    AFX_IDS_SCMINIMIZE      "Minimieren"
+    AFX_IDS_SCMAXIMIZE      "Maximieren"
+    AFX_IDS_SCNEXTWINDOW    "Nächstes Fenster"
+    AFX_IDS_SCPREVWINDOW    "Letztes Fenster"
+    AFX_IDS_SCCLOSE         "Fenster schließen"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Fenster wiederherstellen"
+    AFX_IDS_SCTASKLIST      "Aufgabenliste"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Vorschau schließen"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_INFO_BOX        "Jobinformationen anzeigen, um das Feld anzuzeigen oder auszublenden."
+END
+
+#endif    // Coreano (Corea del Sud) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Tedesco resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Icon
 //
 
@@ -159,41 +294,41 @@ IDB_AMBIENCE_DISTANCE   BITMAP                  "..\\Sample\\res\\ambience_dista
 
 IDR_MAINFRAME MENU
 BEGIN
-    POPUP "File"
+    POPUP "Datei"
     BEGIN
-        MENUITEM "Exit",                        ID_APP_EXIT
+        MENUITEM "Beenden",                     ID_APP_EXIT
     END
     POPUP "Edit"
     BEGIN
-        MENUITEM "Undo...\tCtrl+Z",             ID_EDIT_UNDO
-        MENUITEM "Redo...\tCtrl+Y",             ID_EDIT_REDO
+        MENUITEM "Rückgängig...\tCtrl+Z",             ID_EDIT_UNDO
+        MENUITEM "Wiederholen...\tCtrl+Y",      ID_EDIT_REDO
         MENUITEM SEPARATOR
-        MENUITEM "Cut...\tCtrl+X",              ID_EDIT_CUT
-        MENUITEM "Copy...\tCtrl+C",             ID_EDIT_COPY
-        MENUITEM "Paste...\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "Ausschneiden...\tCtrl+X",     ID_EDIT_CUT
+        MENUITEM "Kopieren...\tCtrl+C",         ID_EDIT_COPY
+        MENUITEM "Einfügen...\tCtrl+V",            ID_EDIT_PASTE
     END
-    POPUP "View"
+    POPUP "Ansicht"
     BEGIN
-        MENUITEM "Toolbar",                     ID_VIEW_TOOLBAR
-        MENUITEM "Statusbar",                   ID_VIEW_STATUS_BAR
+        MENUITEM "Symbolleiste",                ID_VIEW_TOOLBAR
+        MENUITEM "Statusleiste",                ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        POPUP "Render Mode"
+        POPUP "Rendermodus"
         BEGIN
             MENUITEM "Solid",                       ID_VIEW_RENDERING_MODE_SOLID
             MENUITEM "Wire Frame",                  ID_VIEW_RENDERING_MODE_WIRE_FRAME
         END
-        MENUITEM "About Box(F11)",              ID_VIEW_INFO_BOX
+        MENUITEM "Info Box(F11)",               ID_VIEW_INFO_BOX
         MENUITEM SEPARATOR
-        MENUITEM "Toolbar(&T)",                 ID_VIEW_TOOLBAR
-        MENUITEM "Map Control Bar",             ID_VIEW_MAP
-        MENUITEM "Objects Control Bar",         ID_VIEW_OBJECT
-        MENUITEM "Effect Control Bar",          ID_VIEW_EFFECT
+        MENUITEM "Symbolleiste(&T)",            ID_VIEW_TOOLBAR
+        MENUITEM "Map Kontrollleiste",          ID_VIEW_MAP
+        MENUITEM "Objekt Kontrollleiste",       ID_VIEW_OBJECT
+        MENUITEM "Effekt Kontrollleiste",       ID_VIEW_EFFECT
         MENUITEM SEPARATOR
-        MENUITEM "Perspective Adjust",          ID_VIEW_DLG_PERSPECTIVE
+        MENUITEM "Perspektive anpassen",        ID_VIEW_DLG_PERSPECTIVE
     END
     POPUP "Info"
     BEGIN
-        MENUITEM "WorldEditor About...",        ID_APP_ABOUT
+        MENUITEM "Über WorldEditor",        ID_APP_ABOUT
     END
 END
 
@@ -227,45 +362,6 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Version
-//
-
-VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
- FILEFLAGSMASK 0x3fL
-#ifdef _DEBUG
- FILEFLAGS 0x1L
-#else
- FILEFLAGS 0x0L
-#endif
- FILEOS 0x4L
- FILETYPE 0x1L
- FILESUBTYPE 0x0L
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "041204b0"
-        BEGIN
-            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
-            VALUE "FileDescription", "WorldEditorRemix"
-            VALUE "FileVersion", "1.0.0.1"
-            VALUE "InternalName", "WorldEditorRemix.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2021"
-            VALUE "OriginalFilename", "WorldEditorRemix.exe"
-            VALUE "ProductName", "WorldEditorRemix"
-            VALUE "ProductVersion", "1.0.0.1"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x412, 1200
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // Cursor
 //
 
@@ -291,138 +387,42 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// String Table
+// Version
 //
 
-STRINGTABLE
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
 BEGIN
-    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000704b0"
+        BEGIN
+            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
+            VALUE "FileDescription", "WorldEditorRemix"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WorldEditorRemix.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2021"
+            VALUE "OriginalFilename", "WorldEditorRemix.exe"
+            VALUE "ProductName", "WorldEditorRemix"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x7, 1200
+    END
 END
 
-STRINGTABLE
-BEGIN
-    AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
-END
-
-STRINGTABLE
-BEGIN
-    ID_INDICATOR_EXT        "EXT"
-    ID_INDICATOR_CAPS       "CAP"
-    ID_INDICATOR_NUM        "NUM"
-    ID_INDICATOR_SCRL       "SCRL"
-    ID_INDICATOR_OVR        "OVR"
-    ID_INDICATOR_REC        "REC"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_NEW             "New File"
-    ID_FILE_OPEN            "Redo"
-    ID_FILE_CLOSE           "Close File"
-    ID_FILE_SAVE            "Save File"
-    ID_FILE_SAVE_AS         "Save File as"
-    ID_FILE_PAGE_SETUP      "Print Settings"
-    ID_FILE_PRINT_SETUP     "Print Settings"
-    ID_FILE_PRINT           "Print"
-    ID_FILE_PRINT_PREVIEW   "Print Preview"
-END
-
-STRINGTABLE
-BEGIN
-    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
-    ID_APP_EXIT             "Save Document?"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_MRU_FILE1       "Open Document:"
-    ID_FILE_MRU_FILE2       "Open Document:"
-    ID_FILE_MRU_FILE3       "Open Document:"
-    ID_FILE_MRU_FILE4       "Open Document:"
-    ID_FILE_MRU_FILE5       "Open Document:"
-    ID_FILE_MRU_FILE6       "Open Document:"
-    ID_FILE_MRU_FILE7       "Open Document:"
-    ID_FILE_MRU_FILE8       "Open Document:"
-    ID_FILE_MRU_FILE9       "Open Document:"
-    ID_FILE_MRU_FILE10      "Open Document:"
-    ID_FILE_MRU_FILE11      "Open Document:"
-    ID_FILE_MRU_FILE12      "Open Document:"
-    ID_FILE_MRU_FILE13      "Open Document:"
-    ID_FILE_MRU_FILE14      "Open Document:"
-    ID_FILE_MRU_FILE15      "Open Document:"
-    ID_FILE_MRU_FILE16      "Open Document:"
-END
-
-STRINGTABLE
-BEGIN
-    ID_NEXT_PANE            "Switch to next Window"
-    ID_PREV_PANE            "Switch to last Window"
-END
-
-STRINGTABLE
-BEGIN
-    ID_WINDOW_SPLIT         "Split Windows"
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_CLEAR           "Clear Selection"
-    ID_EDIT_CLEAR_ALL       "Clear All"
-    ID_EDIT_COPY            "Copy Selection"
-    ID_EDIT_CUT             "Cut Selection"
-    ID_EDIT_FIND            "Search/Find"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REPEAT          "Repeat Last Action"
-    ID_EDIT_REPLACE         "Replace"
-    ID_EDIT_SELECT_ALL      "Select All"
-    ID_EDIT_UNDO            "Undo"
-    ID_EDIT_REDO            "Redo"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
-    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCSIZE          "Change the Size of the Window"
-    AFX_IDS_SCMOVE          "Move the WIndow"
-    AFX_IDS_SCMINIMIZE      "Minimize"
-    AFX_IDS_SCMAXIMIZE      "Maximize"
-    AFX_IDS_SCNEXTWINDOW    "Next Window"
-    AFX_IDS_SCPREVWINDOW    "Last Window"
-    AFX_IDS_SCCLOSE         "Close Window"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCRESTORE       "Restore Window"
-    AFX_IDS_SCTASKLIST      "Task List"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
-END
-
-#endif    // Coreano (Corea del Sud) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// Tedesco resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
-LANGUAGE LANG_GERMAN, SUBLANG_NEUTRAL
-#pragma code_page(1252)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -438,7 +438,7 @@ BEGIN
     LTEXT           "WorldEditor ReMIX v40",IDC_STATIC,35,6,76,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2003-2021",IDC_STATIC,35,16,119,8
     LTEXT           "Author martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
-    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, and to all the guinea pigs! (such as CryPrime|iAce, Raiard, LeRenard and so on)",IDC_STATIC,35,36,159,29
+    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, and to all the guinea pigs! (such as Cryprime|iAce, Raiard, LeRenard and so on)",IDC_STATIC,35,36,159,29
     DEFPUSHBUTTON   "Ok",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -446,30 +446,31 @@ IDD_OBJECT_ANIMATION DIALOGEX 0, 0, 120, 850
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    GROUPBOX        "Animating Bar",IDC_STATIC,3,116,114,431
-    PUSHBUTTON      "Load",IDC_OBJECT_ANIMATION_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "Animation Script",IDC_STATIC,3,3,114,61
-    PUSHBUTTON      "Save",IDC_OBJECT_ANIMATION_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_OBJECT_ANIMATION_SCRIPT_NAME,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
-    CTEXT           "Script Version",IDC_OBJECT_ANIMATION_SCRIPT_VERSION,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Animationsleiste",IDC_STATIC,3,116,114,431
+    PUSHBUTTON      "Laden",IDC_OBJECT_ANIMATION_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Animationsskript",IDC_STATIC,3,3,114,61
+    PUSHBUTTON      "Speichern",IDC_OBJECT_ANIMATION_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
+    CTEXT           "Skriptname",IDC_OBJECT_ANIMATION_SCRIPT_NAME,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Skriptversion",IDC_OBJECT_ANIMATION_SCRIPT_VERSION,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "Name",IDC_STATIC,13,17,20,8
     LTEXT           "Version",IDC_STATIC,10,31,26,8
     CONTROL         "Slider1",IDC_OBJECT_ANIMATION_TIME_BAR,
                     "msctls_trackbar32",TBS_VERT | WS_TABSTOP,9,154,11,278
     CONTROL         "",IDC_OBJECT_ANIMATION_EVENT_GRAPH,"Static",SS_GRAYFRAME | SS_NOTIFY | SS_SUNKEN,25,155,84,275
     GROUPBOX        "Motion",IDC_STATIC,3,67,114,43
-    CTEXT           "Motion File Name",IDC_OBJECT_ANIMATION_NAME,13,93,97,11,SS_CENTERIMAGE | SS_SUNKEN
-    PUSHBUTTON      "Load",IDC_OBJECT_ANIMATION_LOAD,71,77,40,12,BS_FLAT
-    CONTROL         "Loop",IDC_OBJECT_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,64,130,32,10
+    CTEXT           "Motion Datei Name",IDC_OBJECT_ANIMATION_NAME,13,93,97,11,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Laden",IDC_OBJECT_ANIMATION_LOAD,71,77,40,12,BS_FLAT
+    CONTROL         "Schleife",IDC_OBJECT_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,64,130,32,10
     CONTROL         "Slider2",IDC_OBJECT_ANIMATION_SPEED_BAR,
                     "msctls_trackbar32",WS_TABSTOP,13,514,95,9
-    CONTROL         "Play",IDC_OBJECT_ANIMATION_PLAY,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,10,129,46,22
+    CONTROL         "Abspielen",IDC_OBJECT_ANIMATION_PLAY,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,10,129,46,22
     GROUPBOX        "Attacking Data",IDC_STATIC,3,607,114,237
-    CONTROL         "Enable",IDC_OBJECT_ANIMATION_ATTACKING_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,607,38,10,WS_EX_TRANSPARENT
+    CONTROL         "Aktivieren",IDC_OBJECT_ANIMATION_ATTACKING_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,607,38,10,WS_EX_TRANSPARENT
     LTEXT           "Stiffen Time",IDC_STATIC,7,671,39,8
-    LTEXT           "Attack Type",IDC_STATIC,7,643,39,8
-    LTEXT           "Hitting Type",IDC_STATIC,7,657,39,8
-    LTEXT           "Invisible Time",IDC_STATIC,7,685,46,8
+    LTEXT           "Angriffstyp",IDC_STATIC,7,643,39,8
+    LTEXT           "Schlagtyp",IDC_STATIC,7,657,39,8
+    LTEXT           "Unsichtbare Zeit",IDC_STATIC,7,685,46,8
     LTEXT           "External Force",IDC_STATIC,7,699,48,8
     COMBOBOX        IDC_OBJECT_ANIMATION_ATTACKING_TYPE,56,641,57,224,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     COMBOBOX        IDC_OBJECT_ANIMATION_HITTING_TYPE,56,655,57,224,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
@@ -479,77 +480,77 @@ BEGIN
     CONTROL         "Combo Motion",IDC_OBJECT_ANIMATION_COMBO_MOTION_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,565,63,10
     GROUPBOX        "Option",IDC_STATIC,3,552,114,49
-    GROUPBOX        "Motion Speed",IDC_STATIC,7,502,106,38
-    CTEXT           "Static",IDC_OBJECT_ANIMATION_SPEED_BAR_PRINT,39,525,42,10,0,WS_EX_STATICEDGE
-    LTEXT           "Fast",IDC_STATIC,96,527,15,8
-    LTEXT           "Slow",IDC_STATIC,9,527,17,8
-    LTEXT           "Bone",IDC_STATIC,14,791,18,8
+    GROUPBOX        "Motion Geschwindigkeit",IDC_STATIC,7,502,106,38
+    CTEXT           "Statisch",IDC_OBJECT_ANIMATION_SPEED_BAR_PRINT,39,525,42,10,0,WS_EX_STATICEDGE
+    LTEXT           "Schnell",IDC_STATIC,96,527,15,8
+    LTEXT           "Langsam",IDC_STATIC,9,527,17,8
+    LTEXT           "Skelett",IDC_STATIC,14,791,18,8
     COMBOBOX        IDC_OBJECT_ANIMATION_ATTACKING_BONE,36,789,71,224,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "Weapon Length",IDC_STATIC,13,809,51,8
+    LTEXT           "Waffenlänge",IDC_STATIC,13,809,51,8
     CONTROL         "Loop Motion",IDC_OBJECT_ANIMATION_LOOP_MOTION_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,576,56,10
     GROUPBOX        "Loop Count",IDC_STATIC,7,452,106,45
     CONTROL         "Limit Loop",IDC_OBJECT_ANIMATION_LIMIT_LOOP_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,451,46,10
-    LTEXT           "Motion Type",IDC_STATIC,7,622,42,8
+    LTEXT           "Motion Typ",IDC_STATIC,7,622,42,8
     COMBOBOX        IDC_OBJECT_ANIMATION_MOTION_TYPE,56,620,57,224,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         "Cancel Enable (For Skill)",IDC_OBJECT_ANIMATION_CANCEL_ENABLE_SKILL,
+    CONTROL         "Aktivieren abbrechen (für Skill)",IDC_OBJECT_ANIMATION_CANCEL_ENABLE_SKILL,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,587,97,10
     GROUPBOX        "",IDC_STATIC,8,755,104,81
     COMBOBOX        IDC_OBJECT_ANIMATION_HIT_DATA_LIST,22,753,75,231,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     CONTROL         "Slider1",IDC_OBJECT_ANIMATION_WEAPON_LENGTH,
                     "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,11,822,100,9
-    CTEXT           "Static",IDC_OBJECT_ANIMATION_WEAPON_LENGTH_PRINT,69,809,39,9,SS_SUNKEN
-    PUSHBUTTON      "Insert",IDC_OBJECT_ANIMATION_HIT_DATA_INSERT,13,770,45,12,BS_FLAT
-    PUSHBUTTON      "Delete",IDC_OBJECT_ANIMATION_HIT_DATA_DELETE,63,770,45,12,BS_FLAT
+    CTEXT           "Statisch",IDC_OBJECT_ANIMATION_WEAPON_LENGTH_PRINT,69,809,39,9,SS_SUNKEN
+    PUSHBUTTON      "Einfügen",IDC_OBJECT_ANIMATION_HIT_DATA_INSERT,13,770,45,12,BS_FLAT
+    PUSHBUTTON      "Löschen",IDC_OBJECT_ANIMATION_HIT_DATA_DELETE,63,770,45,12,BS_FLAT
     EDITTEXT        IDC_OBJECT_ANIMATION_LOOP_COUNT,34,463,50,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
-    PUSHBUTTON      "Unlimited Loop",IDC_BUTTON1,24,480,70,12
-    CONTROL         "Frame Step",IDC_OBJECT_ANIMATION_FRAME_STEP,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,64,141,47,10
-    PUSHBUTTON      "Add",IDC_OBJECT_ANIMATION_ADD_MOTION_EVENT,11,435,48,11
-    PUSHBUTTON      "Delete",IDC_OBJECT_ANIMATION_DELETE_MOTION_EVENT,62,435,48,11
+    PUSHBUTTON      "Unbegrenzte Schleife",IDC_BUTTON1,24,480,70,12
+    CONTROL         "Frame Schritt",IDC_OBJECT_ANIMATION_FRAME_STEP,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,64,141,47,10
+    PUSHBUTTON      "Hinzufügen",IDC_OBJECT_ANIMATION_ADD_MOTION_EVENT,11,435,48,11
+    PUSHBUTTON      "Löschen",IDC_OBJECT_ANIMATION_DELETE_MOTION_EVENT,62,435,48,11
     GROUPBOX        "",IDC_STATIC,8,712,105,36
     LTEXT           "Hit Limit Count",IDC_STATIC,14,721,48,8
     CONTROL         "Slider1",IDC_OBJECT_ANIMATION_HIT_LIMIT,
                     "msctls_trackbar32",TBS_NOTICKS | WS_TABSTOP,21,734,79,9
-    CTEXT           "Static",IDC_OBJECT_ANIMATION_HIT_LIMIT_PRINT,70,721,39,9,SS_SUNKEN
+    CTEXT           "Statisch",IDC_OBJECT_ANIMATION_HIT_LIMIT_PRINT,70,721,39,9,SS_SUNKEN
 END
 
 IDD_OBJECT_MODEL DIALOGEX 0, 0, 120, 582
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    GROUPBOX        "Model",IDC_STATIC,3,70,114,74
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_LOAD,18,81,40,12,BS_FLAT
-    PUSHBUTTON      "Load",IDC_OBJECT_MODEL_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "Model Script",IDC_STATIC,3,3,114,61
-    PUSHBUTTON      "Save",IDC_OBJECT_MODEL_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_OBJECT_MODEL_SCRIPT_NAME,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
-    CTEXT           "Script Version",IDC_OBJECT_MODEL_SCRIPT_VERSION,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Modell",IDC_STATIC,3,70,114,74
+    PUSHBUTTON      "Laden",IDC_OBJECT_MODEL_LOAD,18,81,40,12,BS_FLAT
+    PUSHBUTTON      "Laden",IDC_OBJECT_MODEL_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Modellskript",IDC_STATIC,3,3,114,61
+    PUSHBUTTON      "Speichern",IDC_OBJECT_MODEL_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
+    CTEXT           "Skriptname",IDC_OBJECT_MODEL_SCRIPT_NAME,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Skriptversion",IDC_OBJECT_MODEL_SCRIPT_VERSION,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "Name",IDC_STATIC,13,17,20,8
     LTEXT           "Version",IDC_STATIC,10,31,26,8
     GROUPBOX        "Attach",IDC_STATIC,3,150,114,336
     COMBOBOX        IDC_OBJECT_MODEL_ATTACHING_BONE,20,270,79,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Clear All",IDC_OBJECT_MODEL_ATTACH_CLEAR_ALL,61,239,35,12,BS_FLAT
-    PUSHBUTTON      "Clear One",IDC_OBJECT_MODEL_ATTACH_CLEAR_ONE,24,239,35,12,BS_FLAT
+    PUSHBUTTON      "Alles löschen",IDC_OBJECT_MODEL_ATTACH_CLEAR_ALL,61,239,35,12,BS_FLAT
+    PUSHBUTTON      "Eins löschen",IDC_OBJECT_MODEL_ATTACH_CLEAR_ONE,24,239,35,12,BS_FLAT
     GROUPBOX        "",IDC_STATIC,9,222,101,75
     COMBOBOX        IDC_OBJECT_MODEL_ATTACHING_DATA,18,221,83,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
-    CTEXT           "Model File Name",IDC_OBJECT_MODEL_FILE_NAME,9,97,102,11,SS_CENTERIMAGE | SS_SUNKEN
-    GROUPBOX        "Modifier",IDC_OBJECT_MODEL_ATTACHING_DATA_PAGE,9,302,101,175
-    PUSHBUTTON      "Collision Data",IDC_OBJECT_MODEL_MAKE_COLLISION_DATA,14,162,90,12
-    PUSHBUTTON      "Effect",IDC_OBJECT_MODEL_MAKE_EFFECT,14,176,90,12
+    CTEXT           "Modelldateiname",IDC_OBJECT_MODEL_FILE_NAME,9,97,102,11,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Modifikator",IDC_OBJECT_MODEL_ATTACHING_DATA_PAGE,9,302,101,175
+    PUSHBUTTON      "Kollision Data",IDC_OBJECT_MODEL_MAKE_COLLISION_DATA,14,162,90,12
+    PUSHBUTTON      "Effekt",IDC_OBJECT_MODEL_MAKE_EFFECT,14,176,90,12
     GROUPBOX        "Option",IDC_STATIC,3,490,114,40
-    CONTROL         "Show Main Character",IDC_OBJECT_MODEL_SHOW_MAIN_CHARACTER,
+    CONTROL         "Hauptfigur anzeigen",IDC_OBJECT_MODEL_SHOW_MAIN_CHARACTER,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,503,69,10
     GROUPBOX        "",IDC_STATIC,15,256,89,33
     CONTROL         "Attaching Bone",IDC_OBJECT_MODEL_ATTACHING_BONE_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,256,59,10,WS_EX_TRANSPARENT
     COMBOBOX        IDC_OBJECT_MODEL_TYPE,23,116,77,456,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
     GROUPBOX        "",IDC_OBJECT_MODEL_MODEL_DATA_PAGE,9,118,101,18
-    CONTROL         "Show Collision Data",IDC_OBJECT_MODEL_SHOW_COLLISION_DATA,
+    CONTROL         "Kollisionen anzeigen",IDC_OBJECT_MODEL_SHOW_COLLISION_DATA,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,515,69,10
-    PUSHBUTTON      "Object",IDC_OBJECT_MODEL_MAKE_OBJECT,14,190,90,12
+    PUSHBUTTON      "Objekt",IDC_OBJECT_MODEL_MAKE_OBJECT,14,190,90,12
     PUSHBUTTON      "Sound",IDC_OBJECT_MODEL_MAKE_SOUND,14,204,90,12
-    PUSHBUTTON      "Save Attr",IDC_OBJECT_MODEL_SAVE_ATTR,60,81,40,12,BS_FLAT
+    PUSHBUTTON      "Attr Speichern",IDC_OBJECT_MODEL_SAVE_ATTR,60,81,40,12,BS_FLAT
 END
 
 IDD_OBJECT_TAB DIALOG 0, 0, 120, 16
@@ -565,12 +566,12 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     GROUPBOX        "Material",IDC_STATIC,8,82,105,55
-    GROUPBOX        "Fog",IDC_STATIC,2,218,114,64
-    PUSHBUTTON      "Load",IDC_MAP_ENVIRONMENT_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "Environment Script",IDC_STATIC,3,3,114,61
-    PUSHBUTTON      "Save",IDC_MAP_ENVIRONMENT_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
-    CTEXT           "Script Name",IDC_MAP_ENVIRONMENT_SCRIPT_NAME_PRINT,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
-    CTEXT           "Script Version",IDC_MAP_ENVIRONMENT_SCRIPT_VERSION_PRINT,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Nebel",IDC_STATIC,2,218,114,64
+    PUSHBUTTON      "Laden",IDC_MAP_ENVIRONMENT_LOAD_SCRIPT,18,46,40,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Environment Skript",IDC_STATIC,3,3,114,61
+    PUSHBUTTON      "Speichern",IDC_MAP_ENVIRONMENT_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
+    CTEXT           "Skriptname",IDC_MAP_ENVIRONMENT_SCRIPT_NAME_PRINT,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Skriptversion",IDC_MAP_ENVIRONMENT_SCRIPT_VERSION_PRINT,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "Name",IDC_STATIC,13,17,20,8
     LTEXT           "Version",IDC_STATIC,10,31,26,8
     CONTROL         "",IDC_MAP_ENVIRONMENT_MATERIAL_DIFFUSE,"Static",SS_BLACKFRAME | SS_NOTIFY,47,94,60,10

@@ -97,6 +97,7 @@
 #define IDD_INPUT_NUMBER                220
 #define IDC_EFFECT_BOUNDING_SPHERE_POS_Z 221
 #define IDD_MAP_PORTAL                  221
+#define IDR_PNG_COMPASS                 224
 #define IDC_OBJECT_MODEL_LOAD           1000
 #define IDC_COLORPICKER                 1000
 #define IDC_EFFECT_PARTICLE_SLIDER_SPEED 1000
@@ -287,8 +288,10 @@
 #define IDC_EFFECT_PARTICLE_STATIC_SIZE_Y_END 1041
 #define IDC_EFFECT_MESH_BLEND_SET_MULTI 1041
 #define IDC_COLLISION_PAGE_SIZE_TYPE_5  1041
+#define IDD_MAP_OBJECT_RESET_ROTATION   1041
 #define IDC_ENVIRONMENT_TAB_LIGHT       1042
 #define IDC_MAP_TAB_EDIT                1042
+#define IDD_MAP_OBJECT_RESET_HEIGHT     1042
 #define IDC_ENVIRONMENT_TAB_FOG         1043
 #define IDC_MAP_TAB_ENVIRONMENT         1043
 #define IDC_OBJECT_ANIMATION_TIME_BAR   1044
@@ -964,6 +967,9 @@
 #define IDC_BUTTON_REMOVE_TEX           1468
 #define IDC_MAP_ENVIRONMENT_WATER_TEXTURE_COUNT_PRINT 1468
 #define IDC_MAP_TERRAIN_WATER_TEXTURE_COUNT_PRINT 1468
+#define IDC_STATIC_YAW                  1469
+#define IDC_STATIC_PITCH                1470
+#define IDC_STATIC_ROLL                 1471
 #define ID_BUTTON32778                  32778
 #define ID_BUTTON32779                  32779
 #define ID_VIEW_FLY                     32779
@@ -982,13 +988,13 @@
 #define ID_BUTTON32801                  32801
 
 // Next default values for new objects
-// 
+//
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_3D_CONTROLS                     1
-#define _APS_NEXT_RESOURCE_VALUE        224
+#define _APS_NEXT_RESOURCE_VALUE        225
 #define _APS_NEXT_COMMAND_VALUE         32802
-#define _APS_NEXT_CONTROL_VALUE         1469
+#define _APS_NEXT_CONTROL_VALUE         1472
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

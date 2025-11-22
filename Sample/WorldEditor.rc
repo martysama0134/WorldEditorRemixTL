@@ -154,6 +154,14 @@ IDB_AMBIENCE_DISTANCE   BITMAP                  "res\\ambience_distance.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// PNG
+//
+
+IDR_PNG_COMPASS         PNG                     "res\\compass.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Menu
 //
 
@@ -251,7 +259,7 @@ BEGIN
             VALUE "FileDescription", "WorldEditorRemix"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "WorldEditorRemix.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2021"
+            VALUE "LegalCopyright", "Copyright (C) 2023"
             VALUE "OriginalFilename", "WorldEditorRemix.exe"
             VALUE "ProductName", "WorldEditorRemix"
             VALUE "ProductVersion", "1.0.0.1"
@@ -382,7 +390,7 @@ END
 
 STRINGTABLE
 BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
+    ID_VIEW_TOOLBAR         "To show or hide the toolbar n toolbar"
     ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
 END
 
@@ -418,7 +426,7 @@ END
 
 
 /////////////////////////////////////////////////////////////////////////////
-// Inglese resources
+// Inglese (neutro) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
@@ -435,10 +443,10 @@ CAPTION "WorldEditor About"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "WorldEditor ReMIX v40",IDC_STATIC,35,6,76,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2003-2021",IDC_STATIC,35,16,119,8
+    LTEXT           "WorldEditor ReMIX v45",IDC_STATIC,35,6,76,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003-2025",IDC_STATIC,35,16,119,8
     LTEXT           "Author martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
-    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, and to all the guinea pigs! (such as CryPrime|iAce, Raiard, LeRenard and so on)",IDC_STATIC,35,36,159,29
+    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, Tatsumaru, arlinamid, Mali BlackDragon, TokiSan, and to all the guinea pigs! (CryPrime|iAce, Raiard, LeRenard)",IDC_STATIC,35,36,159,36
     DEFPUSHBUTTON   "Ok",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -968,15 +976,15 @@ BEGIN
     CTEXT           "Statico",IDC_MAP_TERRAIN_WATER_TEXTURE_COUNT_PRINT,58,565,23,8,SS_SUNKEN
 END
 
-IDD_MAP_OBJECT DIALOGEX 0, 0, 120, 682
+IDD_MAP_OBJECT DIALOGEX 0, 0, 120, 703
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,203,113,339
+    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,223,113,339
     CONTROL         "Random",IDD_MAP_OBJECT_RANDOM_ROTATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,7,39,10,WS_EX_TRANSPARENT
-    CONTROL         "Slider1",IDC_MAP_OBJECT_YAW,"msctls_trackbar32",TBS_AUTOTICKS,18,23,83,10
-    LTEXT           "X+",IDC_STATIC,101,23,8,8
-    LTEXT           "X-",IDC_STATIC,12,23,8,8
+    CONTROL         "Slider1",IDC_MAP_OBJECT_YAW,"msctls_trackbar32",TBS_AUTOTICKS,17,23,83,10
+    LTEXT           "360",IDC_STATIC_YAW,100,23,13,8
+    LTEXT           "X",IDC_STATIC,11,23,8,8
     GROUPBOX        "Rotation",IDC_STATIC,4,7,112,67
     GROUPBOX        "Snap",IDC_STATIC,4,137,112,31
     CONTROL         "Enable",IDD_MAP_OBJECT_GRID_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,138,33,10,WS_EX_TRANSPARENT
@@ -987,26 +995,28 @@ BEGIN
     CONTROL         "Slider2",IDC_MAP_OBJECT_HEIGHT,"msctls_trackbar32",WS_TABSTOP,8,89,65,10
     CTEXT           "Static",IDC_MAP_OBJECT_HEIGHT_PRINT,74,89,28,9,SS_SUNKEN
     LTEXT           "m",IDC_STATIC,105,89,8,8
-    CONTROL         "Slider1",IDC_MAP_OBJECT_PITCH,"msctls_trackbar32",TBS_AUTOTICKS,18,40,83,10
-    LTEXT           "Y+",IDC_STATIC,101,40,8,8
-    LTEXT           "Y-",IDC_STATIC,12,40,8,8
-    CONTROL         "Slider1",IDC_MAP_OBJECT_ROLL,"msctls_trackbar32",TBS_AUTOTICKS,18,56,83,10
-    LTEXT           "Z+",IDC_STATIC,101,56,8,8
-    LTEXT           "Z-",IDC_STATIC,12,56,8,8
+    CONTROL         "Slider1",IDC_MAP_OBJECT_PITCH,"msctls_trackbar32",TBS_AUTOTICKS,17,40,83,10
+    LTEXT           "360",IDC_STATIC_PITCH,100,40,13,8
+    LTEXT           "Y",IDC_STATIC,11,40,8,8
+    CONTROL         "Slider1",IDC_MAP_OBJECT_ROLL,"msctls_trackbar32",TBS_AUTOTICKS,17,56,83,10
+    LTEXT           "360",IDC_STATIC_ROLL,100,56,13,8
+    LTEXT           "Z",IDC_STATIC,11,56,8,8
     GROUPBOX        "Ambience Scale",IDC_STATIC,4,107,112,27
     CONTROL         "Slider2",IDC_MAP_OBJECT_SCALE,"msctls_trackbar32",WS_TABSTOP,8,119,65,10
     CTEXT           "Static",IDC_MAP_OBJECT_SCALE_PRINT,74,117,28,9,SS_SUNKEN
     LTEXT           "m",IDC_STATIC,105,117,8,8
-    GROUPBOX        "Selected Object Info",IDC_STATIC,4,548,112,128
-    EDITTEXT        IDC_STATIC_SELECTED_OBJECT_INFO,9,560,102,33,ES_MULTILINE | ES_READONLY | WS_VSCROLL
-    GROUPBOX        "Portal Information",IDC_STATIC,9,599,102,70
-    LISTBOX         IDD_MAP_PORTAL_NUMBER_LIST,14,609,92,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "New Object",IDD_MAP_CREATE_PROPERTY,4,187,55,12
-    PUSHBUTTON      "New Directory",IDD_MAP_CREATE_DIRECTORY,4,173,55,12
-    PUSHBUTTON      "Delete Object",IDD_MAP_DELETE,60,187,55,12
-    PUSHBUTTON      "Unselect",IDD_MAP_UNSELECT,60,173,55,12
-    PUSHBUTTON      "Insert",IDD_MAP_OBJECT_INSERT_PORTAL_NUMBER,14,653,43,12
-    PUSHBUTTON      "Delete",IDD_MAP_OBJECT_DELETE_PORTAL_NUMBER,63,653,43,12
+    GROUPBOX        "Selected Object Info",IDC_STATIC,4,568,112,128
+    EDITTEXT        IDC_STATIC_SELECTED_OBJECT_INFO,9,580,102,33,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "Portal Information",IDC_STATIC,9,619,102,70
+    LISTBOX         IDD_MAP_PORTAL_NUMBER_LIST,14,629,92,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New Object",IDD_MAP_CREATE_PROPERTY,4,207,55,12
+    PUSHBUTTON      "New Directory",IDD_MAP_CREATE_DIRECTORY,4,193,55,12
+    PUSHBUTTON      "Delete Object",IDD_MAP_DELETE,60,207,55,12
+    PUSHBUTTON      "Unselect",IDD_MAP_UNSELECT,60,193,55,12
+    PUSHBUTTON      "Insert",IDD_MAP_OBJECT_INSERT_PORTAL_NUMBER,14,673,43,12
+    PUSHBUTTON      "Delete",IDD_MAP_OBJECT_DELETE_PORTAL_NUMBER,63,673,43,12
+    PUSHBUTTON      "Reset Rotation",IDD_MAP_OBJECT_RESET_ROTATION,4,171,55,12
+    PUSHBUTTON      "Reset Height",IDD_MAP_OBJECT_RESET_HEIGHT,60,171,55,12
 END
 
 IDD_MAP_FILE DIALOGEX 0, 0, 120, 640
@@ -1589,7 +1599,7 @@ BEGIN
     PUSHBUTTON      "Load",IDC_FLY_LOAD_BOMB_EFFECT,88,374,21,12,BS_FLAT
     CONTROL         "-_-",IDC_FLY_TAB_NEW_EFFECT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,409,14,15
     CONTROL         "-_-",IDC_FLY_TAB_NEW_OBJECT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,427,14,15
-    CONTROL         "-_-",IDC_FLY_TAB_3,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,445,14,15
+    CONTROL         "-_",IDC_FLY_TAB_3,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,445,14,15
     LISTBOX         IDC_FLY_LIST,23,403,94,63,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "Clear One",IDC_FLY_CLEAR_ONE,3,468,36,12,BS_NOTIFY | BS_FLAT
     PUSHBUTTON      "Clear All",IDC_FLY_CLEAR_ALL,42,468,36,12,BS_NOTIFY | BS_FLAT
@@ -1631,7 +1641,7 @@ BEGIN
                     "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,289,99,20
     CONTROL         "Maintain Z axis parallelly",IDC_FLY_TAB_MAINTAIN_PARALLEL,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,77,98,10
-    LTEXT           "Exceptional sphere size",IDC_STATIC,0,326,79,8
+    LTEXT           "Expectional sphere size",IDC_STATIC,0,326,79,8
     EDITTEXT        IDC_FLY_TAB_COLLISION_SPHERE_RADIUS,82,323,27,12,ES_AUTOHSCROLL
 END
 
@@ -1911,6 +1921,7 @@ BEGIN
 
     IDD_MAP_OBJECT, DIALOG
     BEGIN
+        BOTTOMMARGIN, 682
     END
 
     IDD_MAP_FILE, DIALOG
@@ -2234,7 +2245,7 @@ BEGIN
     0
 END
 
-#endif    // Inglese resources
+#endif    // Inglese (neutro) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

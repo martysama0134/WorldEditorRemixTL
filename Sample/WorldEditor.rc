@@ -255,11 +255,11 @@ BEGIN
     BEGIN
         BLOCK "041204b0"
         BEGIN
-            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
+            VALUE "CompanyName", "martysama0134"
             VALUE "FileDescription", "WorldEditorRemix"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "WorldEditorRemix.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2023"
+            VALUE "LegalCopyright", "Copyright (C) 2025"
             VALUE "OriginalFilename", "WorldEditorRemix.exe"
             VALUE "ProductName", "WorldEditorRemix"
             VALUE "ProductVersion", "1.0.0.1"
@@ -443,10 +443,10 @@ CAPTION "WorldEditor About"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "WorldEditor ReMIX v45",IDC_STATIC,35,6,76,8,SS_NOPREFIX
+    LTEXT           "WorldEditor ReMIX v46",IDC_STATIC,35,6,76,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2003-2025",IDC_STATIC,35,16,119,8
     LTEXT           "Author martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
-    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, Tatsumaru, arlinamid, Mali BlackDragon, TokiSan, and to all the guinea pigs! (CryPrime|iAce, Raiard, LeRenard)",IDC_STATIC,35,36,159,36
+    LTEXT           "A special thank to Xunil, Inya, Sophie Williams, Tatsumaru, arlinamid, Mali BlackDragon, TokiSan, TAUMP, and to all the guinea pigs! (CryPrime|iAce, Raiard, LeRenard)",IDC_STATIC,35,36,159,36
     DEFPUSHBUTTON   "Ok",IDOK,178,7,50,14,WS_GROUP
 END
 
@@ -976,11 +976,11 @@ BEGIN
     CTEXT           "Statico",IDC_MAP_TERRAIN_WATER_TEXTURE_COUNT_PRINT,58,565,23,8,SS_SUNKEN
 END
 
-IDD_MAP_OBJECT DIALOGEX 0, 0, 120, 703
+IDD_MAP_OBJECT DIALOGEX 0, 0, 120, 736
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,223,113,339
+    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,226,113,195
     CONTROL         "Random",IDD_MAP_OBJECT_RANDOM_ROTATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,7,39,10,WS_EX_TRANSPARENT
     CONTROL         "Slider1",IDC_MAP_OBJECT_YAW,"msctls_trackbar32",TBS_AUTOTICKS,17,23,83,10
     LTEXT           "360",IDC_STATIC_YAW,100,23,13,8
@@ -1005,18 +1005,23 @@ BEGIN
     CONTROL         "Slider2",IDC_MAP_OBJECT_SCALE,"msctls_trackbar32",WS_TABSTOP,8,119,65,10
     CTEXT           "Static",IDC_MAP_OBJECT_SCALE_PRINT,74,117,28,9,SS_SUNKEN
     LTEXT           "m",IDC_STATIC,105,117,8,8
-    GROUPBOX        "Selected Object Info",IDC_STATIC,4,568,112,128
-    EDITTEXT        IDC_STATIC_SELECTED_OBJECT_INFO,9,580,102,33,ES_MULTILINE | ES_READONLY | WS_VSCROLL
-    GROUPBOX        "Portal Information",IDC_STATIC,9,619,102,70
-    LISTBOX         IDD_MAP_PORTAL_NUMBER_LIST,14,629,92,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "New Object",IDD_MAP_CREATE_PROPERTY,4,207,55,12
-    PUSHBUTTON      "New Directory",IDD_MAP_CREATE_DIRECTORY,4,193,55,12
-    PUSHBUTTON      "Delete Object",IDD_MAP_DELETE,60,207,55,12
-    PUSHBUTTON      "Unselect",IDD_MAP_UNSELECT,60,193,55,12
-    PUSHBUTTON      "Insert",IDD_MAP_OBJECT_INSERT_PORTAL_NUMBER,14,673,43,12
-    PUSHBUTTON      "Delete",IDD_MAP_OBJECT_DELETE_PORTAL_NUMBER,63,673,43,12
-    PUSHBUTTON      "Reset Rotation",IDD_MAP_OBJECT_RESET_ROTATION,4,171,55,12
-    PUSHBUTTON      "Reset Height",IDD_MAP_OBJECT_RESET_HEIGHT,60,171,55,12
+    GROUPBOX        "Selected Object Info",IDC_STATIC,4,423,112,128
+    EDITTEXT        IDC_STATIC_SELECTED_OBJECT_INFO,9,435,102,33,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "Portal Information",IDC_STATIC,9,474,102,70
+    LISTBOX         IDD_MAP_PORTAL_NUMBER_LIST,14,484,92,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New Object",IDD_MAP_CREATE_PROPERTY,4,210,55,12
+    PUSHBUTTON      "New Directory",IDD_MAP_CREATE_DIRECTORY,4,196,55,12
+    PUSHBUTTON      "Delete Object",IDD_MAP_DELETE,60,210,55,12
+    PUSHBUTTON      "Unselect Object",IDD_MAP_UNSELECT,60,196,55,12
+    PUSHBUTTON      "Insert",IDD_MAP_OBJECT_INSERT_PORTAL_NUMBER,14,528,43,12
+    PUSHBUTTON      "Delete",IDD_MAP_OBJECT_DELETE_PORTAL_NUMBER,63,528,43,12
+    PUSHBUTTON      "Reset Rotation",IDD_MAP_OBJECT_RESET_ROTATION,4,169,55,12
+    PUSHBUTTON      "Reset Height",IDD_MAP_OBJECT_RESET_HEIGHT,60,169,55,12
+    PUSHBUTTON      "Unselect Picking",IDD_MAP_OBJECT_RESET_SELECT,60,182,55,12
+    GROUPBOX        "Hierarchy (Current Area)",IDC_STATIC,4,556,112,152
+    CONTROL         "",IDC_MAP_OBJECT_HIERARCHY_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,6,567,105,120
+    LTEXT           "Ctrl+LMouseClick = Multi Selection",IDC_STATIC,7,688,106,8
+    LTEXT           "RMouseClick = Teleport to Object",IDC_STATIC,7,697,106,8
 END
 
 IDD_MAP_FILE DIALOGEX 0, 0, 120, 640
@@ -1921,7 +1926,7 @@ BEGIN
 
     IDD_MAP_OBJECT, DIALOG
     BEGIN
-        BOTTOMMARGIN, 682
+        BOTTOMMARGIN, 715
     END
 
     IDD_MAP_FILE, DIALOG

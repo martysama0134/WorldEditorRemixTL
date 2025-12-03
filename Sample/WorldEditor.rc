@@ -13,11 +13,52 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Inglese (neutro) resources
+// Coreano (Corea del Sud) resources
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
-#pragma code_page(1252)
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WorldEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""          // Standard components\r\n"
+    "#include ""afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -212,7 +253,7 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "040904b0"
+        BLOCK "041204b0"
         BEGIN
             VALUE "CompanyName", "martysama0134"
             VALUE "FileDescription", "WorldEditorRemix"
@@ -226,7 +267,7 @@ BEGIN
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x409, 1200
+        VALUE "Translation", 0x412, 1200
     END
 END
 
@@ -258,6 +299,141 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WorldEditor"
+    AFX_IDS_IDLEMESSAGE     "Idle"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "New File"
+    ID_FILE_OPEN            "Redo"
+    ID_FILE_CLOSE           "Close File"
+    ID_FILE_SAVE            "Save File"
+    ID_FILE_SAVE_AS         "Save File as"
+    ID_FILE_PAGE_SETUP      "Print Settings"
+    ID_FILE_PRINT_SETUP     "Print Settings"
+    ID_FILE_PRINT           "Print"
+    ID_FILE_PRINT_PREVIEW   "Print Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
+    ID_APP_EXIT             "Save Document?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open Document:"
+    ID_FILE_MRU_FILE2       "Open Document:"
+    ID_FILE_MRU_FILE3       "Open Document:"
+    ID_FILE_MRU_FILE4       "Open Document:"
+    ID_FILE_MRU_FILE5       "Open Document:"
+    ID_FILE_MRU_FILE6       "Open Document:"
+    ID_FILE_MRU_FILE7       "Open Document:"
+    ID_FILE_MRU_FILE8       "Open Document:"
+    ID_FILE_MRU_FILE9       "Open Document:"
+    ID_FILE_MRU_FILE10      "Open Document:"
+    ID_FILE_MRU_FILE11      "Open Document:"
+    ID_FILE_MRU_FILE12      "Open Document:"
+    ID_FILE_MRU_FILE13      "Open Document:"
+    ID_FILE_MRU_FILE14      "Open Document:"
+    ID_FILE_MRU_FILE15      "Open Document:"
+    ID_FILE_MRU_FILE16      "Open Document:"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to next Window"
+    ID_PREV_PANE            "Switch to last Window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split Windows"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Clear Selection"
+    ID_EDIT_CLEAR_ALL       "Clear All"
+    ID_EDIT_COPY            "Copy Selection"
+    ID_EDIT_CUT             "Cut Selection"
+    ID_EDIT_FIND            "Search/Find"
+    ID_EDIT_PASTE           "Paste"
+    ID_EDIT_REPEAT          "Repeat Last Action"
+    ID_EDIT_REPLACE         "Replace"
+    ID_EDIT_SELECT_ALL      "Select All"
+    ID_EDIT_UNDO            "Undo"
+    ID_EDIT_REDO            "Redo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "To show or hide the toolbar n toolbar"
+    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the Size of the Window"
+    AFX_IDS_SCMOVE          "Move the WIndow"
+    AFX_IDS_SCMINIMIZE      "Minimize"
+    AFX_IDS_SCMAXIMIZE      "Maximize"
+    AFX_IDS_SCNEXTWINDOW    "Next Window"
+    AFX_IDS_SCPREVWINDOW    "Last Window"
+    AFX_IDS_SCCLOSE         "Close Window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore Window"
+    AFX_IDS_SCTASKLIST      "Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
+END
+
+#endif    // Coreano (Corea del Sud) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglese (neutro) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Dialog
 //
 
@@ -267,7 +443,7 @@ CAPTION "WorldEditor About"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
-    LTEXT           "WorldEditor ReMIX v48",IDC_STATIC,35,6,76,8,SS_NOPREFIX
+    LTEXT           "WorldEditor ReMIX v49",IDC_STATIC,35,6,76,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2003-2025",IDC_STATIC,35,16,119,8
     LTEXT           "Author martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
     LTEXT           "A special thank to Xunil, Inya, Sophie Williams, Tatsumaru, arlinamid, Mali BlackDragon, TokiSan, TAUMP, and to all the guinea pigs! (CryPrime|iAce, Raiard, LeRenard)",IDC_STATIC,35,36,159,36
@@ -2089,188 +2265,7 @@ BEGIN
     0
 END
 
-IDD_MAP_ATTRIBUTE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
-END
-
-STRINGTABLE
-BEGIN
-    ID_INDICATOR_EXT        "EXT"
-    ID_INDICATOR_CAPS       "CAP"
-    ID_INDICATOR_NUM        "NUM"
-    ID_INDICATOR_SCRL       "SCRL"
-    ID_INDICATOR_OVR        "OVR"
-    ID_INDICATOR_REC        "REC"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_NEW             "New File"
-    ID_FILE_OPEN            "Redo"
-    ID_FILE_CLOSE           "Close File"
-    ID_FILE_SAVE            "Save File"
-    ID_FILE_SAVE_AS         "Save File as"
-    ID_FILE_PAGE_SETUP      "Print Settings"
-    ID_FILE_PRINT_SETUP     "Print Settings"
-    ID_FILE_PRINT           "Print"
-    ID_FILE_PRINT_PREVIEW   "Print Preview"
-END
-
-STRINGTABLE
-BEGIN
-    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
-    ID_APP_EXIT             "Save Document?"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_MRU_FILE1       "Open Document:"
-    ID_FILE_MRU_FILE2       "Open Document:"
-    ID_FILE_MRU_FILE3       "Open Document:"
-    ID_FILE_MRU_FILE4       "Open Document:"
-    ID_FILE_MRU_FILE5       "Open Document:"
-    ID_FILE_MRU_FILE6       "Open Document:"
-    ID_FILE_MRU_FILE7       "Open Document:"
-    ID_FILE_MRU_FILE8       "Open Document:"
-    ID_FILE_MRU_FILE9       "Open Document:"
-    ID_FILE_MRU_FILE10      "Open Document:"
-    ID_FILE_MRU_FILE11      "Open Document:"
-    ID_FILE_MRU_FILE12      "Open Document:"
-    ID_FILE_MRU_FILE13      "Open Document:"
-    ID_FILE_MRU_FILE14      "Open Document:"
-    ID_FILE_MRU_FILE15      "Open Document:"
-    ID_FILE_MRU_FILE16      "Open Document:"
-END
-
-STRINGTABLE
-BEGIN
-    ID_NEXT_PANE            "Switch to next Window"
-    ID_PREV_PANE            "Switch to last Window"
-END
-
-STRINGTABLE
-BEGIN
-    ID_WINDOW_SPLIT         "Split Windows"
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_CLEAR           "Clear Selection"
-    ID_EDIT_CLEAR_ALL       "Clear All"
-    ID_EDIT_COPY            "Copy Selection"
-    ID_EDIT_CUT             "Cut Selection"
-    ID_EDIT_FIND            "Search/Find"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REPEAT          "Repeat Last Action"
-    ID_EDIT_REPLACE         "Replace"
-    ID_EDIT_SELECT_ALL      "Select All"
-    ID_EDIT_UNDO            "Undo"
-    ID_EDIT_REDO            "Redo"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar n toolbar"
-    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCSIZE          "Change the Size of the Window"
-    AFX_IDS_SCMOVE          "Move the WIndow"
-    AFX_IDS_SCMINIMIZE      "Minimize"
-    AFX_IDS_SCMAXIMIZE      "Maximize"
-    AFX_IDS_SCNEXTWINDOW    "Next Window"
-    AFX_IDS_SCPREVWINDOW    "Last Window"
-    AFX_IDS_SCCLOSE         "Close Window"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCRESTORE       "Restore Window"
-    AFX_IDS_SCTASKLIST      "Task List"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
-END
-
 #endif    // Inglese (neutro) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// Italiano (Italia) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
-LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
-#pragma code_page(1252)
-
-#ifdef APSTUDIO_INVOKED
-/////////////////////////////////////////////////////////////////////////////
-//
-// TEXTINCLUDE
-//
-
-1 TEXTINCLUDE 
-BEGIN
-    "resource.h\0"
-END
-
-2 TEXTINCLUDE 
-BEGIN
-    "#include ""afxres.h""\r\n"
-    "\0"
-END
-
-3 TEXTINCLUDE 
-BEGIN
-    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
-    "#define _AFX_NO_OLE_RESOURCES\r\n"
-    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
-    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
-    "\r\n"
-    "\r\n"
-    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
-    "#ifdef _WIN32\r\n"
-    "LANGUAGE 9, 1\r\n"
-    "#pragma code_page(1252)\r\n"
-    "#endif //_WIN32\r\n"
-    "#include ""res\\WorldEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
-    "#include ""afxres.rc""          // Standard components\r\n"
-    "#include ""afxprint.rc""        // printing/print preview resources\r\n"
-    "#endif\r\n"
-    "\r\n"
-    "\0"
-END
-
-#endif    // APSTUDIO_INVOKED
-
-#endif    // Italiano (Italia) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -2286,9 +2281,9 @@ END
 #define _AFX_NO_PROPERTY_RESOURCES
 
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 #ifdef _WIN32
-LANGUAGE 9, 1
+LANGUAGE 18, 1
 #pragma code_page(1252)
 #endif //_WIN32
 #include "res\WorldEditor.rc2"  // non-Microsoft Visual C++ edited resources

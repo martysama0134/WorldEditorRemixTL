@@ -1,10 +1,11 @@
-# WorldEditor Multilingual Glossary
+﻿# WorldEditor Multilingual Glossary
 
 ## Scope And Usage
 - This file is the terminology source of truth for WorldEditor UI translations.
 - Current rollout includes `en` and `it`; add new language columns over time (`de`, `fr`, etc.).
 - Use this glossary together with `AGENTS.md` (process rules, encoding, path escaping, validation).
 - If a term conflicts with older text, this glossary takes precedence unless explicitly overridden.
+- German (`de`/`de_compact`) entries must use canonical umlaut-bearing forms (cp1252-safe), not lossy placeholders like `?`.
 
 ## Canonical Schema
 - `term_id`: stable key for automation and reviews.

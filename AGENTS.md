@@ -1,4 +1,4 @@
-# RC Translation Automation Guide
+﻿# RC Translation Automation Guide
 
 ## Purpose
 - `Sample/WorldEditor.rc` is the source of truth for the latest English resources.
@@ -78,6 +78,14 @@ Warnings:
   - scan for common leftovers such as `Reset`, `Unselect`, `Hierarchy`, `RMouseClick`, `Scan New Obj`, `Water Output`, `Eraser`.
   - resolve each leftover using `GLOSSARY.md`.
 
+## Encoding Integrity (Mandatory)
+- For DE resources, preserve target charset (`de=1252`) and avoid lossy conversion.
+- Never pass DE strings through mismatched UTF-8/cp1252 conversion pipelines.
+- Before finalizing DE, run corruption scans for:
+  - UTF-8 garble markers (for example `Ã`, `Â`, or replacement-character artifacts)
+  - suspicious `?` inside alphabetic words (e.g., `H?he`, `L?schen`, `Zur?ck`)
+- If any corruption markers are found, fix them before completion.
+
 ## Common Pitfalls
 - Mixed path escaping (`"..\Sample\res\\..."`) causing RC/path errors.
 - Over-aggressive control text reuse by non-unique IDs (`IDC_STATIC`) causing repeated labels.
@@ -89,3 +97,4 @@ Warnings:
 3. Set target language and correct code page.
 4. Apply safe translation pass (STRINGTABLE, MENUITEM, dialog CAPTION only).
 5. Run validation checks (encoding, escaping, ID parity, repeated-label scan, target names).
+

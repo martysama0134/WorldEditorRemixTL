@@ -13,7 +13,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// Korean (Korea) resources
+// Coreano (Corea del Sud) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
@@ -47,7 +47,7 @@ BEGIN
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
     "#ifdef _WIN32\r\n"
     "LANGUAGE 18, 1\r\n"
-    "#pragma code_page(1252)\r\n"
+    "#pragma code_page(1256)\r\n"
     "#endif //_WIN32\r\n"
     "#include ""..\\Sample\\res\\WorldEditor.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
     "#include ""afxres.rc""          // Standard components\r\n"
@@ -59,141 +59,6 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// String Table
-//
-
-STRINGTABLE
-BEGIN
-    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_APP_TITLE       "WorldEditor"
-    AFX_IDS_IDLEMESSAGE     "Idle"
-END
-
-STRINGTABLE
-BEGIN
-    ID_INDICATOR_EXT        "EXT"
-    ID_INDICATOR_CAPS       "CAP"
-    ID_INDICATOR_NUM        "NUM"
-    ID_INDICATOR_SCRL       "SCRL"
-    ID_INDICATOR_OVR        "OVR"
-    ID_INDICATOR_REC        "REC"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_NEW             "New File"
-    ID_FILE_OPEN            "Redo"
-    ID_FILE_CLOSE           "Close File"
-    ID_FILE_SAVE            "Save File"
-    ID_FILE_SAVE_AS         "Save File as"
-    ID_FILE_PAGE_SETUP      "Print Settings"
-    ID_FILE_PRINT_SETUP     "Print Settings"
-    ID_FILE_PRINT           "Print"
-    ID_FILE_PRINT_PREVIEW   "Print Preview"
-END
-
-STRINGTABLE
-BEGIN
-    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
-    ID_APP_EXIT             "Save Document?"
-END
-
-STRINGTABLE
-BEGIN
-    ID_FILE_MRU_FILE1       "Open Document:"
-    ID_FILE_MRU_FILE2       "Open Document:"
-    ID_FILE_MRU_FILE3       "Open Document:"
-    ID_FILE_MRU_FILE4       "Open Document:"
-    ID_FILE_MRU_FILE5       "Open Document:"
-    ID_FILE_MRU_FILE6       "Open Document:"
-    ID_FILE_MRU_FILE7       "Open Document:"
-    ID_FILE_MRU_FILE8       "Open Document:"
-    ID_FILE_MRU_FILE9       "Open Document:"
-    ID_FILE_MRU_FILE10      "Open Document:"
-    ID_FILE_MRU_FILE11      "Open Document:"
-    ID_FILE_MRU_FILE12      "Open Document:"
-    ID_FILE_MRU_FILE13      "Open Document:"
-    ID_FILE_MRU_FILE14      "Open Document:"
-    ID_FILE_MRU_FILE15      "Open Document:"
-    ID_FILE_MRU_FILE16      "Open Document:"
-END
-
-STRINGTABLE
-BEGIN
-    ID_NEXT_PANE            "Switch to next Window"
-    ID_PREV_PANE            "Switch to last Window"
-END
-
-STRINGTABLE
-BEGIN
-    ID_WINDOW_SPLIT         "Split Windows"
-END
-
-STRINGTABLE
-BEGIN
-    ID_EDIT_CLEAR           "Clear Selection"
-    ID_EDIT_CLEAR_ALL       "Clear All"
-    ID_EDIT_COPY            "Copy Selection"
-    ID_EDIT_CUT             "Cut Selection"
-    ID_EDIT_FIND            "Search/Find"
-    ID_EDIT_PASTE           "Paste"
-    ID_EDIT_REPEAT          "Repeat Last Action"
-    ID_EDIT_REPLACE         "Replace"
-    ID_EDIT_SELECT_ALL      "Select All"
-    ID_EDIT_UNDO            "Undo"
-    ID_EDIT_REDO            "Redo"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_TOOLBAR         "To show or hide the toolbar \n toolbar"
-    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCSIZE          "Change the Size of the Window"
-    AFX_IDS_SCMOVE          "Move the WIndow"
-    AFX_IDS_SCMINIMIZE      "Minimize"
-    AFX_IDS_SCMAXIMIZE      "Maximize"
-    AFX_IDS_SCNEXTWINDOW    "Next Window"
-    AFX_IDS_SCPREVWINDOW    "Last Window"
-    AFX_IDS_SCCLOSE         "Close Window"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_SCRESTORE       "Restore Window"
-    AFX_IDS_SCTASKLIST      "Task List"
-END
-
-STRINGTABLE
-BEGIN
-    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
-END
-
-STRINGTABLE
-BEGIN
-    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
-END
-
-#endif    // Korean (Korea) resources
-/////////////////////////////////////////////////////////////////////////////
-
-
-/////////////////////////////////////////////////////////////////////////////
-// Arabic (Saudi Arabia) resources
-
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ARA)
-LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
-#pragma code_page(1256)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -289,46 +154,54 @@ IDB_AMBIENCE_DISTANCE   BITMAP                  "..\\Sample\\res\\ambience_dista
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// PNG
+//
+
+IDR_PNG_COMPASS         PNG                     "..\\Sample\\res\\compass.png"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Menu
 //
 
 IDR_MAINFRAME MENU
 BEGIN
-    POPUP "„·›"
+    POPUP "File"
     BEGIN
-        MENUITEM "Œ—ÊÃ",                        ID_APP_EXIT
+        MENUITEM "Exit",                        ID_APP_EXIT
     END
-    POPUP " ⁄œÌ·"
+    POPUP "Edit"
     BEGIN
-        MENUITEM "—ÃÊ⁄...\tCtrl+Z",             ID_EDIT_UNDO
-        MENUITEM "≈⁄«œ…...\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM "Undo...\tCtrl+Z",             ID_EDIT_UNDO
+        MENUITEM "Redo...\tCtrl+Y",             ID_EDIT_REDO
         MENUITEM SEPARATOR
-        MENUITEM "ﬁ’...\tCtrl+X",               ID_EDIT_CUT
-        MENUITEM "‰”Œ...\tCtrl+C",              ID_EDIT_COPY
-        MENUITEM "·’ﬁ...\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Cut...\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "Copy...\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "Paste...\tCtrl+V",            ID_EDIT_PASTE
     END
-    POPUP "«·⁄—÷"
+    POPUP "View"
     BEGIN
-        MENUITEM "‘—Ìÿ «·√œÊ« ",                ID_VIEW_TOOLBAR
-        MENUITEM "‘—Ìÿ «·Õ«·…",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Toolbar",                     ID_VIEW_TOOLBAR
+        MENUITEM "Statusbar",                   ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        POPUP "Ê÷⁄ «·⁄—÷"
+        POPUP "Render Mode"
         BEGIN
-            MENUITEM "’·»",                         ID_VIEW_RENDERING_MODE_SOLID
-            MENUITEM "≈ÿ«— ”·ﬂÌ",                   ID_VIEW_RENDERING_MODE_WIRE_FRAME
+            MENUITEM "Solid",                       ID_VIEW_RENDERING_MODE_SOLID
+            MENUITEM "Wire Frame",                  ID_VIEW_RENDERING_MODE_WIRE_FRAME
         END
-        MENUITEM "’‰œÊﬁ «·„⁄·Ê„«  (F11)",       ID_VIEW_INFO_BOX
+        MENUITEM "About Box(F11)",              ID_VIEW_INFO_BOX
         MENUITEM SEPARATOR
-        MENUITEM "‘—Ìÿ «·√œÊ«  (&T)",           ID_VIEW_TOOLBAR
-        MENUITEM "‘—Ìÿ «· Õﬂ„ ›Ì «·Œ—Ìÿ…",      ID_VIEW_MAP
-        MENUITEM "‘—Ìÿ «· Õﬂ„ ›Ì «·ﬂ«∆‰« ",     ID_VIEW_OBJECT
-        MENUITEM "‘—Ìÿ «· Õﬂ„ ›Ì «· √ÀÌ—",      ID_VIEW_EFFECT
+        MENUITEM "Toolbar(&T)",                 ID_VIEW_TOOLBAR
+        MENUITEM "Map Control Bar",             ID_VIEW_MAP
+        MENUITEM "Objects Control Bar",         ID_VIEW_OBJECT
+        MENUITEM "Effect Control Bar",          ID_VIEW_EFFECT
         MENUITEM SEPARATOR
-        MENUITEM "÷»ÿ «·„‰ŸÊ—",                 ID_VIEW_DLG_PERSPECTIVE
+        MENUITEM "Perspective Adjust",          ID_VIEW_DLG_PERSPECTIVE
     END
-    POPUP "„⁄·Ê„« "
+    POPUP "Info"
     BEGIN
-        MENUITEM "WorldEditor ÕÊ·...",          ID_APP_ABOUT
+        MENUITEM "WorldEditor About...",        ID_APP_ABOUT
     END
 END
 
@@ -362,21 +235,219 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "CompanyName", "martysama0134"
+            VALUE "FileDescription", "WorldEditorRemix"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WorldEditorRemix.exe"
+            VALUE "LegalCopyright", "Copyright (C) 2025"
+            VALUE "OriginalFilename", "WorldEditorRemix.exe"
+            VALUE "ProductName", "WorldEditorRemix"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_VIEWMOVE            CURSOR                  "..\\Sample\\res\\cursor1.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_VIEW_MAP
+    BUTTON      ID_VIEW_OBJECT
+    BUTTON      ID_VIEW_EFFECT
+    BUTTON      ID_VIEW_FLY
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "WorldEditor\n\nWorldE\n\n\nWorldEditor.Document\nWorldE Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "WorldEditor"
+    AFX_IDS_IDLEMESSAGE     "Idle"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "New File"
+    ID_FILE_OPEN            "Redo"
+    ID_FILE_CLOSE           "Close File"
+    ID_FILE_SAVE            "Save File"
+    ID_FILE_SAVE_AS         "Save File as"
+    ID_FILE_PAGE_SETUP      "Print Settings"
+    ID_FILE_PRINT_SETUP     "Print Settings"
+    ID_FILE_PRINT           "Print"
+    ID_FILE_PRINT_PREVIEW   "Print Preview"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Program information, version information, copyright information. N Information"
+    ID_APP_EXIT             "Save Document?"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open Document:"
+    ID_FILE_MRU_FILE2       "Open Document:"
+    ID_FILE_MRU_FILE3       "Open Document:"
+    ID_FILE_MRU_FILE4       "Open Document:"
+    ID_FILE_MRU_FILE5       "Open Document:"
+    ID_FILE_MRU_FILE6       "Open Document:"
+    ID_FILE_MRU_FILE7       "Open Document:"
+    ID_FILE_MRU_FILE8       "Open Document:"
+    ID_FILE_MRU_FILE9       "Open Document:"
+    ID_FILE_MRU_FILE10      "Open Document:"
+    ID_FILE_MRU_FILE11      "Open Document:"
+    ID_FILE_MRU_FILE12      "Open Document:"
+    ID_FILE_MRU_FILE13      "Open Document:"
+    ID_FILE_MRU_FILE14      "Open Document:"
+    ID_FILE_MRU_FILE15      "Open Document:"
+    ID_FILE_MRU_FILE16      "Open Document:"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to next Window"
+    ID_PREV_PANE            "Switch to last Window"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split Windows"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Clear Selection"
+    ID_EDIT_CLEAR_ALL       "Clear All"
+    ID_EDIT_COPY            "Copy Selection"
+    ID_EDIT_CUT             "Cut Selection"
+    ID_EDIT_FIND            "Search/Find"
+    ID_EDIT_PASTE           "Paste"
+    ID_EDIT_REPEAT          "Repeat Last Action"
+    ID_EDIT_REPLACE         "Replace"
+    ID_EDIT_SELECT_ALL      "Select All"
+    ID_EDIT_UNDO            "Undo"
+    ID_EDIT_REDO            "Redo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "To show or hide the toolbar n toolbar"
+    ID_VIEW_STATUS_BAR      "To show or hide the Status Bar \n Status Toolbar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the Size of the Window"
+    AFX_IDS_SCMOVE          "Move the WIndow"
+    AFX_IDS_SCMINIMIZE      "Minimize"
+    AFX_IDS_SCMAXIMIZE      "Maximize"
+    AFX_IDS_SCNEXTWINDOW    "Next Window"
+    AFX_IDS_SCPREVWINDOW    "Last Window"
+    AFX_IDS_SCCLOSE         "Close Window"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore Window"
+    AFX_IDS_SCTASKLIST      "Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Preview Close"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_INFO_BOX        "Show job information to show or hide the box."
+END
+
+#endif    // Coreano (Corea del Sud) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglese (neutro) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Dialog
 //
 
 IDD_ABOUTBOX DIALOGEX 0, 0, 235, 79
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-EXSTYLE WS_EX_RTLREADING
-CAPTION "⁄‰ WorldEditor"
+CAPTION "ÕÊ· WorldEditor"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,197,15,18,18
-    RTEXT           "WorldEditor ReMIX v40",IDC_STATIC,59,8,117,8,SS_NOPREFIX,WS_EX_RIGHT | WS_EX_RTLREADING
-    RTEXT           "ÕﬁÊﬁ «·‰‘— (C) 2003-2021",IDC_STATIC,59,18,119,8,SS_NOPREFIX,WS_EX_RIGHT | WS_EX_RTLREADING
-    RTEXT           "„ƒ·› martysama0134 (lollo_9_1)",IDC_STATIC,59,28,119,8,SS_NOPREFIX,WS_EX_RIGHT | WS_EX_RTLREADING
-    RTEXT           "‘ﬂ— Œ«’ ·‹ Xunil, Inya, Sophie Williams, Ê·ﬂ· «·„”«⁄œÌ‰! („À· CryPrime|iAce, Raiard, LeRenard ≈·Œ..)",IDC_STATIC,44,38,135,29,SS_NOPREFIX,WS_EX_RIGHT | WS_EX_RTLREADING
-    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,10,13,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    RTEXT           "WorldEditor ReMIX v49",IDC_STATIC,35,6,76,8,SS_NOPREFIX
+    RTEXT           "ÕﬁÊﬁ «·‰‘— (C) 2003-2025",IDC_STATIC,35,16,119,8
+    RTEXT           "«·„ƒ·› martysama0134 (lollo_9_1)",IDC_STATIC,35,26,119,8
+    RTEXT           "‘ﬂ— Œ«’ ·‹ Xunil, Inya, Sophie Williams, Tatsumaru, arlinamid, Mali BlackDragon, TokiSan, TAUMP Ê·ﬂ· «·„”«⁄œÌ‰! (CryPrime|iAce, Raiard, LeRenard)",IDC_STATIC,35,36,159,36
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,178,7,50,14,WS_GROUP
 END
 
 IDD_OBJECT_ANIMATION DIALOGEX 0, 0, 120, 850
@@ -402,7 +473,7 @@ BEGIN
                     "msctls_trackbar32",WS_TABSTOP,13,514,95,9
     CONTROL         " ‘€Ì·",IDC_OBJECT_ANIMATION_PLAY,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,10,129,46,22
     GROUPBOX        "»Ì«‰«  «·ÂÃÊ„",IDC_STATIC,3,607,114,237
-    CONTROL         " „ﬂÌ‰",IDC_OBJECT_ANIMATION_ATTACKING_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,78,606,30,10
+    CONTROL         " „ﬂÌ‰",IDC_OBJECT_ANIMATION_ATTACKING_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,607,38,10,WS_EX_TRANSPARENT
     LTEXT           "«·Êﬁ  «·„ ’·»",IDC_STATIC,7,671,39,8
     LTEXT           "‰Ê⁄ «·ÂÃÊ„",IDC_STATIC,7,643,39,8
     LTEXT           "‰Ê⁄ «·÷—»",IDC_STATIC,7,657,39,8
@@ -465,7 +536,7 @@ BEGIN
     LTEXT           "«·«”„",IDC_STATIC,13,17,20,8
     LTEXT           "«·≈’œ«—",IDC_STATIC,10,31,26,8
     GROUPBOX        "≈—›«ﬁ",IDC_STATIC,3,150,114,336
-    COMBOBOX        IDC_OBJECT_MODEL_ATTACHING_BONE,20,273,79,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OBJECT_MODEL_ATTACHING_BONE,20,270,79,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "„”Õ «·ﬂ·",IDC_OBJECT_MODEL_ATTACH_CLEAR_ALL,61,239,35,12,BS_FLAT
     PUSHBUTTON      "„”Õ Ê«Õœ",IDC_OBJECT_MODEL_ATTACH_CLEAR_ONE,24,239,35,12,BS_FLAT
     GROUPBOX        "",IDC_STATIC,9,222,101,75
@@ -476,10 +547,10 @@ BEGIN
     PUSHBUTTON      "«· √ÀÌ—",IDC_OBJECT_MODEL_MAKE_EFFECT,14,176,90,12
     GROUPBOX        "«·ŒÌ«—",IDC_STATIC,3,490,114,40
     CONTROL         "≈ŸÂ«— «·‘Œ’Ì… «·—∆Ì”Ì…",IDC_OBJECT_MODEL_SHOW_MAIN_CHARACTER,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,503,81,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,503,69,10
     GROUPBOX        "",IDC_STATIC,15,256,89,33
     CONTROL         "≈—›«ﬁ «·⁄Ÿ«„",IDC_OBJECT_MODEL_ATTACHING_BONE_ENABLE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,262,59,10,WS_EX_TRANSPARENT
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,256,59,10,WS_EX_TRANSPARENT
     COMBOBOX        IDC_OBJECT_MODEL_TYPE,23,116,77,456,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
     GROUPBOX        "",IDC_OBJECT_MODEL_MODEL_DATA_PAGE,9,118,101,18
     CONTROL         "≈ŸÂ«— »Ì«‰«  «· ÷«—»",IDC_OBJECT_MODEL_SHOW_COLLISION_DATA,
@@ -507,133 +578,130 @@ BEGIN
     GROUPBOX        "”ﬂ—Ì»  «·»Ì∆…",IDC_STATIC,3,3,114,61
     PUSHBUTTON      "Õ›Ÿ",IDC_MAP_ENVIRONMENT_SAVE_SCRIPT,60,46,40,12,BS_NOTIFY | BS_FLAT
     CTEXT           "≈”„ «·”ﬂ—Ì» ",IDC_MAP_ENVIRONMENT_SCRIPT_NAME_PRINT,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
-    CTEXT           "≈’œ«— «·”ﬂ—Ì» ",IDC_MAP_ENVIRONMENT_SCRIPT_VERSION_PRINT,38,29,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "«·«”„",IDC_STATIC,13,17,20,8
-    LTEXT           "«·≈’œ«—",IDC_STATIC,10,31,26,8
+    LTEXT           "«·«”„",IDC_STATIC,10,32,26,8
     CONTROL         "",IDC_MAP_ENVIRONMENT_MATERIAL_DIFFUSE,"Static",SS_BLACKFRAME | SS_NOTIFY,47,94,60,10
-    LTEXT           "‰‘— «·÷Ê¡",IDC_STATIC,17,95,23,8
+    LTEXT           "„‰ ‘—",IDC_STATIC,17,95,23,8
     CONTROL         "",IDC_MAP_ENVIRONMENT_MATERIAL_AMBIENT,"Static",SS_BLACKFRAME | SS_NOTIFY,47,108,60,10
-    LTEXT           "«·„ÕÌÿ",IDC_STATIC,15,109,27,8
+    LTEXT           "„ÕÌÿ",IDC_STATIC,15,109,27,8
     CONTROL         "",IDC_MAP_ENVIRONMENT_FOG_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,47,230,60,10
-    LTEXT           "«··Ê‰",IDC_STATIC,18,231,16,8
-    GROUPBOX        "÷Ê¡ « Ã«ÂÌ",IDC_STATIC,8,144,105,44
-    CONTROL         " „ﬂÌ‰",IDC_MAP_ENVIRONMENT_FOG_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,218,38,10
+    LTEXT           "Color",IDC_STATIC,16,231,18,8
+    GROUPBOX        "«··Ê‰",IDC_STATIC,8,144,105,44
+    CONTROL         " ›⁄Ì·",IDC_MAP_ENVIRONMENT_FOG_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,218,38,10
     CONTROL         "",IDC_MAP_ENVIRONMENT_LIGHT_DIFFUSE,"Static",SS_BLACKFRAME | SS_NOTIFY,47,157,60,10
-    LTEXT           "‰‘— «·÷Ê¡",IDC_STATIC,18,158,23,8
+    LTEXT           "„‰ ‘—",IDC_STATIC,18,158,23,8
     CONTROL         "",IDC_MAP_ENVIRONMENT_LIGHT_AMBIENT,"Static",SS_BLACKFRAME | SS_NOTIFY,47,171,60,10
-    LTEXT           "«·„ÕÌÿ",IDC_STATIC,15,172,27,8
-    CTEXT           "«·„”«›… «·»⁄Ìœ…",IDC_STATIC,11,261,30,16
+    LTEXT           "„ÕÌÿ",IDC_STATIC,15,172,27,8
+    LTEXT           "«·„ÕÌÿ",IDC_STATIC,11,261,30,16
     EDITTEXT        IDC_MAP_ENVIRONMENT_FOG_FAR_DISTANCE,47,263,60,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
-    GROUPBOX        "—Ì«Õ",IDC_STATIC,3,1052,114,47
+    GROUPBOX        "«·„”«›… «·»⁄Ìœ…",IDC_STATIC,3,1052,114,47
     CONTROL         "Slider2",IDC_MAP_ENVIRONMENT_WIND_STRENGTH,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,34,1069,78,10
-    LTEXT           "«·ﬁÊ…",IDC_STATIC,6,1069,28,8
-    LTEXT           "⁄‘Ê«∆Ì",IDC_STATIC,6,1080,28,8
+    LTEXT           "ﬁÊ…",IDC_STATIC,6,1069,28,8
+    LTEXT           "«·ﬁÊ…",IDC_STATIC,6,1080,28,8
     CONTROL         "Slider2",IDC_MAP_ENVIRONMENT_WIND_RANDOM,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,34,1080,78,10
-    GROUPBOX        "«·Ã”Ì„« ",IDC_STATIC,3,1169,114,61
     GROUPBOX        "÷Ê¡",IDC_STATIC,3,70,114,143
-    CONTROL         " „ﬂÌ‰",IDC_MAP_ENVIRONMENT_LIGHT_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,70,38,10
-    CTEXT           "„”«›… ﬁ—Ì»…",IDC_STATIC,10,243,30,16
+    CONTROL         " ›⁄Ì·",IDC_MAP_ENVIRONMENT_LIGHT_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,70,38,10
+    CTEXT           "÷Ê¡",IDC_STATIC,11,243,30,16
     EDITTEXT        IDC_MAP_ENVIRONMENT_FOG_NEAR_DISTANCE,47,245,60,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
     GROUPBOX        " ’›Ì… «·‘«‘…",IDC_STATIC,2,289,114,82
     COMBOBOX        IDC_MAP_ENVIRONMENT_FILTERING_ALPHA_SRC,43,335,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "SRC",IDC_STATIC,15,339,15,8
+    CTEXT           "„”«›… ﬁ—Ì»…",IDC_STATIC,15,339,15,8
     COMBOBOX        IDC_MAP_ENVIRONMENT_FILTERING_ALPHA_DEST,43,351,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "DEST",IDC_STATIC,13,355,19,8
-    LTEXT           "«··Ê‰",IDC_STATIC,13,304,18,8
-    LTEXT           "Alpha",IDC_STATIC,12,319,19,8
+    LTEXT           " ’›Ì… «·‘«‘…",IDC_STATIC,13,355,19,8
+    LTEXT           "SRC",IDC_STATIC,13,304,18,8
+    LTEXT           "DEST",IDC_STATIC,12,319,19,8
     CONTROL         "Slider2",IDC_MAP_ENVIRONMENT_FILTERING_ALPHA,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,320,67,10
     CONTROL         "",IDC_MAP_ENVIRONMENT_FILTERING_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,43,303,64,11
-    CONTROL         " „ﬂÌ‰",IDC_MAP_ENVIRONMENT_FILTERING_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,289,38,10
+    CONTROL         " ›⁄Ì·",IDC_MAP_ENVIRONMENT_FILTERING_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,75,289,38,10
     CONTROL         "",IDC_MAP_ENVIRONMENT_MATERIAL_EMISSIVE,"Static",SS_BLACKFRAME | SS_NOTIFY,47,122,60,10
-    LTEXT           "«‰»⁄«À",IDC_STATIC,13,124,31,8
-    CONTROL         " ⁄œÌ· „Ê÷⁄ «·÷Ê¡",IDC_CHECK_LIGHTPOSITIONEDIT,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,5,193,53,14
-    GROUPBOX        "”ﬂ«Ì »Êﬂ”",IDC_STATIC,2,376,114,553
-    GROUPBOX        "«·«‰Õœ«—",IDC_STATIC,8,450,102,74
+    LTEXT           "«‰»⁄«ÀÌ",IDC_STATIC,13,124,31,8
+    CONTROL         " Õ—Ì— „Ê÷⁄ «·≈÷«¡…",IDC_CHECK_LIGHTPOSITIONEDIT,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,9,193,49,13
+    GROUPBOX        "«‰»⁄«À",IDC_STATIC,2,376,114,553
+    GROUPBOX        " œ—Ã",IDC_STATIC,8,450,102,74
     COMBOBOX        IDC_MAP_ENVIRONMENT_GRADIENT_LIST,45,462,61,449,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "√œŒ· «·Ã“¡ «·⁄·ÊÌ",IDC_MAP_ENVIRONMENT_INSERT_UPPER_GRADIENT,46,478,60,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "≈œ—«Ã √⁄·Ï",IDC_MAP_ENVIRONMENT_INSERT_UPPER_GRADIENT,46,478,60,12,BS_NOTIFY | BS_FLAT
     PUSHBUTTON      "Õ–›",IDC_MAP_ENVIRONMENT_DELETE_GRADIENT,46,506,60,12,BS_NOTIFY | BS_FLAT
     CONTROL         "",IDC_MAP_ENVIRONMENT_GRADIENT_FIRST_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,15,462,27,27
-    PUSHBUTTON      "√œŒ· √ﬁ·",IDC_MAP_ENVIRONMENT_INSERT_LOWER_GRADIENT,46,492,60,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "≈œ—«Ã √”›·",IDC_MAP_ENVIRONMENT_INSERT_LOWER_GRADIENT,46,492,60,12,BS_NOTIFY | BS_FLAT
     GROUPBOX        "„ﬁÌ«”",IDC_STATIC,8,394,102,53
     LTEXT           "X",IDC_STATIC,26,407,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_SCALE_X,46,405,50,12,ES_AUTOHSCROLL
-    LTEXT           "Y",IDC_STATIC,26,420,8,8
+    LTEXT           "„ﬁÌ«”",IDC_STATIC,26,420,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_SCALE_Y,46,418,50,12,ES_AUTOHSCROLL
-    LTEXT           "Z",IDC_STATIC,26,434,8,8
+    LTEXT           "X",IDC_STATIC,26,434,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_SCALE_Z,46,431,50,12,ES_AUTOHSCROLL
-    GROUPBOX        "”Õ«»",IDC_STATIC,7,761,102,162
-    GROUPBOX        "„ﬁÌ«”",IDC_STATIC,14,801,91,27
-    LTEXT           "X",IDC_STATIC,19,815,8,8
+    GROUPBOX        "Y",IDC_STATIC,7,761,102,162
+    GROUPBOX        "Z",IDC_STATIC,14,801,91,27
+    LTEXT           "”Õ«»",IDC_STATIC,19,815,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_SCALE_X,27,812,30,12,ES_AUTOHSCROLL
-    LTEXT           "Y",IDC_STATIC,61,815,8,8
+    LTEXT           "„ﬁÌ«”",IDC_STATIC,61,815,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_SCALE_Y,69,812,30,12,ES_AUTOHSCROLL
-    LTEXT           "«— ›«⁄",IDC_STATIC,22,899,21,8
+    LTEXT           "X",IDC_STATIC,22,899,21,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_HEIGHT,50,897,50,12,ES_AUTOHSCROLL
-    GROUPBOX        "„ﬁÌ«” «·„·„”",IDC_STATIC,14,831,91,27
-    LTEXT           "X",IDC_STATIC,19,846,8,8
+    GROUPBOX        "Y",IDC_STATIC,14,831,91,27
+    LTEXT           "«— ›«⁄",IDC_STATIC,19,846,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_SCALE_X,27,843,30,12,ES_AUTOHSCROLL
-    LTEXT           "Y",IDC_STATIC,61,846,8,8
+    LTEXT           "„ﬁÌ«” «·„·„”",IDC_STATIC,61,846,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_SCALE_Y,69,843,30,12,ES_AUTOHSCROLL
-    GROUPBOX        "”—⁄…",IDC_STATIC,14,865,91,27
-    LTEXT           "X",IDC_STATIC,19,878,8,8
+    GROUPBOX        "X",IDC_STATIC,14,865,91,27
+    LTEXT           "Y",IDC_STATIC,19,878,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_SPEED_X,27,875,30,12,ES_AUTOHSCROLL
-    LTEXT           "Y",IDC_STATIC,61,878,8,8
+    LTEXT           "”—⁄…",IDC_STATIC,61,878,8,8
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_SPEED_Y,69,875,30,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE,78,781,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "„·› ‰”ÌÃ",IDC_STATIC,14,771,91,29
-    EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME,19,782,57,12,ES_AUTOHSCROLL
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE,78,778,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Y",IDC_STATIC,14,771,91,29
+    EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME,19,779,57,12,ES_AUTOHSCROLL
     CONTROL         "",IDC_MAP_ENVIRONMENT_GRADIENT_SECOND_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,15,491,27,27
-    GROUPBOX        "⁄œ”… „÷Ì∆…",IDC_STATIC,4,935,114,117
-    CONTROL         "Ì„ﬂ‰",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,72,939,38,10
-    GROUPBOX        "”ÿÊ⁄",IDC_STATIC,8,946,102,38
-    LTEXT           "«··Ê‰",IDC_STATIC,18,958,18,8
-    LTEXT           "«·√⁄·Ï",IDC_STATIC,19,971,15,8
+    GROUPBOX        "„·› ‰”ÌÃ",IDC_STATIC,4,935,114,117
+    CONTROL         " ›⁄Ì·",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,72,939,38,10
+    GROUPBOX        "⁄œ”… „÷Ì∆…",IDC_STATIC,8,946,102,38
+    LTEXT           "Color",IDC_STATIC,18,958,18,8
+    LTEXT           "”ÿÊ⁄",IDC_STATIC,19,971,15,8
     CONTROL         "Slider2",IDC_MAP_ENVIRONMENT_LENSFLARE_MAX_BRIGHTNESS,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,972,61,10
     CONTROL         "",IDC_MAP_ENVIRONMENT_LENSFLARE_COLOR,"Static",SS_BLACKFRAME | SS_NOTIFY,46,956,55,11
-    GROUPBOX        "«· ÊÂÃ «·—∆Ì”Ì",IDC_STATIC,8,989,102,61
+    GROUPBOX        "«·ÊÂÃ «·—∆Ì”Ì",IDC_STATIC,8,989,102,61
     EDITTEXT        IDC_MAP_ENVIRONMENT_LENSFLARE_TEXTURE_FILE_NAME,14,1018,90,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_LENSFLARE_TEXTURE,64,1003,40,12,BS_NOTIFY | BS_FLAT
-    LTEXT           "„·› ‰”ÌÃ",IDC_STATIC,15,1004,39,8
-    LTEXT           "Size",IDC_STATIC,21,1035,15,8
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_LENSFLARE_TEXTURE,64,1003,40,12,BS_NOTIFY | BS_FLAT
+    LTEXT           "«· ÊÂÃ «·—∆Ì”Ì",IDC_STATIC,15,1004,39,8
+    LTEXT           "ÕÃ„",IDC_STATIC,21,1035,15,8
     CONTROL         "Slider2",IDC_MAP_ENVIRONMENT_LENSFLARE_MAIN_FLARE_SIZE,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,1035,61,10
-    CONTROL         "Ì„ﬂ‰",IDC_MAP_ENVIRONMENT_MAINFLARE_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,989,38,10
-    PUSHBUTTON      "≈⁄«œ…  Õ„Ì· «·Ÿ·",IDC_BUTTON_RECALCULATESHADOW,59,193,55,14
-    GROUPBOX        "Œ·›ÌÂ „Ê”ÌﬁÌ…",IDC_STATIC,2,1103,114,61
-    LTEXT           "À«» …",IDC_STATIC,7,1118,104,10,SS_CENTERIMAGE | SS_SUNKEN
-    PUSHBUTTON      " Õ„Ì· «·„Ê”ÌﬁÏ",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC,61,1131,52,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "‘€· «·’Ê ",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC2,5,1144,40,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "«Œ ›Ì",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC3,33,1131,28,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "  ¬ﬂ·",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC4,47,1144,25,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "3D Êﬁ›",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC5,5,1131,28,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      " ·«‘Ì «·ﬂ·",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC6,73,1144,38,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "‰”ÌÃ ”ﬂ«Ì »Êﬂ”",IDC_STATIC,8,527,102,230
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE2,77,555,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "«·‰”ÌÃ «·√„«„Ì",IDC_STATIC,13,545,91,29
+    CONTROL         " ›⁄Ì·",IDC_MAP_ENVIRONMENT_MAINFLARE_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,989,38,10
+    PUSHBUTTON      "≈⁄«œ…  Õ„Ì· «·Ÿ·",IDC_BUTTON_RECALCULATESHADOW,61,193,50,14
+    GROUPBOX        "„Ê”ÌﬁÏ «·Œ·›Ì…",IDC_STATIC,2,1103,114,61
+    PUSHBUTTON      " Õ„Ì· PlayMusic",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC,61,1129,52,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      " ‘€Ì· «·’Ê ",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC2,5,1142,35,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "ŸÂÊ—  œ—ÌÃÌ",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC3,33,1129,28,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "«Œ ›«¡  œ—ÌÃÌ",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC4,40,1142,32,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Stop3D",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC5,5,1129,28,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "«Œ ›«¡ «·ﬂ·",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC6,73,1142,38,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… SkyBox",IDC_STATIC,8,527,102,230
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE2,77,555,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… «·√„«„",IDC_STATIC,13,545,91,29
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME2,18,555,57,12,ES_AUTOHSCROLL
-    CONTROL         "Ê÷⁄ «·„·„”",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE2,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,47,384,59,10
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE3,78,693,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "√⁄·Ï «·„·„”",IDC_STATIC,14,683,91,29
+    CONTROL         "Ê÷⁄ «·Œ«„…",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE2,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,43,383,59,10
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE3,78,693,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "«·‰”ÌÃ «·√„«„Ì",IDC_STATIC,14,683,91,29
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME3,18,693,57,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE4,77,591,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "‰”ÌÃ «·ŸÂ—",IDC_STATIC,13,580,91,29
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE4,77,591,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… «·Œ·›",IDC_STATIC,13,580,91,29
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME4,18,591,57,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE5,77,624,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "«·„·„” «·√Ì”—",IDC_STATIC,13,614,91,29
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE5,77,624,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… «·Ì”«—",IDC_STATIC,13,614,91,29
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME5,17,624,57,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE6,78,659,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "«·„·„” «·√Ì„‰",IDC_STATIC,13,649,91,29
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE6,78,659,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… «·Ì„Ì‰",IDC_STATIC,13,649,91,29
     EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME6,19,659,57,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE8,77,732,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "‰”ÌÃ ”›·Ì",IDC_STATIC,13,721,91,29
-    EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME8,18,732,57,12,ES_AUTOHSCROLL
-    LTEXT           "À·Ã, „ÿ—,\n √ÀÌ—«  «·Œ·›Ì…",IDC_STATIC,33,1189,55,33
-    CONTROL         "Ì„ﬂ‰",IDC_MAP_ENVIRONMENT_WIND_STRENGTH_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,1053,37,10
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_ENVIRONMENT_LOAD_CLOUD_TEXTURE8,77,731,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… «·√”›·",IDC_STATIC,13,721,91,29
+    EDITTEXT        IDC_MAP_ENVIRONMENT_CLOUD_TEXTURE_FILE_NAME8,18,731,57,12,ES_AUTOHSCROLL
+    CONTROL         " ›⁄Ì·",IDC_MAP_ENVIRONMENT_WIND_STRENGTH_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,68,1053,37,10
+    COMBOBOX        IDC_MAP_ENVIRONMENT_ENVLIST,38,30,70,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
 
 IDD_MAP_TAB DIALOG 0, 0, 120, 16
@@ -644,7 +712,7 @@ BEGIN
     CONTROL         "ﬂ«∆‰",IDC_MAP_TAB_OBJECT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,32,0,14,16
     CONTROL         "«· ÷«—Ì”",IDC_MAP_TAB_TERRAIN,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,17,0,14,16
     CONTROL         "„·›",IDC_MAP_TAB_FILE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,0,0,14,16
-    CONTROL         "«·”„…",IDC_MAP_TAB_ATTRIBUTE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,65,0,14,16
+    CONTROL         "«·”„« ",IDC_MAP_TAB_ATTRIBUTE,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,65,0,14,16
 END
 
 IDD_EFFECT_TAB DIALOGEX 0, 0, 120, 186
@@ -655,13 +723,13 @@ BEGIN
     GROUPBOX        "«›ﬂ  «·”ﬂ—Ì» ",IDC_STATIC,3,3,114,55
     PUSHBUTTON      "Õ›Ÿ",IDC_EFFECT_SAVE_SCRIPT,63,28,45,12,BS_NOTIFY | BS_FLAT
     CTEXT           "≈”„ «·”ﬂ—Ì» ",IDC_EFFECT_SCRIPT_NAME,9,14,100,11,SS_CENTERIMAGE | SS_SUNKEN
-    LISTBOX         IDC_EFFECT_LIST,41,61,57,65,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_EFFECT_LIST,41,61,60,65,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "„”Õ Ê«Õœ",IDC_EFFECT_CLEAR_ONE,3,62,36,12,BS_NOTIFY | BS_FLAT
     PUSHBUTTON      "„”Õ «·ﬂ·",IDC_EFFECT_CLEAR_ALL,3,75,36,12,BS_NOTIFY | BS_FLAT
-    CONTROL         "Ã”„",IDC_EFFECT_TAB_CREATE_PARTICLE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,99,61,20,15
-    CONTROL         "‘»ﬂ…",IDC_EFFECT_TAB_CREATE_MESH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,99,78,20,15
+    CONTROL         "Ã”„",IDC_EFFECT_TAB_CREATE_PARTICLE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,103,61,14,15
+    CONTROL         "‘»ﬂ…",IDC_EFFECT_TAB_CREATE_MESH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,103,78,14,15
     CONTROL         "‘—Ìÿ «·Êﬁ ",IDC_EFFECT_TAB_TIME_BAR_ENABLE,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_PUSHLIKE | WS_TABSTOP,3,129,44,13
-    CONTROL         "÷Ê¡",IDC_EFFECT_TAB_CREATE_LIGHT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,99,95,20,15
+    CONTROL         "÷Ê¡",IDC_EFFECT_TAB_CREATE_LIGHT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,103,95,14,15
     PUSHBUTTON      " ﬂ—«—",IDC_EFFECT_DUPLICATE,3,88,36,12,BS_NOTIFY | BS_FLAT
     PUSHBUTTON      "œ„Ã",IDC_EFFECT_MERGE_SCRIPT,10,42,45,12,BS_NOTIFY | BS_FLAT
     CONTROL         "„“«„‰… ObjectTab",IDC_EFFECT_USING_SCENEOBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,133,65,12
@@ -675,11 +743,11 @@ BEGIN
     CONTROL         "≈ŸÂ«— «·„ƒ‘—",IDC_EFFECT_SHOW_CURSOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,169,63,12
 END
 
-IDD_EFFECT_PARTICLE DIALOGEX 0, 0, 120, 820
+IDD_EFFECT_PARTICLE DIALOG 0, 0, 120, 820
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
-    GROUPBOX        "Ã”Ì„",IDC_STATIC,3,1,114,475
+    GROUPBOX        "Ã”„",IDC_STATIC,3,1,114,475
     GROUPBOX        "·ÊÕ…",IDC_STATIC,8,196,103,31
     PUSHBUTTON      "≈œ—«Ã",IDC_EFFECT_PARTICLE_INSERT_TEXTURE,50,39,57,12,BS_FLAT
     PUSHBUTTON      "„”Õ Ê«Õœ",IDC_EFFECT_PARTICLE_CLEAR_ONE_TEXTURE,50,53,57,12,BS_FLAT
@@ -688,54 +756,54 @@ BEGIN
     GROUPBOX        "»«⁄À",IDC_STATIC,3,479,114,335
     CONTROL         "",IDD_EFFECT_PARTICLE_PARTICLE_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,8,381,102,67
     COMBOBOX        IDD_EFFECT_PARTICLE_EMITTER_SHAPE,49,558,60,378,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    GROUPBOX        "«·‘ﬂ· «·Â‰œ”Ì",IDC_STATIC,9,546,103,129
+    GROUPBOX        "‘ﬂ· «·Â‰œ”…",IDC_STATIC,9,546,103,129
     CONTROL         "«‰»⁄«À „‰ «·Õ«›…",IDD_EFFECT_PARTICLE_EMITTER_EMIT_FROM_EDGE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,660,62,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,661,68,10
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_SIZE_X,24,606,18,12,ES_AUTOHSCROLL
     LTEXT           "X",IDC_STATIC,16,608,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_SIZE_Y,56,606,18,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,48,608,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_SIZE_Z,86,606,18,12,ES_AUTOHSCROLL
     LTEXT           "Z",IDC_STATIC,78,608,8,8
-    GROUPBOX        "«·ÕÃ„",IDC_STATIC,13,594,95,32
+    GROUPBOX        "ÕÃ„",IDC_STATIC,13,594,95,32
     GROUPBOX        "‰’› «·ﬁÿ—",IDC_STATIC,13,630,95,27
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_RADIUS,43,640,35,12,ES_AUTOHSCROLL
     CONTROL         "",IDD_EFFECT_PARTICLE_EMITTER_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,9,741,102,67
     COMBOBOX        IDD_EFFECT_PARTICLE_EMITTER_GRAPH_LIST,47,724,63,386,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "ÕœÀ «·Êﬁ ",IDC_STATIC,11,726,35,8
-    LTEXT           "‰Ê⁄ «·Õ—ﬂ…",IDC_STATIC,13,84,28,8
+    LTEXT           "ÕœÀ «·Êﬁ ",IDC_STATIC,8,727,38,8
+    LTEXT           "‰Ê⁄ «· Õ—Ìﬂ",IDC_STATIC,13,84,28,8
     COMBOBOX        IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_TYPE,44,82,63,437,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           " √ŒÌ— «·Õ—ﬂ…",IDC_STATIC,12,98,30,8
+    LTEXT           " √ŒÌ— «· Õ—Ìﬂ",IDC_STATIC,12,98,30,8
     CONTROL         "Slider1",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_DELAY,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,98,44,10
-    CONTROL         "≈ÿ«— »œ¡ ⁄‘Ê«∆Ì",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_RANDOM_START_FRAME,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,110,82,10
+    CONTROL         "≈ÿ«— »œ«Ì… ⁄‘Ê«∆Ì",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_RANDOM_START_FRAME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,111,82,10
     COMBOBOX        IDC_EFFECT_PARTICLE_BILLBOARD_TYPE,20,209,78,357,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     COMBOBOX        IDD_EFFECT_PARTICLE_PARTICLE_GRAPH_LIST,47,365,63,386,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "ÕœÀ «·Êﬁ ",IDC_STATIC,8,368,38,8
-    CTEXT           "À«» ",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_DELAY_PRINT,87,98,20,10,SS_SUNKEN
-    GROUPBOX        "«·ŒÌ«—",IDC_STATIC,8,321,103,39
-    CONTROL         "«· „œÌœ  „ﬂÌ‰",IDC_EFFECT_PARTICLE_STRETCH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,333,63,10
-    GROUPBOX        "œÊ—«‰",IDC_STATIC,8,230,103,87
+    LTEXT           "Static",IDC_EFFECT_PARTICLE_TEXTURE_ANIMATION_DELAY_PRINT,87,98,20,10,SS_SUNKEN
+    GROUPBOX        "Option",IDC_STATIC,8,321,103,39
+    CONTROL         " ›⁄Ì· «· „œœ",IDC_EFFECT_PARTICLE_STRETCH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,333,63,10
+    GROUPBOX        "«·œÊ—«‰",IDC_STATIC,8,230,103,87
     LTEXT           "«·‰Ê⁄",IDC_STATIC,17,241,18,8
     COMBOBOX        IDC_EFFECT_PARTICLE_ROTATION_TYPE,43,239,63,437,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "”—⁄…",IDC_STATIC,14,256,22,8
     CONTROL         "Slider2",IDC_EFFECT_PARTICLE_ROTATION_SPEED,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,256,44,10
-    CTEXT           "À«» ",IDC_EFFECT_PARTICLE_ROTATION_SPEED_PRINT,86,256,20,10,SS_SUNKEN
-    GROUPBOX        "œÊ—«‰ »œ¡ ⁄‘Ê«∆Ì",IDC_STATIC,13,270,93,40
-    LTEXT           "Ì»œ√",IDC_STATIC,23,282,19,8
+    LTEXT           "Static",IDC_EFFECT_PARTICLE_ROTATION_SPEED_PRINT,86,256,20,10,SS_SUNKEN
+    GROUPBOX        "œÊ—«‰ »œ«Ì… ⁄‘Ê«∆Ì",IDC_STATIC,13,270,93,40
+    LTEXT           "»œ«Ì…",IDC_STATIC,23,282,19,8
     LTEXT           "‰Â«Ì…",IDC_STATIC,25,295,14,8
     EDITTEXT        IDC_EFFECT_PARTICLE_ROTATION_RANDOM_BEGIN,50,281,48,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EFFECT_PARTICLE_ROTATION_RANDOM_END,50,294,48,12,ES_AUTOHSCROLL
     PUSHBUTTON      "„”Õ «·ﬂ·",IDC_EFFECT_PARTICLE_CLEAR_ALL_TEXTURE,50,67,57,12,BS_FLAT
-    LTEXT           "„«ﬂ” «·Ã”Ì„« ",IDC_STATIC,13,489,42,8
+    LTEXT           "«ﬁ’Ï ⁄œœ Ã”Ì„« ",IDC_STATIC,13,489,42,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_MAX_PARTICLE,61,487,42,13,ES_AUTOHSCROLL
-    GROUPBOX        "œÊ—…",IDC_STATIC,9,503,103,40
-    LTEXT           "«·ÿÊ·",IDC_STATIC,21,513,23,8
+    GROUPBOX        "Cycle",IDC_STATIC,9,503,103,40
+    LTEXT           "ÿÊ·",IDC_STATIC,21,513,23,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LENGTH,54,511,42,13,ES_AUTOHSCROLL
-    CONTROL         " ﬂ—«—",IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,527,32,10
-    GROUPBOX        "«·”—⁄… «·⁄‘Ê«∆Ì…",IDC_STATIC,9,678,102,39
+    CONTROL         "Loop",IDD_EFFECT_PARTICLE_EMITTER_CYCLE_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,527,32,10
+    GROUPBOX        "”—⁄… ⁄‘Ê«∆Ì…",IDC_STATIC,9,678,102,39
     LTEXT           "X",IDC_STATIC,29,689,8,8
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_DIRECTION_X,23,700,20,12,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,60,689,8,8
@@ -745,19 +813,19 @@ BEGIN
     LTEXT           "+/-",IDC_STATIC,11,702,11,8
     LTEXT           "+/-",IDC_STATIC,43,702,11,8
     LTEXT           "+/-",IDC_STATIC,75,702,11,8
-    GROUPBOX        "Ì„“Ã",IDC_STATIC,8,127,103,65
+    GROUPBOX        "„“Ã",IDC_STATIC,8,127,103,65
     COMBOBOX        IDC_EFFECT_PARTICLE_BLEND_SRC,39,139,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "SRC",IDC_STATIC,17,142,15,8
     COMBOBOX        IDC_EFFECT_PARTICLE_BLEND_DEST,39,155,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "DEST",IDC_STATIC,15,158,19,8
     CTEXT           "«·‰Ê⁄ «·„ ﬁœ„",IDC_STATIC,13,573,32,17
     COMBOBOX        IDD_EFFECT_PARTICLE_EMITTER_ADVANCED_TYPE,49,576,60,386,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "‰Ê⁄",IDC_STATIC,21,560,18,8
-    CONTROL         "≈—›«ﬁ  „ﬂÌ‰",IDC_EFFECT_PARTICLE_ATTACH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,345,61,10
-    PUSHBUTTON      " ⁄œÌ· «·—”Ê„ «·„ Õ—ﬂ… «·„·Ê‰…",IDC_EFFECT_PARTICLE_COLOR_ANIMATION,15,454,89,16
+    LTEXT           "«·‰Ê⁄",IDC_STATIC,21,560,18,8
+    CONTROL         " ›⁄Ì· «·≈—›«ﬁ",IDC_EFFECT_PARTICLE_ATTACH_FLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,345,61,10
+    PUSHBUTTON      " Õ—Ì—  Õ—Ìﬂ «··Ê‰",IDC_EFFECT_PARTICLE_COLOR_ANIMATION,15,454,89,16
     CONTROL         "",IDC_EFFECT_PARTICLE_PREVIEW,"Static",SS_WHITERECT | WS_BORDER,12,39,36,40
     EDITTEXT        IDD_EFFECT_PARTICLE_EMITTER_LOOP_COUNT,54,525,42,13,ES_AUTOHSCROLL
-    LTEXT           "⁄„·Ì…",IDC_STATIC,14,174,22,10
+    LTEXT           "OPER",IDC_STATIC,14,174,22,10
     COMBOBOX        IDC_EFFECT_PARTICLE_OPERATION_TYPE,39,172,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
 
@@ -766,18 +834,18 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
 CAPTION "‘—Ìÿ «·Êﬁ "
 FONT 9, "Tahoma"
 BEGIN
-    CONTROL         " ‘€Ì·",IDC_EFFECT_TIME_BAR_PLAY,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,101,2,14,16
+    CONTROL         "Play",IDC_EFFECT_TIME_BAR_PLAY,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,101,2,14,16
     CONTROL         "",IDC_EFFECT_TIME_BAR_GRAPH,"Static",SS_GRAYFRAME | SS_NOTIFY,3,24,401,184
     CONTROL         " ﬂ»Ì—",IDC_EFFECT_TIME_BAR_ZOOM_IN_HORIZON,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,151,2,14,16
     CONTROL         " ’€Ì—",IDC_EFFECT_TIME_BAR_ZOOM_OUT_HORIZON,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,166,2,14,16
     CONTROL         "XYZ",IDC_EFFECT_TIME_BAR_XYZ,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,186,2,14,16
     CONTROL         "XYYZZX",IDC_EFFECT_TIME_BAR_XYYZZX,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,201,2,14,16
     COMBOBOX        IDC_EFFECT_TIME_BAR_GRAPH_LIST,6,5,91,391,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
-    CONTROL         " ‘€Ì·",IDC_EFFECT_TIME_BAR_PLAY_LOOP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,116,2,14,16
+    CONTROL         "Play",IDC_EFFECT_TIME_BAR_PLAY_LOOP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,116,2,14,16
     CONTROL         " ﬂ»Ì—",IDC_EFFECT_TIME_BAR_MAXIMIZE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | NOT WS_VISIBLE | WS_TABSTOP,390,2,14,16
     CONTROL         " ’€Ì—",IDC_EFFECT_TIME_BAR_MINIMIZE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,390,2,14,16
     EDITTEXT        IDC_EFFECT_TIME_BAR_LIFE_TIME,352,6,36,12,ES_AUTOHSCROLL
-    CONTROL         " ‘€Ì·",IDC_EFFECT_TIME_BAR_STOP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,131,2,14,16
+    CONTROL         "Play",IDC_EFFECT_TIME_BAR_STOP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,131,2,14,16
     LTEXT           "",IDC_EFFECT_TIME_BAR_INFO,225,2,101,11
 END
 
@@ -813,18 +881,18 @@ BEGIN
     GROUPBOX        "",IDC_STATIC,8,118,104,365
     COMBOBOX        IDC_EFFECT_MESH_LIST,19,117,82,522,CBS_DROPDOWNLIST | WS_VSCROLL,WS_EX_TRANSPARENT
     CONTROL         " ﬂ—«—",IDC_EFFECT_MESH_ANIMATION_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,78,28,10
-    PUSHBUTTON      " ‰ÿ»ﬁ ⁄·Ï «·ﬂ·",IDC_EFFECT_MESH_BILLBOARD_ACCEPT_ALL,26,197,67,12
+    PUSHBUTTON      " ‰ÿ»ﬁ ⁄·Ï «·ﬂ·",IDC_EFFECT_MESH_BILLBOARD_ACCEPT_ALL,27,198,67,12
     PUSHBUTTON      " ‰ÿ»ﬁ ⁄·Ï «·ﬂ·",IDC_EFFECT_MESH_ALPHA_ACCEPT_ALL,26,377,67,12
     PUSHBUTTON      " ‰ÿ»ﬁ ⁄·Ï «·ﬂ·",IDC_EFFECT_MESH_TEXTURE_ANIMATION_ACCEPT_ALL,27,442,67,12
     LTEXT           "≈ÿ«— «·»œ«Ì…",IDC_STATIC,16,461,38,8
-    EDITTEXT        IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME,53,460,21,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Ì ﬁœ„",IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME_ACCEPT,78,459,24,13
+    EDITTEXT        IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME,57,460,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ì ﬁœ„",IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME_ACCEPT,80,460,24,11
     LTEXT           "⁄«„·",IDC_STATIC,16,271,21,8
     CONTROL         "",IDC_EFFECT_MESH_COLOR_FACTOR,"Static",SS_BLACKFRAME | SS_NOTIFY,40,270,64,11
     LTEXT           "⁄„·Ì…",IDC_STATIC,17,285,19,8
     COMBOBOX        IDC_EFFECT_MESH_COLOR_OPERATION,40,284,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     CONTROL         "",IDD_EFFECT_MESH_ALPHA_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,16,305,88,67
-    EDITTEXT        IDC_EFFECT_MESH_LOOP_COUNT,49,77,53,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFFECT_MESH_LOOP_COUNT,51,77,45,12,ES_AUTOHSCROLL
     CONTROL         "Ì √À— « Ã«Â «·Õ—ﬂ…",IDC_EFFECT_MESH_BILLBOARD_MOVE,
                     "Button",BS_AUTOCHECKBOX | BS_MULTILINE,21,177,72,18
 END
@@ -841,10 +909,11 @@ BEGIN
     PUSHBUTTON      "„”Õ Ê«Õœ",IDC_EFFECT_PARTICLE_CLEAR_ONE_TEXTURE,20,53,40,12,BS_FLAT
     COMBOBOX        IDC_EFFECT_PARTICLE_TEXTURE_COMBO_BOX,16,35,90,271,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "‰”ÌÃ",IDC_STATIC,8,11,103,59
-    CONTROL         " ⁄ÿÌ·",IDC_EFFECT_TEXTURE_BILLBOARD_OFF,"Button",BS_AUTOCHECKBOX,18,86,32,10
-    CONTROL         "Ì‰Ÿ— ··ﬂ«„Ì—«",IDC_EFFECT_TEXTURE_BILLBOARD_ALL,"Button",BS_AUTOCHECKBOX,18,96,46,10
+    CONTROL         " ⁄ÿÌ·",IDC_EFFECT_TEXTURE_BILLBOARD_OFF,"Button",BS_AUTOCHECKBOX,18,86,25,10
+    CONTROL         "Ì‰Ÿ— ··ﬂ«„Ì—«",IDC_EFFECT_TEXTURE_BILLBOARD_ALL,
+                    "Button",BS_AUTOCHECKBOX,18,96,80,10
     CONTROL         "«” œ«—… ›ﬁÿ Y «·„ÕÊ—",IDC_EFFECT_TEXTURE_BILLBOARD_Y,
-                    "Button",BS_AUTOCHECKBOX,18,106,73,10
+                    "Button",BS_AUTOCHECKBOX,18,106,72,10
     COMBOBOX        IDC_EFFECT_TEXTURE_ALPHA_SRC,38,136,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "SRC",IDC_STATIC,16,138,15,8
     COMBOBOX        IDC_EFFECT_TEXTURE_ALPHA_DEST,38,152,65,245,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
@@ -855,11 +924,11 @@ IDD_MAP_TERRAIN DIALOGEX 0, 0, 120, 595
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    CONTROL         "›—‘«… √⁄·Ï",IDC_MAP_TERRAIN_BRUSH_UP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,17,121,17,19
-    CONTROL         "›—‘«… √”›·",IDC_MAP_TERRAIN_BRUSH_DOWN,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,34,121,17,19
-    CONTROL         "Â÷»… «·›—‘«…",IDC_MAP_TERRAIN_BRUSH_PLATEAU,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,52,121,17,19
-    CONTROL         "÷Ê÷«¡ «·›—‘«…",IDC_MAP_TERRAIN_BRUSH_NOISE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,69,121,17,19
-    CONTROL         "›—‘«… ‰«⁄„…",IDC_MAP_TERRAIN_BRUSH_SMOOTH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | BS_MULTILINE | WS_TABSTOP,86,121,17,19
+    CONTROL         "›—‘«… √⁄·Ï",IDC_MAP_TERRAIN_BRUSH_UP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,17,121,17,19
+    CONTROL         "›—‘«… √”›·",IDC_MAP_TERRAIN_BRUSH_DOWN,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,34,121,17,19
+    CONTROL         "Â÷»… «·›—‘«…",IDC_MAP_TERRAIN_BRUSH_PLATEAU,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,52,121,17,19
+    CONTROL         "÷Ê÷«¡ «·›—‘«…",IDC_MAP_TERRAIN_BRUSH_NOISE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,69,121,17,19
+    CONTROL         "›—‘«… ‰«⁄„…",IDC_MAP_TERRAIN_BRUSH_SMOOTH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,86,121,17,19
     CONTROL         "œ«∆—… ‘ﬂ· «·›—‘«…",IDC_MAP_TERRAIN_BRUSH_SHAPE_CIRCLE,
                     "Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,17,30,17,19
     CONTROL         "‘ﬂ· ›—‘«… „—»⁄",IDC_MAP_TERRAIN_BRUSH_SHAPE_SQUARE,
@@ -871,10 +940,10 @@ BEGIN
     EDITTEXT        IDC_MAP_TERRAIN_SCALE_PRINT,90,52,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
     EDITTEXT        IDC_MAP_TERRAIN_STRENGTH_PRINT,90,66,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
     GROUPBOX        "›—‘«… «·«— ›«⁄",IDC_STATIC,3,88,113,61
-    LTEXT           "‰Ê⁄ «·›—‘«… :",IDC_STATIC,12,98,43,8
-    LTEXT           "‘ﬂ·",IDC_STATIC,13,17,18,8
+    LTEXT           "‰Ê⁄ «·›—‘«… :",IDC_STATIC,10,105,43,8
+    LTEXT           "‘ﬂ·",IDC_STATIC,8,18,22,8
     EDITTEXT        IDC_MAP_TERRAIN_BRUSH_SHAPE_PRINT,36,16,49,12,ES_CENTER | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
-    EDITTEXT        IDC_MAP_TERRAIN_BRUSH_TYPE_PRINT,60,97,49,12,ES_CENTER | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_MAP_TERRAIN_BRUSH_TYPE_PRINT,58,104,49,12,ES_CENTER | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
     GROUPBOX        "›—‘«… «·„·„”",IDC_STATIC,3,157,113,288
     GROUPBOX        "›—‘«…",IDC_STATIC,3,5,113,78
     CONTROL         "",IDC_CHECK_HEIGHTBRUSH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,88,8,8
@@ -885,34 +954,35 @@ BEGIN
     CONTROL         "„„Õ«…",IDC_CHECK_ERASER,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,65,169,44,15
     GROUPBOX        "›—‘«… „«∆Ì…",IDC_STATIC_WATER,2,451,113,78
     CONTROL         "",IDC_CHECK_WATERBRUSH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,94,452,8,8
-    CONTROL         "„„Õ«…",IDC_CHECK_ERASERWATER,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,67,499,44,12
-    PUSHBUTTON      "Õœœ 0z",IDC_CHECK_ERASERWATER2,6,499,44,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "+1z",IDC_CHECK_ERASERWATER3,6,513,44,12,BS_NOTIFY | BS_FLAT
-    PUSHBUTTON      "-1z",IDC_CHECK_ERASERWATER4,67,513,44,12,BS_NOTIFY | BS_FLAT
+    CONTROL         "„„Õ«…",IDC_CHECK_ERASERWATER,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,67,489,44,12
+    PUSHBUTTON      "Õœœ 0z",IDC_CHECK_ERASERWATER2,6,489,44,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "+1z",IDC_CHECK_ERASERWATER3,6,503,44,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "-1z",IDC_CHECK_ERASERWATER4,67,503,44,12,BS_NOTIFY | BS_FLAT
     CONTROL         "Slider1",IDC_MAP_TERRAIN_SCALE_WATERHEIGHT,
-                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,482,104,10
-    LTEXT           "«·≈— ›«⁄",IDC_STATIC,19,466,21,8
-    EDITTEXT        IDC_MAP_TERRAIN_WATERHEIGHT_PRINT,47,464,30,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
-    LTEXT           "„ —",IDC_STATIC,85,465,19,8
-    CONTROL         "÷⁄ÌÂ ⁄·Ï «·„‰ÿﬁ… »œÊ‰ ‰”ÌÃ",IDC_CHECK_DRAW_ON_BLANK_TILE_ONLY,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,477,104,10
+    LTEXT           "«·≈— ›«⁄",IDC_STATIC,19,464,21,8
+    EDITTEXT        IDC_MAP_TERRAIN_WATERHEIGHT_PRINT,47,462,30,12,ES_CENTER | ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         " ÿ»Ìﬁ ⁄·Ï «·„‰ÿﬁ… »œÊ‰ Œ«„…",IDC_CHECK_DRAW_ON_BLANK_TILE_ONLY,
                     "Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,9,187,100,15
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_TERRAIN_LOAD_WATER_TEXTURE,85,550,23,12,BS_NOTIFY | BS_FLAT
-    GROUPBOX        "ﬁÊ«„ „«∆Ì Œ«’",IDC_STATIC,3,537,114,41
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_TERRAIN_LOAD_WATER_TEXTURE,85,550,23,12,BS_NOTIFY | BS_FLAT
+    GROUPBOX        "Œ«„… „«¡ Œ«’…",IDC_STATIC,3,537,114,41
     EDITTEXT        IDC_MAP_TERRAIN_WATER_TEXTURE_FILE_NAME,8,551,75,12,ES_AUTOHSCROLL
     CONTROL         " ›⁄Ì·",IDC_MAP_TERRAIN_WATER_TEXTURE_ENABLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,537,33,10
-    LTEXT           "⁄œœ «·›—Ì„« :",IDC_STATIC,12,565,46,8
-    CTEXT           "À«» ",IDC_MAP_TERRAIN_WATER_TEXTURE_COUNT_PRINT,58,565,23,10,SS_SUNKEN
+    LTEXT           "⁄œœ «·≈ÿ«—« :",IDC_STATIC,12,565,46,8
+    CTEXT           "À«» ",IDC_MAP_TERRAIN_WATER_TEXTURE_COUNT_PRINT,58,565,23,8,SS_SUNKEN
+    PUSHBUTTON      "÷»ÿ «— ›«⁄ «·„«¡ ﬂ·Â",IDC_CHECK_ADJUST_WATER_HEIGHT,6,516,104,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "«· ﬁ«ÿ",IDC_CHECK_WATER_PICK,84,462,26,12,BS_NOTIFY | BS_FLAT
 END
 
-IDD_MAP_OBJECT DIALOGEX 0, 0, 120, 682
+IDD_MAP_OBJECT DIALOGEX 0, 0, 120, 736
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,203,113,339
+    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,237,113,179
     CONTROL         "⁄‘Ê«∆Ì",IDD_MAP_OBJECT_RANDOM_ROTATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,7,39,10,WS_EX_TRANSPARENT
-    CONTROL         "Slider1",IDC_MAP_OBJECT_YAW,"msctls_trackbar32",TBS_AUTOTICKS,18,23,83,10
-    LTEXT           "X+",IDC_STATIC,101,23,8,8
-    LTEXT           "X-",IDC_STATIC,12,23,8,8
+    CONTROL         "Slider1",IDC_MAP_OBJECT_YAW,"msctls_trackbar32",TBS_AUTOTICKS,17,23,83,10
+    LTEXT           "360",IDC_STATIC_YAW,100,23,13,8
+    LTEXT           "X-",IDC_STATIC,11,23,8,8
     GROUPBOX        "«·œÊ—«‰",IDC_STATIC,4,7,112,67
     GROUPBOX        " À»Ì ",IDC_STATIC,4,137,112,31
     CONTROL         " ›⁄Ì·",IDD_MAP_OBJECT_GRID_MODE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,76,138,33,10,WS_EX_TRANSPARENT
@@ -923,26 +993,36 @@ BEGIN
     CONTROL         "Slider2",IDC_MAP_OBJECT_HEIGHT,"msctls_trackbar32",WS_TABSTOP,8,89,65,10
     CTEXT           "Static",IDC_MAP_OBJECT_HEIGHT_PRINT,74,89,28,9,SS_SUNKEN
     LTEXT           "„ —",IDC_STATIC,105,89,8,8
-    CONTROL         "Slider1",IDC_MAP_OBJECT_PITCH,"msctls_trackbar32",TBS_AUTOTICKS,18,40,83,10
-    LTEXT           "Y+",IDC_STATIC,101,40,8,8
-    LTEXT           "Y-",IDC_STATIC,12,40,8,8
-    CONTROL         "Slider1",IDC_MAP_OBJECT_ROLL,"msctls_trackbar32",TBS_AUTOTICKS,18,56,83,10
-    LTEXT           "Z+",IDC_STATIC,101,56,8,8
-    LTEXT           "Z-",IDC_STATIC,12,56,8,8
+    CONTROL         "Slider1",IDC_MAP_OBJECT_PITCH,"msctls_trackbar32",TBS_AUTOTICKS,17,40,83,10
+    LTEXT           "360",IDC_STATIC_PITCH,100,40,13,8
+    LTEXT           "Y-",IDC_STATIC,11,40,8,8
+    CONTROL         "Slider1",IDC_MAP_OBJECT_ROLL,"msctls_trackbar32",TBS_AUTOTICKS,17,56,83,10
+    LTEXT           "360",IDC_STATIC_ROLL,100,56,13,8
+    LTEXT           "Z-",IDC_STATIC,11,56,8,8
     GROUPBOX        "„ﬁÌ«” «·«ÃÊ«¡",IDC_STATIC,4,107,112,27
     CONTROL         "Slider2",IDC_MAP_OBJECT_SCALE,"msctls_trackbar32",WS_TABSTOP,8,119,65,10
     CTEXT           "À«» ",IDC_MAP_OBJECT_SCALE_PRINT,74,117,28,9,SS_SUNKEN
     LTEXT           "„ —",IDC_STATIC,105,117,8,8
-    GROUPBOX        "„⁄·Ê„«  «·⁄‰’— «·„Õœœ",IDC_STATIC,4,548,112,128
-    EDITTEXT        IDC_STATIC_SELECTED_OBJECT_INFO,9,560,102,33,ES_MULTILINE | ES_READONLY | WS_VSCROLL
-    GROUPBOX        "„⁄·Ê„«  «·»Ê«»…",IDC_STATIC,9,599,102,70
-    LISTBOX         IDD_MAP_PORTAL_NUMBER_LIST,14,609,92,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "⁄‰’— ÃœÌœ",IDD_MAP_CREATE_PROPERTY,4,187,55,12
-    PUSHBUTTON      "„Ã·œ ÃœÌœ",IDD_MAP_CREATE_DIRECTORY,4,173,55,12
-    PUSHBUTTON      "Õ–› «·⁄‰’—",IDD_MAP_DELETE,60,187,55,12
-    PUSHBUTTON      "≈·€«¡ «·«Œ Ì«—",IDD_MAP_UNSELECT,60,173,55,12
-    PUSHBUTTON      "√œŒ·",IDD_MAP_OBJECT_INSERT_PORTAL_NUMBER,14,652,43,13
-    PUSHBUTTON      "≈Õ–›",IDD_MAP_OBJECT_DELETE_PORTAL_NUMBER,63,652,43,13
+    GROUPBOX        "„⁄·Ê„«  «·⁄‰’— «·„Õœœ",IDC_STATIC,4,423,112,128
+    EDITTEXT        IDC_STATIC_SELECTED_OBJECT_INFO,9,435,102,33,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+    GROUPBOX        "„⁄·Ê„«  «·»Ê«»…",IDC_STATIC,9,474,102,70
+    LISTBOX         IDD_MAP_PORTAL_NUMBER_LIST,14,484,92,41,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "⁄‰’— ÃœÌœ",IDD_MAP_CREATE_PROPERTY,4,210,55,12
+    PUSHBUTTON      "„Ã·œ ÃœÌœ",IDD_MAP_CREATE_DIRECTORY,4,196,55,12
+    PUSHBUTTON      "Õ–› «·⁄‰’—",IDD_MAP_DELETE,60,210,55,12
+    PUSHBUTTON      "≈·€«¡ «·«Œ Ì«—",IDD_MAP_UNSELECT,60,196,55,12
+    PUSHBUTTON      "√œŒ·",IDD_MAP_OBJECT_INSERT_PORTAL_NUMBER,14,528,43,12
+    PUSHBUTTON      "≈Õ–›",IDD_MAP_OBJECT_DELETE_PORTAL_NUMBER,63,528,43,12
+    PUSHBUTTON      "≈⁄«œ… ÷»ÿ «·œÊ—«‰",IDD_MAP_OBJECT_RESET_ROTATION,4,169,55,12
+    PUSHBUTTON      "≈⁄«œ… ÷»ÿ «·«— ›«⁄",IDD_MAP_OBJECT_RESET_HEIGHT,60,169,55,12
+    PUSHBUTTON      "≈·€«¡  ÕœÌœ picking",IDD_MAP_OBJECT_RESET_SELECT,60,182,55,12
+    GROUPBOX        "«·ÂÌﬂ· («·„‰ÿﬁ… «·Õ«·Ì…)",IDC_STATIC,4,556,112,152
+    CONTROL         "",IDC_MAP_OBJECT_HIERARCHY_LIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,6,567,105,120
+    LTEXT           "Ctrl+‰ﬁ—… Ì”«— =  ÕœÌœ „ ⁄œœ",IDC_STATIC,7,688,106,8
+    LTEXT           "‰ﬁ—… Ì„Ì‰ = «‰ ﬁ«· ≈·Ï «·ﬂ«∆‰",IDC_STATIC,7,697,106,8
+    PUSHBUTTON      "›Õ’ ﬂ«∆‰ ÃœÌœ",IDD_MAP_OBJECT_SCAN_NEW_OBJECT,4,182,55,12
+    EDITTEXT        IDC_STATIC_SEARCH_OBJECT,4,224,97,12
+    PUSHBUTTON      "X",IDD_MAP_SEARCH_CLEAR,102,224,15,12
 END
 
 IDD_MAP_FILE DIALOGEX 0, 0, 120, 640
@@ -955,59 +1035,62 @@ BEGIN
     CTEXT           "",IDC_MAP_SCRIPT_NAME_PRINT,38,16,70,11,SS_CENTERIMAGE | SS_SUNKEN
     LTEXT           "«·≈”„",IDC_STATIC,13,17,20,8
     GROUPBOX        "",IDC_STATIC,3,89,114,190
-    LTEXT           "ÕÃ„ «·Œ·Ì…",IDC_STATIC,11,114,34,8
+    LTEXT           "ÕÃ„ «·Œ·Ì…",IDC_STATIC,11,114,30,8
     LTEXT           "«· ÷«—Ì”",IDC_STATIC,11,102,40,8
-    LTEXT           "«·√⁄·Ï",IDC_STATIC,11,127,19,8
+    LTEXT           "«·√⁄·Ï",IDC_STATIC,11,127,15,8
     RTEXT           "0.00 „ —",IDC_STATIC_VIEW_RADIUS,69,101,40,8,0,WS_EX_RIGHT
     RTEXT           "0.00 „ —",IDC_STATIC_WORLD_SCALE,66,114,43,8,0,WS_EX_RIGHT
     RTEXT           "0.00 „ —",IDC_STATIC_MAX_HEIGHT,56,126,53,8,0,WS_EX_RIGHT
     PUSHBUTTON      "€Ì— ‰ﬁÿ… «·»œ«Ì…",IDC_BUTTON_CHANGE_BASEXY,19,192,76,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    PUSHBUTTON      "≈Õ›Ÿ ﬂ‹",IDC_MAP_FILE_SAVEAS,67,68,40,12,BS_NOTIFY | BS_FLAT | WS_DISABLED
-    EDITTEXT        IDC_SAVEAS_FILENAME,13,50,94,13,ES_AUTOHSCROLL | WS_DISABLED
     PUSHBUTTON      "ÃœÌœ",IDC_MAP_FILE_NEW,9,32,30,12,BS_CENTER | BS_VCENTER | BS_FLAT
     PUSHBUTTON      "Õ›Ÿ ServerAttr",IDC_BUTTON_INIT_SHADOWMAP,22,339,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    GROUPBOX        "≈Œ ’«—« ",IDC_STATIC,3,291,114,142
+    GROUPBOX        "√œÊ« ",IDC_STATIC,3,291,114,142
     PUSHBUTTON      "Õ›Ÿ »Ì«‰«  «· ’«œ„",IDC_MAP_FILE_SAVE_COLLISION_DATA,22,357,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    GROUPBOX        "≈⁄œ«œ« ",IDC_STATIC,3,438,114,125
+    GROUPBOX        "Option",IDC_STATIC,3,438,114,125
     CONTROL         "≈ÿ«— ”·ﬂÌ",IDC_MAP_TERRAIN_OPTION_WIRE_FRAME,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,449,49,10
-    CONTROL         "‘»ﬂ… 10„ —",IDC_CHECK_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,449,51,10
+    CONTROL         "‘»ﬂ… 10 „ —",IDC_CHECK_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,449,49,10
     CONTROL         "‘»ﬂ… «·ÕœÊœ",IDC_CHECK_GRID2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,460,49,10
-    CONTROL         "›⁄· «·‘Œ’Ì…",IDC_CHECK_CHARACTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,482,52,10
-    PUSHBUTTON      " ‰ﬁ· (Alt+G)",IDC_BUTTON_GOTO,22,305,77,12,BS_CENTER | BS_VCENTER | BS_FLAT
-    CONTROL         "›⁄· «· ’«œ„",IDC_MAP_TERRAIN_OPTION_OBJECT_COLLISION,
+    CONTROL         "≈Œ—«Ã «·‘Œ’Ì…",IDC_CHECK_CHARACTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,482,49,10
+    PUSHBUTTON      "«‰ ﬁ«· (Alt+G)",IDC_BUTTON_GOTO,22,305,77,12,BS_CENTER | BS_VCENTER | BS_FLAT
+    CONTROL         "≈Œ—«Ã «· ’«œ„",IDC_MAP_TERRAIN_OPTION_OBJECT_COLLISION,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,504,71,10
-    CONTROL         "›⁄· «·ﬂ«∆‰« ",IDC_MAP_TERRAIN_OPTION_OBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,493,71,10
-    PUSHBUTTON      "≈⁄«œ…  ⁄ÌÌ‰ Œ—Ìÿ… Attr",IDC_MAP_FILE_SAVE_ATTRMAP,22,375,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    CONTROL         "›⁄· «·Ÿ·",IDC_MAP_TERRAIN_OPTION_OBJECT_SHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,515,80,10
-    PUSHBUTTON      " ÿ»Ìﬁ «·„·„” «·√”«”Ì",IDC_BUTTON_INIT_BASETEXTUREMAP,22,321,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    CONTROL         "‘»ﬂ… «· ’ÕÌÕ",IDC_CHECK_PATCH_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,460,52,10
-    CONTROL         "≈Œ—«Ã «·„Ì«Â",IDC_CHECK_WATER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,471,49,10
+    CONTROL         "≈Œ—«Ã «·ﬂ«∆‰",IDC_MAP_TERRAIN_OPTION_OBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,493,71,10
+    PUSHBUTTON      "≈⁄«œ… ÷»ÿ ”„«  «·Œ—Ìÿ…",IDC_MAP_FILE_SAVE_ATTRMAP,22,375,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    CONTROL         "≈Œ—«Ã «·Ÿ·",IDC_MAP_TERRAIN_OPTION_OBJECT_SHADOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,515,80,10
+    PUSHBUTTON      " ÿ»Ìﬁ «·Œ«„… «·√”«”Ì…",IDC_BUTTON_INIT_BASETEXTUREMAP,22,321,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    CONTROL         "‘»ﬂ… «· —ﬁÌ⁄",IDC_CHECK_PATCH_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,460,49,10
+    CONTROL         "≈Œ—«Ã «·„«¡",IDC_CHECK_WATER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,471,49,10
     CONTROL         "»Ê’·…",IDC_CHECK_COMPASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,471,54,10
-    PUSHBUTTON      "«Õ›Ÿ Atlasmap / Mini",IDC_BUTTON_SAVE_ATLAS,22,393,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Õ›Ÿ Atlasmap/mini",IDC_BUTTON_SAVE_ATLAS,22,393,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
     GROUPBOX        "‰ﬁÿ… «·»œ«Ì…",IDC_STATIC,9,141,101,72
-    CTEXT           "X",IDC_STATIC,20,157,8,8,SS_CENTERIMAGE | NOT WS_GROUP
-    CTEXT           "Y",IDC_STATIC,20,175,8,8,SS_CENTERIMAGE | NOT WS_GROUP
-    RTEXT           "0 ’„",IDC_STATIC_BASEX,35,157,64,8,0,WS_EX_RIGHT
-    RTEXT           "0 ’„",IDC_STATIC_BASEY,35,175,64,8,0,WS_EX_RIGHT
-    GROUPBOX        "„ €Ì—«  «·»Ì∆…",IDC_STATIC,9,220,101,51
-    CTEXT           "·Ì”",IDC_STATIC_ENVIRONMENT_SET,16,233,89,12,SS_CENTERIMAGE
-    PUSHBUTTON      " ⁄ÌÌ‰ „ €Ì—«  «·»Ì∆…",IDC_BUTTON_SELECTE_ENVIRONMENT_SET,19,250,73,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    CONTROL         " ÷«—Ì” Œ«—Ã",IDC_MAP_TERRAIN_OPTION_TERRAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,482,50,10
+    CTEXT           "‰ﬁÿ… «·»œ«Ì…",IDC_STATIC,20,157,8,8,SS_CENTERIMAGE | NOT WS_GROUP
+    CTEXT           "X",IDC_STATIC,20,175,8,8,SS_CENTERIMAGE | NOT WS_GROUP
+    RTEXT           "0 cm",IDC_STATIC_BASEX,35,157,64,8,0,WS_EX_RIGHT
+    RTEXT           "0 cm",IDC_STATIC_BASEY,35,175,64,8,0,WS_EX_RIGHT
+    GROUPBOX        "„ €Ì— «·»Ì∆…",IDC_STATIC,9,220,101,51
+    CTEXT           "NOT",IDC_STATIC_ENVIRONMENT_SET,16,233,89,12,SS_CENTERIMAGE
+    PUSHBUTTON      " ⁄ÌÌ‰ „ €Ì— «·»Ì∆…",IDC_BUTTON_SELECTE_ENVIRONMENT_SET,19,250,73,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    CONTROL         "≈Œ—«Ã «· ÷«—Ì”",IDC_MAP_TERRAIN_OPTION_TERRAIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,482,50,10
     PUSHBUTTON      "÷»ÿ «— ›«⁄ «· ÷«—Ì”",IDC_BUTTON_CHANGE_TERRAIN_HEIGHT,22,411,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
     CONTROL         "»Ê«»… ÊÂ„Ì…",IDC_MAP_TERRAIN_OPTION_FAKE_PORTAL_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,526,62,10
-    CONTROL         "„⁄—› «·»Ê«»«  «·ÊÂ„Ì…",IDC_MAP_TERRAIN_OPTION_FAKE_PORTAL_ID_LIST,
+    CONTROL         "„⁄—›«  «·»Ê«»… «·ÊÂ„Ì…",IDC_MAP_TERRAIN_OPTION_FAKE_PORTAL_ID_LIST,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,537,93,10
-    CONTROL         "„‰ÿﬁ… «·—«»ÿ…",IDC_MAP_TERRAIN_GUILD_AREA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,548,61,10
+    CONTROL         "„‰ÿﬁ… «·‰ﬁ«»…",IDC_MAP_TERRAIN_GUILD_AREA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,548,61,10
     GROUPBOX        "ŒÌ«—«  Œ«’…",IDC_STATIC,3,570,114,30
     CONTROL         " ‘›Ì— «·»Ì«‰« ",IDC_MAP_SPECIAL_OPTION_DATA_ENCRYPTION_ENABLE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,583,61,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,581,61,10
     CONTROL         "Õ›Ÿ  ·ﬁ«∆Ì",IDC_CHECK_AUTO_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,69,49,10
+    PUSHBUTTON      "≈€·«ﬁ",IDC_MAP_FILE_CLOSE,9,48,30,12,BS_CENTER | BS_VCENTER | BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "≈⁄«œ…  Õ„Ì·",IDC_MAP_FILE_RELOAD,44,48,30,12,BS_CENTER | BS_VCENTER | BS_NOTIFY | BS_FLAT
+    CONTROL         "‰”Œ «Õ Ì«ÿÌ  ·ﬁ«∆Ì",IDC_CHECK_AUTO_BACKUP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,69,49,10
+    PUSHBUTTON      " ’œÌ—",IDC_MAP_FILE_EXPORT,79,48,30,12,BS_CENTER | BS_VCENTER | BS_NOTIFY | BS_FLAT
 END
 
 IDD_MAP_OBJECT_DIRECTORY DIALOGEX 0, 0, 145, 37
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
-CAPTION "≈‰‘«¡ œ·Ì·"
+CAPTION "≈‰‘«¡ Œ«’Ì…"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     EDITTEXT        IDC_MAP_OBJECT_CREATE_DIRECTORY_PATH_NAME,36,3,106,12,ES_AUTOHSCROLL
@@ -1031,18 +1114,18 @@ BEGIN
     LTEXT           "‰Ê⁄ «·Œ«’Ì…",IDC_STATIC,138,26,47,8
 END
 
-IDD_MAP_OBJECT_PROPERTY_PAGE_TREE DIALOGEX 0, 0, 177, 205
+IDD_MAP_OBJECT_PROPERTY_PAGE_TREE DIALOG 0, 0, 177, 205
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,5,170,195
-    LTEXT           "„·› ‘Ã—…",IDC_STATIC,9,18,30,8
+    LTEXT           "„·› «·‘Ã—…",IDC_STATIC,9,18,30,8
     EDITTEXT        IDC_MAP_OBJECT_PROPERTY_TREE_FILE,9,31,157,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_OBJECT_PROPERTY_TREE_LOAD,116,15,50,12
-    LTEXT           "ÕÃ„ «·‘Ã—…",IDC_STATIC,18,58,16,8
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_OBJECT_PROPERTY_TREE_LOAD,116,15,50,12
+    LTEXT           "ÕÃ„ «·‘Ã—…",IDC_STATIC,9,58,32,8
     CONTROL         "Slider1",IDC_MAP_OBJECT_PROPERTY_TREE_SIZE,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,45,57,90,10
-    CTEXT           " »«Ì‰ ÕÃ„ «·‘Ã—…",IDC_STATIC,9,70,32,17
+    CTEXT           " €Ì— ÕÃ„ «·‘Ã—…",IDC_STATIC,9,70,32,17
     CONTROL         "Slider1",IDC_MAP_OBJECT_PROPERTY_TREE_SIZE_VARIATION,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,45,74,90,10
     CTEXT           "0",IDC_MAP_OBJECT_PROPERTY_TREE_SIZE_PRINT,137,57,30,10,SS_CENTERIMAGE | SS_SUNKEN
@@ -1057,8 +1140,8 @@ BEGIN
     GROUPBOX        "",IDC_STATIC,3,5,170,195
     LTEXT           "„·› «·„»‰Ï",IDC_STATIC,10,18,40,8
     EDITTEXT        IDC_MAP_OBJECT_PROPERTY_BUILDING_FILE,10,31,157,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_OBJECT_PROPERTY_BUILDING_LOAD,116,16,50,12
-    CONTROL         "«·Ÿ·",IDC_MAP_OBJECT_PROPERTY_BUILDING_SHADOW_FLAG,
+    PUSHBUTTON      " Õ„Ì·",IDC_MAP_OBJECT_PROPERTY_BUILDING_LOAD,116,16,50,12
+    CONTROL         "Ÿ·",IDC_MAP_OBJECT_PROPERTY_BUILDING_SHADOW_FLAG,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,55,42,10
 END
 
@@ -1095,26 +1178,26 @@ BEGIN
     PUSHBUTTON      "≈“«·… «·‰”ÌÃ",IDC_BUTTON_REMOVE_TEX,106,25,56,14,BS_CENTER | BS_VCENTER
 END
 
-IDD_OBJECT_MODEL_ATTACH_COLLISION_PAGE DIALOGEX 0, 0, 110, 186
+IDD_OBJECT_MODEL_ATTACH_COLLISION_PAGE DIALOG 0, 0, 110, 186
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
-    GROUPBOX        "»Ì«‰«  «·ﬂ‘› ⁄‰ «· ’«œ„",IDC_STATIC,4,4,101,178
-    LTEXT           "«·ÕÃ„",IDC_STATIC,15,92,15,8
+    GROUPBOX        "»Ì«‰«  ﬂ‘› «· ’«œ„",IDC_STATIC,4,4,101,178
+    LTEXT           "ÕÃ„",IDC_STATIC,15,92,15,8
     GROUPBOX        "«·‰Ê⁄",IDC_STATIC,8,18,92,36
-    CONTROL         "Ã”„ «·„Ã«·",IDC_COLLISION_PAGE_TYPE_BODY,"Button",BS_AUTORADIOBUTTON,15,29,58,10
-    CONTROL         "«·œ›«⁄ ⁄‰ «·„Ã«·",IDC_COLLISION_PAGE_TYPE_DEFENDING,
+    CONTROL         "ﬂ—… «·Ã”„",IDC_COLLISION_PAGE_TYPE_BODY,"Button",BS_AUTORADIOBUTTON,15,29,58,10
+    CONTROL         "ﬂ—… «·œ›«⁄",IDC_COLLISION_PAGE_TYPE_DEFENDING,
                     "Button",BS_AUTORADIOBUTTON,15,39,73,10
     CONTROL         "Slider1",IDC_COLLISION_PAGE_SIZE,"msctls_trackbar32",WS_TABSTOP,11,102,86,10
-    CTEXT           "À«» …",IDC_COLLISION_PAGE_SIZE_PRINT,36,91,58,9,SS_SUNKEN
+    CTEXT           "Static",IDC_COLLISION_PAGE_SIZE_PRINT,36,91,58,9,SS_SUNKEN
     GROUPBOX        "",IDC_STATIC,8,76,92,99
     COMBOBOX        IDC_COLLISION_PAGE_DATA_LIST,20,74,69,453,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "„Êﬁ⁄ X",IDC_STATIC,16,135,34,8
+    LTEXT           "„Ê÷⁄ X",IDC_STATIC,16,135,34,8
     EDITTEXT        IDC_COLLISION_PAGE_POSITION_X,51,133,41,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_COLLISION_PAGE_POSITION_Y,51,145,41,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_COLLISION_PAGE_POSITION_Z,51,157,41,12,ES_AUTOHSCROLL
-    LTEXT           "„Êﬁ⁄ Y",IDC_STATIC,16,147,34,8
-    LTEXT           "„Êﬁ⁄ Z",IDC_STATIC,16,159,34,8
+    LTEXT           "„Ê÷⁄ Y",IDC_STATIC,16,147,34,8
+    LTEXT           "„Ê÷⁄ Z",IDC_STATIC,16,159,34,8
     PUSHBUTTON      "≈œ—«Ã",IDC_COLLISION_PAGE_INSERT_DATA,13,58,40,12,BS_FLAT
     PUSHBUTTON      "„”Õ Ê«Õœ",IDC_COLLISION_PAGE_DELETE_ONE_DATA,56,58,40,12,BS_FLAT
     PUSHBUTTON      "1",IDC_COLLISION_PAGE_SIZE_TYPE_1,14,115,15,15
@@ -1126,14 +1209,14 @@ END
 
 IDD_DIALOG_NEWMAP DIALOGEX 0, 0, 209, 83
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Œ—Ìÿ… ÃœÌœ…"
+CAPTION "ÕœÀ ÃœÌœ"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,13,58,37,12,BS_FLAT
-    PUSHBUTTON      "≈·€«¡",IDCANCEL,57,58,37,12,BS_FLAT
-    LTEXT           "«·≈”„",IDC_STATIC,19,6,20,8
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,13,58,37,11,BS_FLAT
+    PUSHBUTTON      "≈·€«¡",IDCANCEL,57,58,37,11,BS_FLAT
+    LTEXT           "«·≈”„",IDC_STATIC,10,6,20,8
     EDITTEXT        IDC_EDIT_NEWMAP_NAME,55,4,128,12,ES_CENTER | ES_LOWERCASE | NOT WS_BORDER,WS_EX_STATICEDGE
-    LTEXT           "«·ÕÃ„",IDC_STATIC,19,21,18,8
+    LTEXT           "«·ÕÃ„",IDC_STATIC,10,21,16,8
     EDITTEXT        IDC_EDIT_NEWMAP_SIZEX,55,20,25,12,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
     CTEXT           "x",IDC_STATIC,86,21,8,8,SS_CENTERIMAGE
     EDITTEXT        IDC_EDIT_NEWMAP_SIZEY,99,20,25,12,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
@@ -1160,11 +1243,11 @@ BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
     LTEXT           "„·›",IDC_STATIC,8,14,12,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_EFFECT_FILE_NAME,23,12,115,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_ANIMATION_EVENT_EFFECT_LOAD,141,12,29,12
+    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_ANIMATION_EVENT_EFFECT_LOAD,141,12,29,11
     COMBOBOX        IDC_OBJECT_ANIMATION_EVENT_EFFECT_ATTACHING_BONE,28,53,118,510,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "≈—›«ﬁ «·⁄Ÿ«„",IDC_STATIC,15,42,147,37
     CONTROL         "Ì„ﬂ‰",IDC_OBJECT_ANIMATION_EVENT_EFFECT_ATTACHING_BONE_ENABLE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,41,38,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,42,38,10
     GROUPBOX        "„Êﬁ⁄",IDC_STATIC,15,80,147,29
     LTEXT           "X",IDC_STATIC,22,93,8,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_EFFECT_POSITION_X,30,91,30,13,ES_AUTOHSCROLL
@@ -1173,62 +1256,62 @@ BEGIN
     LTEXT           "Z",IDC_STATIC,114,93,8,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_EFFECT_POSITION_Z,122,91,30,13,ES_AUTOHSCROLL
     CONTROL         "«· «·Ì",IDC_OBJECT_ANIMATION_EVENT_EFFECT_ATTACHING_FOLLOWING,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,66,67,47,10
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,68,47,10
     CONTROL         " √ÀÌ— «·—”Ê„ «·„ Õ—ﬂ… ··ﬂ«∆‰ „” ﬁ·",IDC_OBJECT_ANIMATION_EVENT_EFFECT_INDEPENDENT,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,27,145,10
 END
 
-IDD_OBJECT_ANIMATION_EVENT_SOUND DIALOGEX 0, 0, 179, 120
+IDD_OBJECT_ANIMATION_EVENT_SOUND DIALOG 0, 0, 179, 120
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
     LTEXT           "„·›",IDC_STATIC,9,15,12,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_SOUND_FILE_NAME,8,27,161,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_ANIMATION_EVENT_SOUND_LOAD,115,12,54,12
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_ANIMATION_EVENT_SOUND_LOAD,115,13,54,11
 END
 
-IDD_OBJECT_ANIMATION_EVENT_ATTACK DIALOGEX 0, 0, 178, 119
+IDD_OBJECT_ANIMATION_EVENT_ATTACK DIALOG 0, 0, 178, 119
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
-    GROUPBOX        "»Ì«‰«  «·„Ã«·",IDC_STATIC,8,12,161,29
+    GROUPBOX        "»Ì«‰«  «·ﬂ—…",IDC_STATIC,8,12,161,29
     LTEXT           "X",IDC_STATIC,13,25,8,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_POSITION_X,21,23,24,13,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,48,25,8,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_POSITION_Y,56,23,25,13,ES_AUTOHSCROLL
     LTEXT           "Z",IDC_STATIC,84,25,8,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_POSITION_Z,92,23,25,13,ES_AUTOHSCROLL
-    LTEXT           "‰’› «·ﬁÿ—",IDC_STATIC,120,25,16,8
+    LTEXT           "Rad",IDC_STATIC,120,25,14,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_RADIUS,134,23,30,13,ES_AUTOHSCROLL
     GROUPBOX        "»Ì«‰«  «·ÂÃÊ„",IDC_STATIC,8,47,161,59
-    LTEXT           "«·Êﬁ  €Ì— «·„—∆Ì",IDC_STATIC,24,77,34,8
-    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_INVISIBLE_TIME,60,75,30,12,ES_AUTOHSCROLL
-    LTEXT           "«·ﬁÊ… «·Œ«—ÃÌ…",IDC_STATIC,17,90,42,8
-    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_EXTERNAL_FORCE,60,88,30,12,ES_AUTOHSCROLL
-    LTEXT           "‰Ê⁄ «·÷—»…",IDC_STATIC,21,60,13,8
+    LTEXT           "«·Êﬁ  €Ì— «·„—∆Ì",IDC_STATIC,14,77,46,8
+    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_INVISIBLE_TIME,62,75,30,12,ES_AUTOHSCROLL
+    LTEXT           "«·ﬁÊ… «·Œ«—ÃÌ…",IDC_STATIC,14,90,48,8
+    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_EXTERNAL_FORCE,62,88,30,12,ES_AUTOHSCROLL
+    LTEXT           "‰Ê⁄ «·÷—»",IDC_STATIC,13,60,26,8
     COMBOBOX        IDC_OBJECT_ANIMATION_EVENT_HIT_TYPE,39,58,40,378,CBS_DROPDOWNLIST | WS_TABSTOP
-    CONTROL         " „ﬂÌ‰ «·÷—»",IDC_OBJECT_ANIMATION_EVENT_HIT_PROCESS,
+    CONTROL         " ›⁄Ì· „⁄«·Ã… «·«’ÿœ«„",IDC_OBJECT_ANIMATION_EVENT_HIT_PROCESS,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,91,46,72,10
-    LTEXT           "„œ…",IDC_STATIC,105,77,13,8
-    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_DURATION,121,75,30,12,ES_AUTOHSCROLL
-    LTEXT           "‰Ê⁄ «·ÂÃÊ„",IDC_STATIC,89,60,33,8
+    LTEXT           "„œ…",IDC_STATIC,104,78,27,8
+    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_DURATION,133,75,30,12,ES_AUTOHSCROLL
+    LTEXT           "‰Ê⁄ «·ÂÃÊ„",IDC_STATIC,87,60,37,8
     COMBOBOX        IDC_OBJECT_ANIMATION_EVENT_ATTACK_TYPE,124,58,40,378,CBS_DROPDOWNLIST | WS_TABSTOP
-    LTEXT           "Õœ «·ÂÃÊ„",IDC_STATIC,105,89,13,8
-    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_HIT_LIMIT,121,88,30,12,ES_AUTOHSCROLL
+    LTEXT           "Õœ «·÷—»",IDC_STATIC,104,90,27,8
+    EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_ATTACK_HIT_LIMIT,133,88,30,12,ES_AUTOHSCROLL
 END
 
-IDD_OBJECT_ANIMATION_EVENT_SCREEN_WAVING DIALOGEX 0, 0, 179, 119
+IDD_OBJECT_ANIMATION_EVENT_SCREEN_WAVING DIALOG 0, 0, 179, 119
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
-    LTEXT           "„œ…",IDC_STATIC,24,15,27,8
+    LTEXT           "„œ…",IDC_STATIC,18,15,27,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_DURATION_TIME,57,14,96,12,ES_AUTOHSCROLL
-    LTEXT           "ﬁÊ…",IDC_STATIC,24,29,22,8
+    LTEXT           "ﬁÊ…",IDC_STATIC,18,29,22,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_POWER,57,28,96,12,ES_AUTOHSCROLL
-    CTEXT           "„œÏ «· √ÀÌ—",IDC_STATIC,22,46,15,16
+    CTEXT           " √ÀÌ— «·„œÏ",IDC_STATIC,16,46,28,16
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_AFFECTING_RANGE,57,47,96,12,ES_AUTOHSCROLL
 END
 
@@ -1237,7 +1320,7 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
-    LTEXT           "Ê«„÷",IDC_STATIC,75,55,28,8,NOT WS_GROUP
+    LTEXT           "Ê„Ì÷",IDC_STATIC,75,55,28,8,NOT WS_GROUP
 END
 
 IDD_OBJECT_ANIMATION_EVENT_CHARACTER_GLOWING DIALOG 0, 0, 178, 119
@@ -1245,7 +1328,7 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
-    LTEXT           "„ ÊÂÃ… «·‘Œ’Ì…",IDC_STATIC,59,56,61,8
+    LTEXT           " ÊÂÃ «·‘Œ’Ì…",IDC_STATIC,59,56,61,8
 END
 
 IDD_DIALOG_PERSPECTIVE DIALOGEX 0, 0, 187, 61
@@ -1257,7 +1340,7 @@ BEGIN
     CONTROL         "Slider1",IDC_DIALOG_PERSPECTIVE_FOV,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,10,88,11
     CTEXT           "À«» ",IDC_DIALOG_PERSPECTIVE_FOV_PRINT,147,10,31,9,0,WS_EX_STATICEDGE
     CTEXT           "„”«›… ﬁ—Ì»…",IDC_STATIC,9,28,47,8
-    CTEXT           "«·„”«›… «·»⁄Ìœ…",IDC_STATIC,11,44,42,8
+    CTEXT           "«·„”«›… «·»⁄Ìœ…",IDC_STATIC,14,44,42,8
     CONTROL         "Slider1",IDC_DIALOG_PERSPECTIVE_NEAR_DISTANCE,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,57,27,88,11
     CTEXT           "À«» ",IDC_DIALOG_PERSPECTIVE_NEAR_DISTANCE_PRINT,147,27,31,9,0,WS_EX_STATICEDGE
@@ -1266,19 +1349,19 @@ BEGIN
     CTEXT           "À«» ",IDC_DIALOG_PERSPECTIVE_FAR_DISTANCE_PRINT,147,44,31,9,0,WS_EX_STATICEDGE
 END
 
-IDD_OBJECT_MODEL_TYPE_CHARACTER_PAGE DIALOGEX 0, 0, 101, 148
+IDD_OBJECT_MODEL_TYPE_CHARACTER_PAGE DIALOG 0, 0, 101, 148
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
-    LTEXT           "⁄œœ «·√Ã“«¡",IDC_STATIC,7,5,35,8
-    EDITTEXT        IDC_OBJECT_MODEL_CHARACTER_PART_COUNT,44,4,50,12,ES_AUTOHSCROLL
-    GROUPBOX        "«·÷—»… «·«› —«÷Ì…",IDC_STATIC,5,20,91,110
-    LTEXT           "«·’Ê ",IDC_STATIC,12,31,22,8
+    LTEXT           "⁄œœ «·√Ã“«¡",IDC_STATIC,6,6,35,8
+    EDITTEXT        IDC_OBJECT_MODEL_CHARACTER_PART_COUNT,45,4,50,12,ES_AUTOHSCROLL
+    GROUPBOX        "«·÷—» «·«› —«÷Ì",IDC_STATIC,5,20,91,110
+    LTEXT           "’Ê ",IDC_STATIC,12,31,22,8
     EDITTEXT        IDC_OBJECT_MODEL_CHARACTER_SOUND_NAME,10,42,81,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_MODEL_CHARACTER_LOAD_SOUND,50,29,40,12,BS_FLAT
-    LTEXT           " √ÀÌ—",IDC_STATIC,12,56,19,8
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_MODEL_CHARACTER_LOAD_EFFECT,52,113,40,12,BS_FLAT
-    PUSHBUTTON      "≈Œ »«— «·÷—»",IDC_OBJECT_MODEL_CHARACTER_HIT_TEST,28,133,43,12,BS_FLAT
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_MODEL_CHARACTER_LOAD_SOUND,50,29,40,12,BS_FLAT
+    LTEXT           " √ÀÌ—",IDC_STATIC,12,55,19,8
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_MODEL_CHARACTER_LOAD_EFFECT,52,113,40,12,BS_FLAT
+    PUSHBUTTON      "«Œ »«— «·÷—»",IDC_OBJECT_MODEL_CHARACTER_HIT_TEST,30,132,40,12,BS_FLAT
     LISTBOX         IDC_OBJECT_MODEL_CHARACTER_EFFECT_NAME_LIST,5,65,90,44,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
     PUSHBUTTON      "„”Õ Ê«Õœ",IDC_OBJECT_MODEL_CHARACTER_CLEAR_ONE_EFFECT,9,113,40,12,BS_FLAT
 END
@@ -1295,56 +1378,58 @@ BEGIN
     CONTROL         "„—»⁄ ‘ﬂ· «·›—‘«…",IDC_MAP_ATTR_BRUSH_SHAPE_SQUARE,
                     "Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,27,23,17,19
     CONTROL         "Slider1",IDC_MAP_ATTR_SCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,31,53,58,10
-    LTEXT           "„ﬁÌ«”",IDC_STATIC,8,53,24,8
+    LTEXT           "„ﬁÌ«”",IDC_STATIC,5,53,19,8
     EDITTEXT        IDC_MAP_ATTR_SCALE_PRINT,93,51,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
     LTEXT           "‘ﬂ· «·›—‘«…",IDC_STATIC,6,7,43,8
     EDITTEXT        IDC_MAP_ATTR_BRUSH_SHAPE_PRINT,63,5,49,12,ES_CENTER | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
     GROUPBOX        "—ﬁ„ «·”„…",IDC_STATIC,9,107,101,84
-    CONTROL         "·« Õ—ﬂ…",IDC_MAP_ATTR0_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,121,34,10
-    CONTROL         "„«¡ ··’Ìœ",IDC_MAP_ATTR1_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,64,121,41,10
-    CONTROL         "„‰ÿﬁ… Õ„«Ì… (œ«∆—…)",IDC_MAP_ATTR2_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,140,70,10
-    CONTROL         "3",IDC_MAP_ATTR3_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,140,16,10
-    GROUPBOX        "›—‘«… „‰ÿﬁ… «·ÊÕÊ‘",IDC_STATIC,1,255,117,333
+    CONTROL         "·« Õ—ﬂ…",IDC_MAP_ATTR0_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,120,34,10
+    CONTROL         "„«¡ ··’Ìœ",IDC_MAP_ATTR1_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,120,34,10
+    CONTROL         "„‰ÿﬁ… Õ„«Ì… (œ«∆—…)",IDC_MAP_ATTR2_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,138,42,10
+    CONTROL         "3",IDC_MAP_ATTR3_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,138,19,10
+    CONTROL         "4",IDC_MAP_ATTR4_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,156,19,10
+    CONTROL         "5",IDC_MAP_ATTR5_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,156,19,10
+    CONTROL         "6",IDC_MAP_ATTR6_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,174,19,10
+    CONTROL         "7",IDC_MAP_ATTR7_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,174,19,10
+    GROUPBOX        "X",IDC_STATIC,1,255,117,333
     PUSHBUTTON      "≈“«·…",IDC_BUTTON_MONSTERAREAINFO_REMOVE,61,548,42,14,BS_CENTER | BS_VCENTER | BS_FLAT
-    GROUPBOX        "«·„Õœœ…",IDC_STATIC,1,367,117,202
-    GROUPBOX        "ÃœÌœ",IDC_STATIC,1,287,117,74
+    GROUPBOX        "X",IDC_STATIC,1,367,117,202
+    GROUPBOX        "Y",IDC_STATIC,1,287,117,74
     EDITTEXT        IDC_EDIT_MONSTERAREAINFO_ORIGINX,33,450,43,14,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_RIGHT
-    LTEXT           "X",IDC_STATIC,22,453,8,8
+    LTEXT           "“⁄Ì„",IDC_STATIC,22,453,8,8
     LTEXT           "Y",IDC_STATIC,22,473,8,8
     EDITTEXT        IDC_EDIT_MONSTERAREAINFO_ORIGINY,33,469,43,14,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_RIGHT
     EDITTEXT        IDC_EDIT_MONSTERAREAINFO_SIZEX,31,504,48,14,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_RIGHT
-    LTEXT           "X",IDC_STATIC,20,507,8,8
-    LTEXT           "Y",IDC_STATIC,20,527,8,8
+    LTEXT           "«·« Ã«Â",IDC_STATIC,20,507,8,8
+    LTEXT           "„ —",IDC_STATIC,20,527,8,8
     EDITTEXT        IDC_EDIT_MONSTERAREAINFO_SIZEY,31,523,48,14,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_RIGHT
     COMBOBOX        IDC_COMBO_MonsterName,1,300,117,270,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "“⁄Ì„",IDC_STATIC,18,322,34,8
-    EDITTEXT        IDC_EDIT_MONSTERAREAINFO_MONSTERCOUNT,64,320,50,14,ES_NUMBER,WS_EX_RIGHT
-    CONTROL         "≈ŸÂ«— ﬂ«›… „⁄·Ê„«  „‰ÿﬁ… «·ÊÕ‘",IDC_CHECK_SHOW_ALLMONSTERAREAINFO,
-                    "Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | WS_TABSTOP,4,573,114,10
-    LTEXT           "«·« Ã«Â",IDC_STATIC,16,343,29,8
+    LTEXT           "„ —",IDC_STATIC,17,322,34,8
+    EDITTEXT        IDC_EDIT_MONSTERAREAINFO_MONSTERCOUNT,69,320,50,14,ES_NUMBER,WS_EX_RIGHT
+    CONTROL         "≈ŸÂ«— ﬂ· „⁄·Ê„«  „‰ÿﬁ… «·ÊÕÊ‘",IDC_CHECK_SHOW_ALLMONSTERAREAINFO,
+                    "Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | WS_TABSTOP,9,573,104,10
+    LTEXT           "„ —",IDC_STATIC,17,343,29,8
     COMBOBOX        IDC_COMBO_DIRECTION,58,339,61,114,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "„ —",IDC_STATIC,82,453,19,8
-    LTEXT           "„ —",IDC_STATIC,82,472,19,8
-    LTEXT           "„ —",IDC_STATIC,84,507,19,8
-    LTEXT           "„ —",IDC_STATIC,84,526,19,8
-    GROUPBOX        "«·„—ﬂ“",IDC_STATIC,14,437,89,52
-    GROUPBOX        "«·ÕÃ„",IDC_STATIC,14,492,89,51
-    LTEXT           "“⁄Ì„",IDC_STATIC,15,402,34,8
-    EDITTEXT        IDC_EDIT_SELECTEDMONSTERAREAINFO_MONSTERCOUNT,57,398,56,14,ES_AUTOHSCROLL,WS_EX_RIGHT
-    LTEXT           "«·« Ã«Â",IDC_STATIC,15,421,29,8
+    LTEXT           "«·„—ﬂ“",IDC_STATIC,82,453,19,8
+    LTEXT           "«·ÕÃ„",IDC_STATIC,82,472,19,8
+    LTEXT           "“⁄Ì„",IDC_STATIC,84,507,19,8
+    LTEXT           "«·« Ã«Â",IDC_STATIC,84,526,19,8
+    GROUPBOX        "„—ﬂ“",IDC_STATIC,14,437,89,52
+    GROUPBOX        "ÕÃ„",IDC_STATIC,14,492,89,51
+    LTEXT           "„ —",IDC_STATIC,15,402,34,8
+    EDITTEXT        IDC_EDIT_SELECTEDMONSTERAREAINFO_MONSTERCOUNT,63,398,56,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Y-„ﬁÌ«”",IDC_STATIC,15,421,29,8
     COMBOBOX        IDC_COMBO_SELECTEDMONSTERAREAINFO_DIRECTION,53,417,66,114,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
     PUSHBUTTON      "Õ›Ÿ",IDC_BUTTON_SAVE,14,548,42,14,BS_CENTER | BS_VCENTER | BS_FLAT
     CONTROL         " ⁄œÌ·",IDC_CHECK_MONSTERAREAINFO_ADD,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,9,267,98,15
-    COMBOBOX        IDC_COMBO_SelectedMonsterName,4,380,110,270,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SelectedMonsterName,1,380,117,270,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
     CONTROL         "Slider1",IDC_MAP_ATTR_SCALEY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,31,75,58,10
-    LTEXT           "Y-„ﬁÌ«”",IDC_STATIC,4,75,28,8
+    LTEXT           "„ﬁÌ«” Y",IDC_STATIC,5,75,24,8
     EDITTEXT        IDC_MAP_ATTR_SCALEY_PRINT,93,73,21,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
-    CONTROL         "Slider1",IDC_SLIDER_ATTR,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | WS_TABSTOP,13,158,77,28
-    CTEXT           "",IDC_ATTR_NUM,94,164,12,14,SS_CENTERIMAGE
-    GROUPBOX        " — Ì» «·ÊÕ‘ «·ÕœÀ",IDC_STATIC,5,593,109,121
+    GROUPBOX        " — Ì» ÕœÀ «·ÊÕÊ‘",IDC_STATIC,5,593,109,121
     LISTBOX         IDC_LIST1,11,606,97,44,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "Õ›Ÿ",IDC_MAP_ATTR_SAVE_ARRANGE,11,651,45,12,BS_CENTER | BS_VCENTER | BS_FLAT
-    PUSHBUTTON      "≈“«·…",IDC_MAP_ATTR_DELETE_ARRANGE,63,651,45,12,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Õ›Ÿ",IDC_MAP_ATTR_SAVE_ARRANGE,11,651,45,11,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "≈“«·…",IDC_MAP_ATTR_DELETE_ARRANGE,63,651,45,11,BS_CENTER | BS_VCENTER | BS_FLAT
 END
 
 IDD_DIALOG_GOTO DIALOGEX 0, 0, 107, 43
@@ -1352,32 +1437,32 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "≈‰ ﬁ· ≈·Ï"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,13,24,37,13
-    PUSHBUTTON      "≈·€«¡",IDCANCEL,57,24,37,13
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,13,24,37,11
+    PUSHBUTTON      "≈·€«¡",IDCANCEL,57,24,37,11
     EDITTEXT        IDC_EDIT_GOTO_POSITION_X,10,7,35,12,ES_CENTER | ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
     CTEXT           "x",-1,50,8,8,8,SS_CENTERIMAGE
     EDITTEXT        IDC_EDIT_GOTO_POSITION_Y,62,7,35,12,ES_CENTER | NOT WS_BORDER,WS_EX_STATICEDGE
 END
 
-IDD_OBJECT_MODEL_TYPE_EQUIPMENT_PAGE DIALOGEX 0, 0, 101, 178
+IDD_OBJECT_MODEL_TYPE_EQUIPMENT_PAGE DIALOG 0, 0, 101, 178
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
-    LTEXT           "«·’Ê ",IDC_STATIC,10,33,22,8
+    LTEXT           "’Ê ",IDC_STATIC,10,33,22,8
     EDITTEXT        IDC_OBJECT_MODEL_EQUIPMENT_SOUND_NAME,9,45,84,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_SOUND,53,31,40,12,BS_FLAT
-    LTEXT           " √ÀÌ—",IDC_STATIC,9,59,19,8
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_EFFECT,51,108,43,13,BS_FLAT
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_SOUND,53,31,40,12,BS_FLAT
+    LTEXT           " √ÀÌ—",IDC_STATIC,9,60,19,8
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_EFFECT,53,108,40,12,BS_FLAT
     LISTBOX         IDC_OBJECT_MODEL_EQUIPMENT_EFFECT_LIST,5,68,91,37,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
-    PUSHBUTTON      "„”Õ Ê«Õœ",IDC_OBJECT_MODEL_EQUIPMENT_CLEAR_ONE_EFFECT,6,108,42,13,BS_FLAT
+    PUSHBUTTON      "„”Õ Ê«Õœ",IDC_OBJECT_MODEL_EQUIPMENT_CLEAR_ONE_EFFECT,9,108,40,12,BS_FLAT
     LTEXT           "√ÌﬁÊ‰…",IDC_STATIC,5,127,15,8
     EDITTEXT        IDC_OBJECT_MODEL_EQUIPMENT_ICON_IMAGE_NAME,5,137,91,12,ES_AUTOHSCROLL
-    LTEXT           "„ÊœÌ· «·≈”ﬁ«ÿ",IDC_STATIC,5,152,38,8
+    LTEXT           "≈›·«  «·‰„Ê–Ã",IDC_STATIC,5,152,38,8
     EDITTEXT        IDC_OBJECT_MODEL_EQUIPMENT_DROP_MODEL_NAME,5,162,91,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_ICON_IMAGE,56,124,40,12,BS_FLAT
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_DROP_MODEL,56,149,40,12,BS_FLAT
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_ICON_IMAGE,56,125,40,12,BS_FLAT
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_MODEL_EQUIPMENT_LOAD_DROP_MODEL,56,150,40,12,BS_FLAT
     GROUPBOX        "»Ì«‰«  «·÷—»",IDC_STATIC,4,20,93,104
-    LTEXT           "«·‰Ê⁄",IDC_STATIC,8,5,18,8
+    LTEXT           "«·‰Ê⁄",IDC_STATIC,7,6,18,8
     COMBOBOX        IDC_OBJECT_MODEL_EQUIPMENT_TYPE,31,3,63,584,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
 END
 
@@ -1386,9 +1471,9 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "ﬂ«∆‰",IDC_STATIC,4,4,101,178
-    LTEXT           "„·› «·„ÊœÌ·",IDC_STATIC,10,18,35,8
+    LTEXT           "„·› «·‰„Ê–Ã",IDC_STATIC,10,18,35,8
     EDITTEXT        IDD_OBJECT_PAGE_MODEL_FILE,8,30,93,12,ES_AUTOHSCROLL | ES_READONLY
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_PAGE_LOAD_MODEL,61,15,40,12,BS_FLAT
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_PAGE_LOAD_MODEL,61,15,40,12,BS_FLAT
 END
 
 IDD_EFFECT_LIGHT DIALOGEX 0, 0, 120, 323
@@ -1396,7 +1481,7 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
     GROUPBOX        "«··Ê‰",IDC_STATIC,3,54,114,72
-    LTEXT           "„ÕÌÿ",IDC_STATIC,14,66,19,8
+    LTEXT           "„ÕÌÿ",IDC_STATIC,8,66,27,8
     LTEXT           "„‰ ‘—",IDC_STATIC,11,80,23,8
     CONTROL         "",IDC_EFFECT_LIGHT_AMBIENT,"Static",SS_BLACKFRAME | SS_NOTIFY,40,64,40,10
     CONTROL         "",IDC_EFFECT_LIGHT_DIFFUSE,"Static",SS_BLACKFRAME | SS_NOTIFY,40,79,40,10
@@ -1405,29 +1490,29 @@ BEGIN
     CONTROL         "Slider1",IDC_EFFECT_LIGHT_DIFFUSE_ALPHA,
                     "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,81,80,35,10
     GROUPBOX        "«·„œÏ",IDC_STATIC,3,129,114,122
-    EDITTEXT        IDC_EFFECT_LIGHT_RANGE,36,141,66,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EFFECT_LIGHT_RANGE,36,140,66,12,ES_AUTOHSCROLL
     GROUPBOX        "«· ÊÂÌ‰",IDC_STATIC,3,255,114,64
-    LTEXT           "À«» ",IDC_STATIC,16,268,16,8
-    LTEXT           "ŒÿÌ",IDC_STATIC,14,284,19,8
-    LTEXT           "„—»⁄",IDC_STATIC,16,300,13,8
+    LTEXT           "À«» ",IDC_STATIC,8,268,30,8
+    LTEXT           "ŒÿÌ",IDC_STATIC,12,284,21,8
+    LTEXT           "„—»⁄",IDC_STATIC,11,300,24,8
     EDITTEXT        IDC_EFFECT_LIGHT_ATT0,42,267,67,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EFFECT_LIGHT_ATT1,42,283,67,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_EFFECT_LIGHT_ATT2,42,299,67,12,ES_AUTOHSCROLL
-    LTEXT           "«·√⁄·Ï",IDC_STATIC,11,143,19,12
+    LTEXT           "«·√⁄·Ï",IDC_STATIC,11,141,19,12
     CONTROL         "",IDD_EFFECT_LIGHT_RANGE_GRAPH,"Static",SS_BLACKFRAME | SS_NOTIFY,8,168,102,67
     GROUPBOX        "„œ…",IDC_STATIC,3,0,114,50
     EDITTEXT        IDC_EFFECT_LIGHT_DURATION,14,15,92,12,ES_AUTOHSCROLL
-    LTEXT           "«·√⁄·Ï",IDC_STATIC,9,158,19,12,0,WS_EX_TRANSPARENT
+    LTEXT           "«·√⁄·Ï",IDC_STATIC,6,158,19,12
     LTEXT           "0",IDC_STATIC,7,239,19,12
     LTEXT           "[«·„—Ã⁄] \n «·„ÕÌÿ: ·« ÌÊÃœ  √ÀÌ— ⁄«œÌ \n «·«‰ ‘«—: «· √ÀÌ— «·⁄«œÌ „ «Õ",IDC_STATIC,9,95,101,26
     CONTROL         " ﬂ—«—",IDC_EFFECT_LIGHT_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,32,30,12
     EDITTEXT        IDC_EFFECT_LIGHT_LOOP_COUNT,47,32,59,12,ES_AUTOHSCROLL
 END
 
-IDD_COLOR_ANIMATION_DIALOG DIALOGEX 0, 0, 299, 59
+IDD_COLOR_ANIMATION_DIALOG DIALOG 0, 0, 299, 59
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "·Ê‰ «·√‰„Ì‘‰"
-FONT 10, "Tahoma", 0, 0, 0x0
+CAPTION " Õ—Ìﬂ «··Ê‰"
+FONT 10, "Tahoma"
 BEGIN
     CONTROL         "",IDC_RGB_BAR,"Static",SS_BLACKFRAME | SS_NOTIFY | NOT WS_VISIBLE,12,12,223,11
     CONTROL         "Slider1",IDC_COLOR_ANIMATION_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,245,34,40,8
@@ -1459,9 +1544,9 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION " ÂÌ∆… «·‰”ÌÃ «·√”«”Ì…"
 FONT 9, "Tahoma", 0, 0, 0x0
 BEGIN
-    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,105,50,51,13
-    PUSHBUTTON      "≈·€«¡",IDCANCEL,105,71,51,13
-    CTEXT           "»⁄œ  ÕœÌœ \n „«œ… √”«”Ì… · ÿ»ÌﬁÂ« \n «÷€ÿ ⁄·Ï «·“— '„Ê«›ﬁ'",IDC_STATIC,89,13,78,32
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,105,50,37,11
+    PUSHBUTTON      "≈·€«¡",IDCANCEL,105,71,37,11
+    CTEXT           "»⁄œ  ÕœÌœ \n „«œ… √”«”Ì… · ÿ»ÌﬁÂ« \n «÷€ÿ ⁄·Ï «·“— '„Ê«›ﬁ'",IDC_STATIC,89,13,73,32
     CONTROL         "List2",IDC_LIST_TEXTURE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,3,84,93
 END
 
@@ -1507,19 +1592,19 @@ BEGIN
     EDITTEXT        IDC_FLY_HOMING_MAX_ANGLE,65,180,41,12,ES_AUTOHSCROLL
     LTEXT           "«·Ã«–»Ì…",IDC_STATIC,12,200,23,8
     EDITTEXT        IDC_FLY_GRAVITY,65,198,41,12,ES_AUTOHSCROLL
-    LTEXT           "«·« Ã«Â «·„” „—",IDC_STATIC,12,221,26,19
+    LTEXT           "«·« Ã«Â «·„” „—",IDC_STATIC,5,225,45,8
     EDITTEXT        IDC_FLY_ACCEL_FRONT,45,223,29,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_FLY_ANGLE_FRONT,78,223,29,12,ES_AUTOHSCROLL
-    LTEXT           "«·« Ã«Â «·Ã«‰»Ì",IDC_STATIC,13,240,22,8
+    LTEXT           "«·« Ã«Â «·Ã«‰»Ì",IDC_STATIC,7,237,34,8
     EDITTEXT        IDC_FLY_ACCEL_SIDE,45,236,29,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_FLY_ANGLE_SIDE,78,235,29,12,ES_AUTOHSCROLL
-    LTEXT           "« Ã«Â ·√”›·",IDC_STATIC,15,251,16,8
+    LTEXT           "« Ã«Â ·√”›·",IDC_STATIC,8,251,30,8
     EDITTEXT        IDC_FLY_ACCEL_GRAVITY,45,249,29,12,ES_AUTOHSCROLL
     EDITTEXT        IDC_FLY_ANGLE_GRAVITY,78,249,29,12,ES_AUTOHSCROLL
     GROUPBOX        "«” „—«— «· ”«—⁄ Ê«·”—⁄…",IDC_STATIC,6,212,107,54
     GROUPBOX        " —ﬂÌ»  √ÀÌ— «·«‰›Ã«—",IDC_STATIC,6,345,107,45
     EDITTEXT        IDC_FLY_BOMB_RANGE,10,357,26,13,ES_AUTOHSCROLL
-    LTEXT           "‰ÂÃ √ﬁ· „‰ ”„",IDC_STATIC,43,359,55,8
+    LTEXT           "‰ÂÃ √ﬁ· „‰ ”„",IDC_STATIC,37,359,66,8
     EDITTEXT        IDC_FLY_BOMB_EFFECT,10,373,73,13,ES_AUTOHSCROLL
     PUSHBUTTON      "Õ„¯ˆ·",IDC_FLY_LOAD_BOMB_EFFECT,88,374,21,12,BS_FLAT
     CONTROL         "-_-",IDC_FLY_TAB_NEW_EFFECT,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,4,409,14,15
@@ -1544,9 +1629,9 @@ BEGIN
     EDITTEXT        IDC_FLY_VALUE3,65,631,41,12,ES_AUTOHSCROLL
     CONTROL         "·Â –Ì·",IDC_FLY_TAB_HAS_TAIL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,528,43,10
     GROUPBOX        "",IDC_STATIC_FLY4,9,535,102,63,BS_FLAT
-    LTEXT           "«·ÿÊ·",IDC_STATIC_FLY1,14,578,23,8
+    LTEXT           "«·ÿÊ·",IDC_STATIC_FLY1,10,578,23,8
     LTEXT           "«··Ê‰",IDC_STATIC_FLY2,14,562,18,8
-    LTEXT           "„ﬁ«”",IDC_STATIC_FLY3,63,585,20,8
+    LTEXT           "„ﬁ«”",IDC_STATIC_FLY3,67,585,15,8
     CONTROL         "«·–Ì· «·À·«ÀÌ",IDC_FLY_TAB_TAIL_TRI_RADIO,"Button",BS_AUTORADIOBUTTON,9,544,56,10
     CONTROL         "–Ì· „—»⁄",IDC_FLY_TAB_TAIL_RECT_RADIO,"Button",BS_AUTORADIOBUTTON,65,543,53,10
     EDITTEXT        IDC_FLY_TAB_TAIL_SIZE,83,583,27,12,ES_AUTOHSCROLL
@@ -1560,27 +1645,27 @@ BEGIN
     GROUPBOX        "„⁄·Ê„«  «·«’ÿœ«„ «·≈÷«›Ì…",IDC_STATIC,6,267,107,74
     CONTROL         "⁄‰œ «·«’ÿœ«„ »«·Œ·›Ì…",IDC_FLY_TAB_HIT_ON_BACKGROUND,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,278,108,10
-    LTEXT           "Freq. «·ÊÕ‘ petr",IDC_STATIC,14,311,60,8
+    LTEXT           "Freq. «·ÊÕ‘ petr",IDC_STATIC,5,311,60,8
     EDITTEXT        IDC_FLY_TAB_PIERCE_COUNT,82,310,27,12,ES_AUTOHSCROLL
     CONTROL         "⁄‰œ «·«’ÿœ«„ „⁄ ÊÕ‘ ¬Œ— €Ì— „” Âœ›",IDC_FLY_TAB_HIT_ON_ANOTHER_MONSTER,
                     "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,289,99,20
     CONTROL         "«·Õ›«Ÿ ⁄·Ï  „«À· «·„ÕÊ— Z",IDC_FLY_TAB_MAINTAIN_PARALLEL,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,77,98,10
-    LTEXT           "ÕÃ„ «·ﬂ—… «” À‰«∆Ì",IDC_STATIC,12,326,64,8
+    LTEXT           "ÕÃ„ «·ﬂ—… «” À‰«∆Ì",IDC_STATIC,0,326,79,8
     EDITTEXT        IDC_FLY_TAB_COLLISION_SPHERE_RADIUS,82,323,27,12,ES_AUTOHSCROLL
 END
 
-IDD_OBJECT_ANIMATION_EVENT_FLY DIALOGEX 0, 0, 178, 119
+IDD_OBJECT_ANIMATION_EVENT_FLY DIALOG 0, 0, 178, 119
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
     LTEXT           "„·›",IDC_STATIC,8,19,12,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_FLY_FILE_NAME,23,17,112,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_ANIMATION_EVENT_FLY_LOAD,138,17,29,12
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_ANIMATION_EVENT_FLY_LOAD,138,17,29,11
     COMBOBOX        IDC_OBJECT_ANIMATION_EVENT_FLY_ATTACHING_BONE,23,49,132,510,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "≈—›«ﬁ «·⁄Ÿ«„",IDC_STATIC,9,36,158,35
-    CONTROL         "Ì„ﬂ‰",IDC_OBJECT_ANIMATION_EVENT_FLY_ATTACHING_BONE_ENABLE,
+    CONTROL         " ›⁄Ì·",IDC_OBJECT_ANIMATION_EVENT_FLY_ATTACHING_BONE_ENABLE,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,36,38,10
     GROUPBOX        "„Êﬁ⁄",IDC_STATIC,9,77,158,29
     LTEXT           "X",IDC_STATIC,20,90,8,8
@@ -1601,16 +1686,16 @@ BEGIN
     PUSHBUTTON      "ÃœÌœ",IDC_MAP_OBJECT_PROPERTY_AMBIENCE_FILE_NEW,82,15,40,11,BS_FLAT
     PUSHBUTTON      "Õ–›",IDC_MAP_OBJECT_PROPERTY_AMBIENCE_FILE_DELETE,125,15,40,11,BS_FLAT
     GROUPBOX        "Êﬁ  «· ‘€Ì·",IDC_STATIC,10,81,157,38
-    LTEXT           "«·›«’· «·“„‰Ì",IDC_STATIC,18,93,24,8
+    LTEXT           "›«’·",IDC_STATIC,18,93,24,8
     EDITTEXT        IDC_MAP_OBJECT_PROPERTY_AMBIENCE_INTERVAL,105,90,35,12,ES_AUTOHSCROLL
-    LTEXT           " »«Ì‰ «·›«’· «·“„‰Ì",IDC_STATIC,18,104,54,8
+    LTEXT           " €Ì— «·›«’·",IDC_STATIC,18,104,54,8
     EDITTEXT        IDC_MAP_OBJECT_PROPERTY_AMBIENCE_INTERVAL_VARIATION,105,103,35,12,ES_AUTOHSCROLL
-    LTEXT           "(À«‰Ì…)",IDC_STATIC,143,93,19,8
-    LTEXT           "(À«‰Ì…)",IDC_STATIC,143,105,19,8
+    LTEXT           "(sec)",IDC_STATIC,143,93,19,8
+    LTEXT           "(sec)",IDC_STATIC,143,105,19,8
     COMBOBOX        IDC_MAP_OBJECT_PROPERTY_AMBIENCE_PLAY_TYPE,55,64,112,224,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
     LTEXT           "‰Ê⁄ «· ‘€Ì·",IDC_STATIC,12,66,34,8
     EDITTEXT        IDC_MAP_OBJECT_PROPERTY_AMBIENCE_MAX_VOLUME_AREA_PERCENTAGE,87,150,50,12,ES_AUTOHSCROLL
-    GROUPBOX        "«·Õœ «·√ﬁ’Ï ·ÕÃ„ «·„”«Õ…",IDC_STATIC,10,123,157,71
+    GROUPBOX        "„‰ÿﬁ… «ﬁ’Ï ÕÃ„",IDC_STATIC,10,123,157,71
     LTEXT           "%",IDC_STATIC,140,152,8,8
     CONTROL         IDB_AMBIENCE_DISTANCE,IDC_STATIC,"Static",SS_BITMAP,27,134,54,57
 END
@@ -1620,7 +1705,7 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
-    LTEXT           "≈÷Â«— «·‘Œ’Ì…",IDC_STATIC,62,55,53,8
+    LTEXT           "≈ŸÂ«— «·‘Œ’Ì…",IDC_STATIC,62,55,53,8
 END
 
 IDD_OBJECT_ANIMATION_EVENT_CHARACTER_HIDE DIALOG 0, 0, 178, 120
@@ -1636,7 +1721,7 @@ STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
-    LTEXT           "Warp",IDC_STATIC,80,56,17,8
+    LTEXT           "«‰ ﬁ«·",IDC_STATIC,80,56,17,8
 END
 
 IDD_DIALOG_CHANGE_BASEXY DIALOGEX 0, 0, 187, 98
@@ -1664,17 +1749,17 @@ BEGIN
     PUSHBUTTON      "Õ„¯ˆ·",IDC_MAP_OBJECT_PROPERTY_DUNGEON_BLOCK_LOAD,116,16,50,12
 END
 
-IDD_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET DIALOGEX 0, 0, 178, 117
+IDD_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET DIALOG 0, 0, 178, 117
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "Tahoma", 0, 0, 0x0
+FONT 9, "Tahoma"
 BEGIN
     GROUPBOX        "",IDC_STATIC,3,4,171,110
     LTEXT           "„·›",IDC_STATIC,8,14,12,8
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET_FILE_NAME,23,12,115,12,ES_AUTOHSCROLL
-    PUSHBUTTON      "Õ„¯ˆ·",IDC_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET_LOAD,141,12,29,12
+    PUSHBUTTON      " Õ„Ì·",IDC_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET_LOAD,141,12,29,11
     GROUPBOX        "„Êﬁ⁄",IDC_STATIC,15,29,147,44
     LTEXT           "X",IDC_STATIC,22,42,8,8
-    CONTROL         "„ «»⁄…",IDC_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET_FOLLOWING,
+    CONTROL         "«· «·Ì",IDC_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET_FOLLOWING,
                     "Button",BS_AUTOCHECKBOX | WS_TABSTOP,62,58,47,10
     EDITTEXT        IDC_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET_POSITION_X,30,40,30,13,ES_AUTOHSCROLL
     LTEXT           "Y",IDC_STATIC,68,42,8,8
@@ -1687,7 +1772,7 @@ END
 
 IDD_EFFECT_TRANSLATION DIALOG 0, 0, 67, 43
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION " —Ã„…"
+CAPTION " €ÌÌ— „Êﬁ⁄ «·ﬁ«⁄œ…"
 FONT 9, "Tahoma"
 BEGIN
     EDITTEXT        IDC_EFFECT_TRANSLATION_X,14,3,50,12,ES_AUTOHSCROLL
@@ -1702,16 +1787,16 @@ IDD_MAP_EVENT DIALOG 0, 0, 120, 247
 STYLE DS_SETFONT | WS_CHILD
 FONT 9, "Tahoma"
 BEGIN
-    GROUPBOX        "À«» …",IDC_STATIC,2,2,116,42
+    GROUPBOX        "Static",IDC_STATIC,2,2,116,42
 END
 
-IDD_EFFECT_BOUNDING_SPHERE DIALOGEX 0, 0, 99, 101
+IDD_EFFECT_BOUNDING_SPHERE DIALOG 0, 0, 99, 101
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
-CAPTION "«·„Ã«· «·„ÕÌÿ"
-FONT 9, "Tahoma", 0, 0, 0x0
+CAPTION " €ÌÌ— „Êﬁ⁄ «·ﬁ«⁄œ…"
+FONT 9, "Tahoma"
 BEGIN
-    LTEXT           "‰’› «·ﬁÿ—",IDC_STATIC,9,8,23,8
-    EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_RADIUS,35,6,55,13,ES_AUTOHSCROLL
+    LTEXT           "‰’› «·ﬁÿ—",IDC_STATIC,9,5,23,8
+    EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_RADIUS,35,3,55,13,ES_AUTOHSCROLL
     GROUPBOX        "„Êﬁ⁄",IDC_STATIC,3,19,93,62
     LTEXT           "X",IDC_STATIC,8,33,8,8
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_POS_X,20,29,70,13,ES_AUTOHSCROLL
@@ -1719,13 +1804,13 @@ BEGIN
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_POS_Y,20,45,70,13,ES_AUTOHSCROLL
     LTEXT           "Z",IDC_STATIC,8,63,8,8
     EDITTEXT        IDC_EFFECT_BOUNDING_SPHERE_POS_Z,20,59,70,13,ES_AUTOHSCROLL
-    CONTROL         " „ﬂÌ‰ „Ã«· «·„ÕÌÿ",IDC_EFFECT_BOUNDING_SPHERE_ENABLE,
-                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,85,84,10
+    CONTROL         " ›⁄Ì· ﬂ—… «·≈Õ«ÿ…",IDC_EFFECT_BOUNDING_SPHERE_ENABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,3,88,93,10
 END
 
 IDD_MAP_ARRANGE_HEIGHT DIALOGEX 0, 0, 187, 113
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
-CAPTION " ⁄œÌ·«  «·Œ—Ìÿ…"
+CAPTION "≈œŒ«·"
 FONT 9, "Tahoma", 0, 0, 0x1
 BEGIN
     CONTROL         "Progress1",IDC_MAP_ARRANGE_HEIGHT_PROGRESS,
@@ -1744,14 +1829,14 @@ BEGIN
     EDITTEXT        IDC_NUMBER,13,3,85,12,ES_AUTOHSCROLL | ES_NUMBER
 END
 
-IDD_MAP_PORTAL DIALOGEX 0, 0, 91, 201
+IDD_MAP_PORTAL DIALOG 0, 0, 91, 201
 STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "≈ŸÂ«— «·»Ê«»…"
-FONT 9, "Tahoma", 0, 0, 0x0
+CAPTION "≈œŒ«·"
+FONT 9, "Tahoma"
 BEGIN
     CONTROL         "List1",IDC_PORTAL_LIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSCROLL | WS_BORDER | WS_TABSTOP,3,3,85,180
-    PUSHBUTTON      "⁄—÷ «·ﬂ·",IDC_PORTAL_SHOW_ALL,4,185,37,12
-    PUSHBUTTON      "√Œ› ﬂ· ‘Ì¡",IDC_PORTAL_HIDE_ALL,42,185,45,12
+    PUSHBUTTON      "≈ŸÂ«— «·ﬂ·",IDC_PORTAL_SHOW_ALL,3,186,40,12
+    PUSHBUTTON      "≈Œ›«¡ «·ﬂ·",IDC_PORTAL_HIDE_ALL,48,186,40,12
 END
 
 IDD_GTCOLORDIALOG_DIALOG DIALOGEX 0, 0, 259, 168
@@ -1785,70 +1870,6 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 //
-// Version
-//
-
-VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,1
- PRODUCTVERSION 1,0,0,1
- FILEFLAGSMASK 0x3fL
-#ifdef _DEBUG
- FILEFLAGS 0x1L
-#else
- FILEFLAGS 0x0L
-#endif
- FILEOS 0x4L
- FILETYPE 0x1L
- FILESUBTYPE 0x0L
-BEGIN
-    BLOCK "StringFileInfo"
-    BEGIN
-        BLOCK "040104b0"
-        BEGIN
-            VALUE "CompanyName", "Chaos3/HeartLongju (martysama0134)"
-            VALUE "FileDescription", "WorldEditorRemix"
-            VALUE "FileVersion", "1.0.0.1"
-            VALUE "InternalName", "WorldEditorRemix.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2021"
-            VALUE "OriginalFilename", "WorldEditorRemix.exe"
-            VALUE "ProductName", "WorldEditorRemix"
-            VALUE "ProductVersion", "1.0.0.1"
-        END
-    END
-    BLOCK "VarFileInfo"
-    BEGIN
-        VALUE "Translation", 0x401, 1200
-    END
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Cursor
-//
-
-IDC_VIEWMOVE            CURSOR                  "..\\Sample\\res\\cursor1.cur"
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Toolbar
-//
-
-IDR_MAINFRAME TOOLBAR 16, 15
-BEGIN
-    BUTTON      ID_VIEW_MAP
-    BUTTON      ID_VIEW_OBJECT
-    BUTTON      ID_VIEW_EFFECT
-    BUTTON      ID_VIEW_FLY
-    SEPARATOR
-    BUTTON      ID_EDIT_UNDO
-    BUTTON      ID_EDIT_REDO
-END
-
-
-/////////////////////////////////////////////////////////////////////////////
-//
 // DESIGNINFO
 //
 
@@ -1858,10 +1879,6 @@ BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
         BOTTOMMARGIN, 73
-    END
-
-    IDD_OBJECT_ANIMATION, DIALOG
-    BEGIN
     END
 
     IDD_OBJECT_MODEL, DIALOG
@@ -1914,6 +1931,7 @@ BEGIN
 
     IDD_MAP_OBJECT, DIALOG
     BEGIN
+        BOTTOMMARGIN, 715
     END
 
     IDD_MAP_FILE, DIALOG
@@ -2237,52 +2255,7 @@ BEGIN
     0
 END
 
-IDD_OBJECT_MODEL AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_MAP_OBJECT_PROPERTY_PAGE_TREE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_MAP_ATTRIBUTE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_ANIMATION_EVENT_ATTACK AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_MODEL_TYPE_EQUIPMENT_PAGE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_MODEL_TYPE_CHARACTER_PAGE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_ANIMATION_EVENT_FLY AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_ANIMATION_EVENT_EFFECT_TO_TARGET AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_ANIMATION_EVENT_EFFECT AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_OBJECT_ANIMATION AFX_DIALOG_LAYOUT
+IDD_MAP_ENVIRONMENT AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
@@ -2292,57 +2265,7 @@ BEGIN
     0
 END
 
-IDD_OBJECT_MODEL_ATTACH_COLLISION_PAGE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_EFFECT_PARTICLE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_EFFECT_MESH AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_EFFECT_TEXTURE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_EFFECT_LIGHT AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_DIALOG_NEWMAP AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_DIALOG_INITBASETEXTURE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_MAP_PORTAL AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_DIALOG_GOTO AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-IDD_EFFECT_BOUNDING_SPHERE AFX_DIALOG_LAYOUT
-BEGIN
-    0
-END
-
-#endif    // Arabic (Saudi Arabia) resources
+#endif    // Inglese (neutro) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

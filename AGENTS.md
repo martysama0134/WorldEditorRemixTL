@@ -64,6 +64,9 @@ Warnings:
 - Translation-memory quality rule:
   - If old localized text is identical to source EN, treat it as unresolved residue (not as translated content).
 - Never bulk-map control labels by shared IDs like `IDC_STATIC` (prevents repeated-string corruption).
+- For RTL targets (currently `AE`), preserve existing RTL hints only when safely mappable:
+  - dialog/control direction styles (`WS_EX_RTLREADING`, `WS_EX_RIGHT`) and right-aligned text directives.
+  - do not apply heuristic mass RTL rewrites across unrelated controls.
 
 ## Preserved Blocks
 - Keep Korean bootstrap block intact:

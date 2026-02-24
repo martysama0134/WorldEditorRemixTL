@@ -458,7 +458,7 @@ BEGIN
 
 
 
-    POPUP "Edit"
+    POPUP "Bearbeiten"
 
 
 
@@ -522,7 +522,7 @@ BEGIN
 
 
 
-            MENUITEM "Solid",                       ID_VIEW_RENDERING_MODE_SOLID
+            MENUITEM "Solide",                       ID_VIEW_RENDERING_MODE_SOLID
 
 
 
@@ -546,7 +546,7 @@ BEGIN
 
 
 
-        MENUITEM "Map Kontrollleiste",             ID_VIEW_MAP
+        MENUITEM "Karten-Kontrollleiste",             ID_VIEW_MAP
 
 
 
@@ -570,7 +570,7 @@ BEGIN
 
 
 
-    POPUP "Info"
+    POPUP "Infos"
 
 
 
@@ -1394,7 +1394,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 
 
 
-CAPTION "WorldEditor About"
+CAPTION "Über WorldEditor"
 
 
 
@@ -1854,7 +1854,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Sound",IDC_OBJECT_MODEL_MAKE_SOUND,14,204,90,12
+    PUSHBUTTON      "Ton",IDC_OBJECT_MODEL_MAKE_SOUND,14,204,90,12
 
 
 
@@ -1922,7 +1922,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Environment Skript",IDC_STATIC,3,3,114,61
+    GROUPBOX        "Umgebungsskript",IDC_STATIC,3,3,114,61
 
 
 
@@ -2094,7 +2094,7 @@ BEGIN
 
 
 
-    CONTROL         "Edit Light Pos",IDC_CHECK_LIGHTPOSITIONEDIT,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,9,193,49,13
+    CONTROL         "Lichtpos. bearbeiten",IDC_CHECK_LIGHTPOSITIONEDIT,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,9,193,49,13
 
 
 
@@ -2126,7 +2126,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Scale",IDC_STATIC,8,394,102,53
+    GROUPBOX        "Skalierung",IDC_STATIC,8,394,102,53
 
 
 
@@ -2158,7 +2158,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Scale",IDC_STATIC,14,801,91,27
+    GROUPBOX        "Skalierung",IDC_STATIC,14,801,91,27
 
 
 
@@ -2186,7 +2186,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture Scale",IDC_STATIC,14,831,91,27
+    GROUPBOX        "Texturskalierung",IDC_STATIC,14,831,91,27
 
 
 
@@ -2230,7 +2230,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture File",IDC_STATIC,14,771,91,29
+    GROUPBOX        "Texturdatei",IDC_STATIC,14,771,91,29
 
 
 
@@ -2286,7 +2286,7 @@ BEGIN
 
 
 
-    LTEXT           "Texture File",IDC_STATIC,15,1004,39,8
+    LTEXT           "Texturdatei",IDC_STATIC,15,1004,39,8
 
 
 
@@ -2310,7 +2310,7 @@ BEGIN
 
 
 
-    GROUPBOX        "BackGround Music",IDC_STATIC,2,1103,114,61
+    GROUPBOX        "Hintergrundmusik",IDC_STATIC,2,1103,114,61
 
 
 
@@ -2318,7 +2318,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "PlaySound",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC2,5,1142,35,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Sound abspielen",IDC_MAP_ENVIRONMENT_LOAD_BACKGROUND_MUSIC2,5,1142,35,12,BS_NOTIFY | BS_FLAT
 
 
 
@@ -2338,7 +2338,7 @@ BEGIN
 
 
 
-    GROUPBOX        "SkyBox Texture",IDC_STATIC,8,527,102,230
+    GROUPBOX        "SkyBox-Textur",IDC_STATIC,8,527,102,230
 
 
 
@@ -2346,7 +2346,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Front Texture",IDC_STATIC,13,545,91,29
+    GROUPBOX        "Vordere Textur",IDC_STATIC,13,545,91,29
 
 
 
@@ -2354,7 +2354,7 @@ BEGIN
 
 
 
-    CONTROL         "TextureMode",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE2,
+    CONTROL         "Texturmodus",IDC_MAP_ENVIRONMENT_LENSFLARE_ENABLE2,
 
 
 
@@ -2366,7 +2366,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Top Texture",IDC_STATIC,14,683,91,29
+    GROUPBOX        "Obere Textur",IDC_STATIC,14,683,91,29
 
 
 
@@ -2378,7 +2378,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Back Texture",IDC_STATIC,13,580,91,29
+    GROUPBOX        "Hintere Textur",IDC_STATIC,13,580,91,29
 
 
 
@@ -2390,7 +2390,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Left Texture",IDC_STATIC,13,614,91,29
+    GROUPBOX        "Linke Textur",IDC_STATIC,13,614,91,29
 
 
 
@@ -2402,7 +2402,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Right Texture",IDC_STATIC,13,649,91,29
+    GROUPBOX        "Rechte Textur",IDC_STATIC,13,649,91,29
 
 
 
@@ -2414,7 +2414,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Bottom Texture",IDC_STATIC,13,721,91,29
+    GROUPBOX        "Untere Textur",IDC_STATIC,13,721,91,29
 
 
 
@@ -2450,7 +2450,7 @@ BEGIN
 
 
 
-    CONTROL         "Environment",IDC_MAP_TAB_ENVIRONMENT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,47,0,14,16
+    CONTROL         "Umgebung",IDC_MAP_TAB_ENVIRONMENT,"Button",BS_AUTORADIOBUTTON | BS_BITMAP | BS_PUSHLIKE,47,0,14,16
 
 
 
@@ -2542,7 +2542,7 @@ BEGIN
 
 
 
-    CONTROL         "Sync ObjectTab",IDC_EFFECT_USING_SCENEOBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,133,65,12
+    CONTROL         "Obj.-Tab sync",IDC_EFFECT_USING_SCENEOBJECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,50,133,65,12
 
 
 
@@ -2558,11 +2558,11 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Environment",IDC_EFFECT_TAB_ENVIRONMENT,3,159,44,13
+    PUSHBUTTON      "Umgebung",IDC_EFFECT_TAB_ENVIRONMENT,3,159,44,13
 
 
 
-    PUSHBUTTON      "SaveAs",IDC_EFFECT_SAVE_AS_SCRIPT,63,42,45,12,BS_NOTIFY | BS_FLAT
+    PUSHBUTTON      "Speichern unter",IDC_EFFECT_SAVE_AS_SCRIPT,63,42,45,12,BS_NOTIFY | BS_FLAT
 
 
 
@@ -2618,7 +2618,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture",IDC_STATIC,8,10,103,114
+    GROUPBOX        "Textur",IDC_STATIC,8,10,103,114
 
 
 
@@ -2634,7 +2634,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Geometry Shape",IDC_STATIC,9,546,103,129
+    GROUPBOX        "Geometrieform",IDC_STATIC,9,546,103,129
 
 
 
@@ -2690,7 +2690,7 @@ BEGIN
 
 
 
-    LTEXT           "Time Event",IDC_STATIC,8,727,38,8
+    LTEXT           "Zeitereignis",IDC_STATIC,8,727,38,8
 
 
 
@@ -2730,7 +2730,7 @@ BEGIN
 
 
 
-    LTEXT           "Time Event",IDC_STATIC,8,368,38,8
+    LTEXT           "Zeitereignis",IDC_STATIC,8,368,38,8
 
 
 
@@ -2898,7 +2898,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Edit Color Animation",IDC_EFFECT_PARTICLE_COLOR_ANIMATION,15,454,89,16
+    PUSHBUTTON      "Farbanimation bearbeiten",IDC_EFFECT_PARTICLE_COLOR_ANIMATION,15,454,89,16
 
 
 
@@ -2950,11 +2950,11 @@ BEGIN
 
 
 
-    CONTROL         "Zoom In",IDC_EFFECT_TIME_BAR_ZOOM_IN_HORIZON,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,151,2,14,16
+    CONTROL         "Reinzoomen",IDC_EFFECT_TIME_BAR_ZOOM_IN_HORIZON,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,151,2,14,16
 
 
 
-    CONTROL         "Zoom Out",IDC_EFFECT_TIME_BAR_ZOOM_OUT_HORIZON,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,166,2,14,16
+    CONTROL         "Rauszoomen",IDC_EFFECT_TIME_BAR_ZOOM_OUT_HORIZON,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | WS_TABSTOP,166,2,14,16
 
 
 
@@ -3030,7 +3030,7 @@ BEGIN
 
 
 
-    CTEXT           "Model Name",IDC_EFFECT_MESH_MODEL_NAME,13,38,93,12,SS_CENTERIMAGE | SS_SUNKEN
+    CTEXT           "Modellname",IDC_EFFECT_MESH_MODEL_NAME,13,38,93,12,SS_CENTERIMAGE | SS_SUNKEN
 
 
 
@@ -3070,7 +3070,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture Animation",IDC_STATIC,12,402,96,76
+    GROUPBOX        "Texturanimation",IDC_STATIC,12,402,96,76
 
 
 
@@ -3126,15 +3126,15 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Apply to the whole",IDC_EFFECT_MESH_BILLBOARD_ACCEPT_ALL,27,198,67,12
+    PUSHBUTTON      "Auf alles anw.",IDC_EFFECT_MESH_BILLBOARD_ACCEPT_ALL,27,198,67,12
 
 
 
-    PUSHBUTTON      "Apply to the whole",IDC_EFFECT_MESH_ALPHA_ACCEPT_ALL,26,377,67,12
+    PUSHBUTTON      "Auf alles anw.",IDC_EFFECT_MESH_ALPHA_ACCEPT_ALL,26,377,67,12
 
 
 
-    PUSHBUTTON      "Apply to the whole",IDC_EFFECT_MESH_TEXTURE_ANIMATION_ACCEPT_ALL,27,442,67,12
+    PUSHBUTTON      "Auf alles anw.",IDC_EFFECT_MESH_TEXTURE_ANIMATION_ACCEPT_ALL,27,442,67,12
 
 
 
@@ -3146,7 +3146,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Apply",IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME_ACCEPT,80,460,24,11
+    PUSHBUTTON      "Anw.",IDC_EFFECT_MESH_TEXTURE_ANIMATION_START_FRAME_ACCEPT,80,460,24,11
 
 
 
@@ -3202,7 +3202,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture",IDC_STATIC,3,1,114,180
+    GROUPBOX        "Textur",IDC_STATIC,3,1,114,180
 
 
 
@@ -3230,7 +3230,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture",IDC_STATIC,8,11,103,59
+    GROUPBOX        "Textur",IDC_STATIC,8,11,103,59
 
 
 
@@ -3290,23 +3290,23 @@ BEGIN
 
 
 
-    CONTROL         "Brush Up",IDC_MAP_TERRAIN_BRUSH_UP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,17,121,17,19
+    CONTROL         "Pinsel hoch",IDC_MAP_TERRAIN_BRUSH_UP,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,17,121,17,19
 
 
 
-    CONTROL         "Brush Down",IDC_MAP_TERRAIN_BRUSH_DOWN,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,34,121,17,19
+    CONTROL         "Pinsel runter",IDC_MAP_TERRAIN_BRUSH_DOWN,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,34,121,17,19
 
 
 
-    CONTROL         "Brush Plateau",IDC_MAP_TERRAIN_BRUSH_PLATEAU,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,52,121,17,19
+    CONTROL         "Plateaupinsel",IDC_MAP_TERRAIN_BRUSH_PLATEAU,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,52,121,17,19
 
 
 
-    CONTROL         "Brush Noise",IDC_MAP_TERRAIN_BRUSH_NOISE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,69,121,17,19
+    CONTROL         "Rauschpinsel",IDC_MAP_TERRAIN_BRUSH_NOISE,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,69,121,17,19
 
 
 
-    CONTROL         "Brush Smooth",IDC_MAP_TERRAIN_BRUSH_SMOOTH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,86,121,17,19
+    CONTROL         "Glättungspinsel",IDC_MAP_TERRAIN_BRUSH_SMOOTH,"Button",BS_AUTOCHECKBOX | BS_BITMAP | BS_PUSHLIKE | WS_TABSTOP,86,121,17,19
 
 
 
@@ -3330,7 +3330,7 @@ BEGIN
 
 
 
-    LTEXT           "Scale",IDC_STATIC,10,54,19,8
+    LTEXT           "Skalierung",IDC_STATIC,10,54,19,8
 
 
 
@@ -3358,7 +3358,7 @@ BEGIN
 
 
 
-    LTEXT           "Shape",IDC_STATIC,8,18,22,8
+    LTEXT           "Form",IDC_STATIC,8,18,22,8
 
 
 
@@ -3370,11 +3370,11 @@ BEGIN
 
 
 
-    GROUPBOX        "Texture Brush",IDC_STATIC,3,157,113,288
+    GROUPBOX        "Texturpinsel",IDC_STATIC,3,157,113,288
 
 
 
-    GROUPBOX        "Brush",IDC_STATIC,3,5,113,78
+    GROUPBOX        "Pinsel",IDC_STATIC,3,5,113,78
 
 
 
@@ -3402,7 +3402,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Water Brush",IDC_STATIC_WATER,2,451,113,78
+    GROUPBOX        "Wasserpinsel",IDC_STATIC_WATER,2,451,113,78
 
 
 
@@ -3442,7 +3442,7 @@ BEGIN
 
 
 
-    CONTROL         "Apply to the area w/o texture",IDC_CHECK_DRAW_ON_BLANK_TILE_ONLY,
+    CONTROL         "Nur auf Bereich ohne Textur",IDC_CHECK_DRAW_ON_BLANK_TILE_ONLY,
 
 
 
@@ -3454,7 +3454,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Special Water Texture",IDC_STATIC,3,537,114,41
+    GROUPBOX        "Spezielle Wassertextur",IDC_STATIC,3,537,114,41
 
 
 
@@ -3502,7 +3502,7 @@ BEGIN
 
 
 
-    CONTROL         "Tree1",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,237,113,179
+    CONTROL         "Baum",IDC_MAP_OBJECT_TREE,"SysTreeView32",TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_SINGLEEXPAND | WS_BORDER | WS_HSCROLL | WS_TABSTOP,4,237,113,179
 
 
 
@@ -3662,7 +3662,7 @@ BEGIN
 
 
 
-    LTEXT           "Ctrl+LMouseClick = Multi Selection",IDC_STATIC,7,688,106,8
+    LTEXT           "Ctrl+L-Mausklick = Mehrfachauswahl",IDC_STATIC,7,688,106,8
 
 
 
@@ -3750,15 +3750,15 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Change BasePosition",IDC_BUTTON_CHANGE_BASEXY,19,192,76,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Basispos. ändern",IDC_BUTTON_CHANGE_BASEXY,19,192,76,14,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
-    PUSHBUTTON      "New",IDC_MAP_FILE_NEW,9,32,30,12,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Neu",IDC_MAP_FILE_NEW,9,32,30,12,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
-    PUSHBUTTON      "Save ServerAttr",IDC_BUTTON_INIT_SHADOWMAP,22,339,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "ServerAttr speich.",IDC_BUTTON_INIT_SHADOWMAP,22,339,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
@@ -3766,7 +3766,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Save collision Data",IDC_MAP_FILE_SAVE_COLLISION_DATA,22,357,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Kollisionsdaten speich.",IDC_MAP_FILE_SAVE_COLLISION_DATA,22,357,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
@@ -3818,11 +3818,11 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Apply Base Texture",IDC_BUTTON_INIT_BASETEXTUREMAP,22,321,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Basetextur anwenden",IDC_BUTTON_INIT_BASETEXTUREMAP,22,321,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
-    CONTROL         "Patch Grid",IDC_CHECK_PATCH_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,460,49,10
+    CONTROL         "Patch-Raster",IDC_CHECK_PATCH_GRID,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,460,49,10
 
 
 
@@ -3830,15 +3830,15 @@ BEGIN
 
 
 
-    CONTROL         "Compass",IDC_CHECK_COMPASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,471,54,10
+    CONTROL         "Kompass",IDC_CHECK_COMPASS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,63,471,54,10
 
 
 
-    PUSHBUTTON      "Save Atlasmap/mini",IDC_BUTTON_SAVE_ATLAS,22,393,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Atlas/Mini speich.",IDC_BUTTON_SAVE_ATLAS,22,393,77,14,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
-    GROUPBOX        "Starting Point",IDC_STATIC,9,141,101,72
+    GROUPBOX        "Startpunkt",IDC_STATIC,9,141,101,72
 
 
 
@@ -3858,7 +3858,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Environment Variable",IDC_STATIC,9,220,101,51
+    GROUPBOX        "Umgebungsvariable",IDC_STATIC,9,220,101,51
 
 
 
@@ -3866,7 +3866,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Set Environment var.",IDC_BUTTON_SELECTE_ENVIRONMENT_SET,19,250,73,14,BS_CENTER | BS_VCENTER | BS_FLAT
+    PUSHBUTTON      "Umgebungsvar. setzen",IDC_BUTTON_SELECTE_ENVIRONMENT_SET,19,250,73,14,BS_CENTER | BS_VCENTER | BS_FLAT
 
 
 
@@ -3910,7 +3910,7 @@ BEGIN
 
 
 
-    CONTROL         "AutoSave",IDC_CHECK_AUTO_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,69,49,10
+    CONTROL         "Auto-Speichern",IDC_CHECK_AUTO_SAVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,69,49,10
 
 
 
@@ -3962,7 +3962,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Accept",IDC_ACCEPT,24,21,44,12
+    PUSHBUTTON      "Akzeptieren",IDC_ACCEPT,24,21,44,12
 
 
 
@@ -4010,7 +4010,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Accept",IDC_OK,160,238,50,12
+    PUSHBUTTON      "Akzeptieren",IDC_OK,160,238,50,12
 
 
 
@@ -4050,7 +4050,7 @@ BEGIN
 
 
 
-    LTEXT           "Tree File",IDC_STATIC,9,18,30,8
+    LTEXT           "Baumdatei",IDC_STATIC,9,18,30,8
 
 
 
@@ -4062,7 +4062,7 @@ BEGIN
 
 
 
-    LTEXT           "Tree Size",IDC_STATIC,9,58,32,8
+    LTEXT           "Baumgröße",IDC_STATIC,9,58,32,8
 
 
 
@@ -4074,7 +4074,7 @@ BEGIN
 
 
 
-    CTEXT           "Tree Size Variation",IDC_STATIC,9,70,32,17
+    CTEXT           "Baumgrößenvariation",IDC_STATIC,9,70,32,17
 
 
 
@@ -4094,7 +4094,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Accept",IDC_MAP_OBJECT_PROPERTY_TREE_ACCEPT,116,91,50,12
+    PUSHBUTTON      "Akzeptieren",IDC_MAP_OBJECT_PROPERTY_TREE_ACCEPT,116,91,50,12
 
 
 
@@ -4122,7 +4122,7 @@ BEGIN
 
 
 
-    LTEXT           "Building File",IDC_STATIC,10,18,40,8
+    LTEXT           "Gebäude-Datei",IDC_STATIC,10,18,40,8
 
 
 
@@ -4154,7 +4154,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 
 
 
-CAPTION "Texture Property"
+CAPTION "Textur-Eigenschaft"
 
 
 
@@ -4262,11 +4262,11 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Change Texture",IDC_BUTTON_CHANGE_TEX,45,25,56,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Textur ändern",IDC_BUTTON_CHANGE_TEX,45,25,56,14,BS_CENTER | BS_VCENTER
 
 
 
-    PUSHBUTTON      "Remove Texture",IDC_BUTTON_REMOVE_TEX,106,25,56,14,BS_CENTER | BS_VCENTER
+    PUSHBUTTON      "Textur entfernen",IDC_BUTTON_REMOVE_TEX,106,25,56,14,BS_CENTER | BS_VCENTER
 
 
 
@@ -4290,7 +4290,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Collision Detection Data",IDC_STATIC,4,4,101,178
+    GROUPBOX        "Kollisionserkennungsdaten",IDC_STATIC,4,4,101,178
 
 
 
@@ -4394,7 +4394,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 
 
 
-CAPTION "New Map"
+CAPTION "Neue Karte"
 
 
 
@@ -4438,7 +4438,7 @@ BEGIN
 
 
 
-    LTEXT           "TextureSet",IDC_STATIC,10,35,37,8
+    LTEXT           "Texturset",IDC_STATIC,10,35,37,8
 
 
 
@@ -4458,7 +4458,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
 
 
 
-CAPTION "New Event"
+CAPTION "Neues Ereignis"
 
 
 
@@ -4474,7 +4474,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "Accept",IDC_NEW_EVENT_ACCEPT,51,142,36,13
+    PUSHBUTTON      "Akzeptieren",IDC_NEW_EVENT_ACCEPT,51,142,36,13
 
 
 
@@ -4870,7 +4870,7 @@ BEGIN
 
 
 
-    LTEXT           "Field of View",IDC_STATIC,11,11,43,8
+    LTEXT           "Sichtfeld",IDC_STATIC,11,11,43,8
 
 
 
@@ -4946,7 +4946,7 @@ BEGIN
 
 
 
-    LTEXT           "Sound",IDC_STATIC,12,31,22,8
+    LTEXT           "Ton",IDC_STATIC,12,31,22,8
 
 
 
@@ -4998,11 +4998,11 @@ BEGIN
 
 
 
-    CONTROL         "Edit",IDC_CHECK_CELLEEDIT,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,9,200,101,16
+    CONTROL         "Bearbeiten",IDC_CHECK_CELLEEDIT,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,9,200,101,16
 
 
 
-    GROUPBOX        " Attribute Brush",IDC_STATIC,1,94,117,154
+    GROUPBOX        " Attributpinsel",IDC_STATIC,1,94,117,154
 
 
 
@@ -5030,7 +5030,7 @@ BEGIN
 
 
 
-    LTEXT           "Scale",IDC_STATIC,5,53,19,8
+    LTEXT           "Skalierung",IDC_STATIC,5,53,19,8
 
 
 
@@ -5054,7 +5054,7 @@ BEGIN
 
 
 
-    CONTROL         "Water",IDC_MAP_ATTR1_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,120,34,10
+    CONTROL         "Wasser",IDC_MAP_ATTR1_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,69,120,34,10
 
 
 
@@ -5082,7 +5082,7 @@ BEGIN
 
 
 
-    GROUPBOX        "MonsterAreaInfo Brush",IDC_STATIC,1,255,117,333
+    GROUPBOX        "Monsterbereichsinfo-Pinsel",IDC_STATIC,1,255,117,333
 
 
 
@@ -5094,7 +5094,7 @@ BEGIN
 
 
 
-    GROUPBOX        "New",IDC_STATIC,1,287,117,74
+    GROUPBOX        "Neu",IDC_STATIC,1,287,117,74
 
 
 
@@ -5202,7 +5202,7 @@ BEGIN
 
 
 
-    CONTROL         "Edit",IDC_CHECK_MONSTERAREAINFO_ADD,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,9,267,98,15
+    CONTROL         "Bearbeiten",IDC_CHECK_MONSTERAREAINFO_ADD,"Button",BS_AUTOCHECKBOX | BS_CENTER | BS_VCENTER | BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,9,267,98,15
 
 
 
@@ -5222,7 +5222,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Event Monster Arrange",IDC_STATIC,5,593,109,121
+    GROUPBOX        "Event-Monster anordnen",IDC_STATIC,5,593,109,121
 
 
 
@@ -5302,7 +5302,7 @@ BEGIN
 
 
 
-    LTEXT           "Sound",IDC_STATIC,10,33,22,8
+    LTEXT           "Ton",IDC_STATIC,10,33,22,8
 
 
 
@@ -5338,7 +5338,7 @@ BEGIN
 
 
 
-    LTEXT           "Drop Model",IDC_STATIC,5,152,38,8
+    LTEXT           "Modell ablegen",IDC_STATIC,5,152,38,8
 
 
 
@@ -5390,7 +5390,7 @@ BEGIN
 
 
 
-    LTEXT           "Model File",IDC_STATIC,10,18,35,8
+    LTEXT           "Modelldatei",IDC_STATIC,10,18,35,8
 
 
 
@@ -5582,7 +5582,7 @@ STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
 
 
 
-CAPTION "Time - Value Edit"
+CAPTION "Zeit-Wert bearbeiten"
 
 
 
@@ -5626,7 +5626,7 @@ BEGIN
 
 
 
-    LTEXT           "Effect File",IDC_STATIC,10,18,32,8
+    LTEXT           "Effektdatei",IDC_STATIC,10,18,32,8
 
 
 
@@ -5698,7 +5698,7 @@ BEGIN
 
 
 
-    CTEXT           "Sound",IDC_STATIC,0,0,119,20,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Ton",IDC_STATIC,0,0,119,20,SS_CENTERIMAGE,WS_EX_STATICEDGE
 
 
 
@@ -5726,7 +5726,7 @@ BEGIN
 
 
 
-    LTEXT           "Effect File",IDC_STATIC,10,18,32,8
+    LTEXT           "Effektdatei",IDC_STATIC,10,18,32,8
 
 
 
@@ -6042,7 +6042,7 @@ BEGIN
 
 
 
-    GROUPBOX        "Additional Collision Information",IDC_STATIC,6,267,107,74
+    GROUPBOX        "Zusätzliche Kollisionsinfos",IDC_STATIC,6,267,107,74
 
 
 
@@ -6190,7 +6190,7 @@ BEGIN
 
 
 
-    LTEXT           "Sound File List",IDC_STATIC,9,17,49,8
+    LTEXT           "Sounddateiliste",IDC_STATIC,9,17,49,8
 
 
 
@@ -6198,7 +6198,7 @@ BEGIN
 
 
 
-    PUSHBUTTON      "New",IDC_MAP_OBJECT_PROPERTY_AMBIENCE_FILE_NEW,82,15,40,11,BS_FLAT
+    PUSHBUTTON      "Neu",IDC_MAP_OBJECT_PROPERTY_AMBIENCE_FILE_NEW,82,15,40,11,BS_FLAT
 
 
 
@@ -6354,7 +6354,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
 
 
 
-CAPTION "Change Base Location"
+CAPTION "Basispos. ändern"
 
 
 
@@ -6422,7 +6422,7 @@ BEGIN
 
 
 
-    LTEXT           "Dungeon Block File Name",IDC_STATIC,10,18,85,8
+    LTEXT           "Dungeon-Block-Dateiname",IDC_STATIC,10,18,85,8
 
 
 
@@ -6666,7 +6666,7 @@ STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
 
 
 
-CAPTION "Map adjustments"
+CAPTION "Kartenanpassungen"
 
 
 

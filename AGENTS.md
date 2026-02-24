@@ -48,6 +48,9 @@ Warnings:
 - When term conflicts appear, `GLOSSARY.md` wins.
 - Use `en` as glossary source and the target-language column for output.
 - If the target-language column is missing for a term, keep source text and mark it as TODO.
+- Coverage scope for automation must include all localizable text-bearing directives:
+  - `STRINGTABLE`, `MENUITEM`, `POPUP`, dialog `CAPTION`
+  - dialog/control labels (`CONTROL`, `LTEXT`, `CTEXT`, `RTEXT`, `GROUPBOX`, `PUSHBUTTON`, `DEFPUSHBUTTON`, `AUTOCHECKBOX`, `AUTORADIOBUTTON`, `CHECKBOX`, `STATE3`, `RADIOBUTTON`)
 - UI-Fit Abbreviation Rule:
   - Compare control EN source label against translated target label.
   - If target label is longer than EN source and the control is constrained (especially short button/label widths), use glossary compact form.
@@ -58,6 +61,8 @@ Warnings:
   - `STRINGTABLE` by string ID.
   - `MENUITEM` by `(menu resource ID, command ID)`.
   - dialog `CAPTION` by dialog resource ID.
+- Translation-memory quality rule:
+  - If old localized text is identical to source EN, treat it as unresolved residue (not as translated content).
 - Never bulk-map control labels by shared IDs like `IDC_STATIC` (prevents repeated-string corruption).
 
 ## Preserved Blocks
@@ -74,9 +79,13 @@ Warnings:
 - Resource ID parity with `Sample/WorldEditor.rc`.
 - No mass repeated labels in dialogs.
 - Project target names unchanged (`WorldEditorRemix_XX`).
+- Coverage gate:
+  - verify that all localizable directive classes were scanned and evaluated, not only `STRINGTABLE`/`MENUITEM`/`CAPTION`.
 - Unresolved source-language residue sweep completed for the target language:
   - scan for common leftovers such as `Reset`, `Unselect`, `Hierarchy`, `RMouseClick`, `Scan New Obj`, `Water Output`, `Eraser`.
   - resolve each leftover using `GLOSSARY.md`.
+- Residue gate:
+  - fail completion if user-facing EN labels remain beyond an explicit allowlist of technical tokens.
 
 ## Encoding Integrity (Mandatory)
 - For DE resources, preserve target charset (`de=1252`) and avoid lossy conversion.

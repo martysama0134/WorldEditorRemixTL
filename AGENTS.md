@@ -88,12 +88,12 @@ Warnings:
   - fail completion if user-facing EN labels remain beyond an explicit allowlist of technical tokens.
 
 ## Encoding Integrity (Mandatory)
-- For DE resources, preserve target charset (`de=1252`) and avoid lossy conversion.
-- Never pass DE strings through mismatched UTF-8/cp1252 conversion pipelines.
-- Before finalizing DE, run corruption scans for:
+- Preserve each target language file in its charset from the matrix above (for example `de=1252`, `tr=1254`, `gr=1253`, `pl=1250`, `ru=koi8-ru`).
+- Never pass localized strings through mismatched UTF-8/ANSI conversion pipelines.
+- Before finalizing any language, run corruption scans for:
   - UTF-8 garble markers (for example `Ã`, `Â`, or replacement-character artifacts)
-  - suspicious `?` inside alphabetic words (e.g., `H?he`, `L?schen`, `Zur?ck`)
-- If any corruption markers are found, fix them before completion.
+  - suspicious `?` inside alphabetic words (except intentional punctuation like `...?` prompts)
+- If corruption markers are found, fix them before completion.
 
 ## Bootstrap And Credits Sync Gates (Mandatory)
 - Treat everything before the target language block (`LANGUAGE LANG_XX`) as bootstrap context.
@@ -116,4 +116,3 @@ Warnings:
 3. Set target language and correct code page.
 4. Apply safe translation pass (STRINGTABLE, MENUITEM, dialog CAPTION only).
 5. Run validation checks (encoding, escaping, ID parity, repeated-label scan, target names).
-

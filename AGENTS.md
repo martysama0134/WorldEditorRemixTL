@@ -48,6 +48,12 @@ Warnings:
 - When term conflicts appear, `GLOSSARY.md` wins.
 - Use `en` as glossary source and the target-language column for output.
 - If the target-language column is missing for a term, keep source text and mark it as TODO.
+- UI-Fit Abbreviation Rule:
+  - Compare control EN source label against translated target label.
+  - If target label is longer than EN source and the control is constrained (especially short button/label widths), use glossary compact form.
+  - Keep placeholders/symbols unchanged: `%d`, `%s`, `\n`, `\t`, `&`, `""`.
+  - Use compact forms only from `GLOSSARY.md`.
+  - If no compact form exists, keep canonical translation and mark TODO in glossary.
 - Reuse only safe mappings when automating:
   - `STRINGTABLE` by string ID.
   - `MENUITEM` by `(menu resource ID, command ID)`.

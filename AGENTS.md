@@ -44,6 +44,10 @@ Warnings:
 
 ## Safe Translation Rules
 - Translate in situ for the target language, with terminology suitable for a 3D map creator/editor for an online game.
+- Before translating, read `GLOSSARY.md`.
+- When term conflicts appear, `GLOSSARY.md` wins.
+- Use `en` as glossary source and the target-language column for output.
+- If the target-language column is missing for a term, keep source text and mark it as TODO.
 - Reuse only safe mappings when automating:
   - `STRINGTABLE` by string ID.
   - `MENUITEM` by `(menu resource ID, command ID)`.
@@ -64,6 +68,9 @@ Warnings:
 - Resource ID parity with `Sample/WorldEditor.rc`.
 - No mass repeated labels in dialogs.
 - Project target names unchanged (`WorldEditorRemix_XX`).
+- Unresolved source-language residue sweep completed for the target language:
+  - scan for common leftovers such as `Reset`, `Unselect`, `Hierarchy`, `RMouseClick`, `Scan New Obj`, `Water Output`, `Eraser`.
+  - resolve each leftover using `GLOSSARY.md`.
 
 ## Common Pitfalls
 - Mixed path escaping (`"..\Sample\res\\..."`) causing RC/path errors.

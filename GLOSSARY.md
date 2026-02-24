@@ -57,6 +57,7 @@
 | unselect_object | Unselect Object | Deseleziona oggetto | Desel. ogg. | Objekt abwählen | Obj. abw. | Désélectionner objet | Désél. obj. | ui | Edge-case short button uses compact by default in DE due width constraints. | Use compact only if control is constrained and EN is shorter. |
 | new_directory | New Directory | Nuova directory | Nuova dir. | Neues Verzeichnis | Neues Verz. | Nouveau dossier | Nouv. dossier | ui | Directory action in object panel; old-DE specific preferred term `Verzeichnis`. | Use compact only if control is constrained and EN is shorter. |
 | portal_information | Portal Information | Info Portale | Info Port. | Portalinfo | Portalinfo | Infos portail | Infos portail | ui | Old-DE edge-case keeps compact compound form used in editor contexts. | Compact not needed by default. |
+| selected_object_info | Selected Object Info | Info oggetto selezionato | Info ogg. sel. | Ausgewählte Objektinfo | Obj.info | Infos objet sélectionné | Infos obj. sélect. | ui | Object panel information group title. | Use compact only if control is constrained and EN is shorter. |
 
 ## Do / Don't Examples
 - Do: `Reimposta rotazione`

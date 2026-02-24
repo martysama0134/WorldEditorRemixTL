@@ -434,6 +434,51 @@ LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
 
 /////////////////////////////////////////////////////////////////////////////
 //
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "„·›"
+    BEGIN
+        MENUITEM "Œ—ÊÃ",                        ID_APP_EXIT
+    END
+    POPUP " Õ—Ì—"
+    BEGIN
+        MENUITEM " —«Ã⁄...	Ctrl+Z",             ID_EDIT_UNDO
+        MENUITEM "≈⁄«œ…...	Ctrl+Y",             ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "ﬁ’...	Ctrl+X",              ID_EDIT_CUT
+        MENUITEM "‰”Œ...	Ctrl+C",             ID_EDIT_COPY
+        MENUITEM "·’ﬁ...	Ctrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "⁄—÷"
+    BEGIN
+        MENUITEM "‘—Ìÿ «·√œÊ« ",                     ID_VIEW_TOOLBAR
+        MENUITEM "‘—Ìÿ «·Õ«·…",                   ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "Ê÷⁄ «·⁄—÷"
+        BEGIN
+            MENUITEM "’·»",                       ID_VIEW_RENDERING_MODE_SOLID
+            MENUITEM "≈ÿ«— ”·ﬂÌ",                  ID_VIEW_RENDERING_MODE_WIRE_FRAME
+        END
+        MENUITEM "„—»⁄ «·„⁄·Ê„« (F11)",              ID_VIEW_INFO_BOX
+        MENUITEM SEPARATOR
+        MENUITEM "‘—Ìÿ «·√œÊ« (&T)",                 ID_VIEW_TOOLBAR
+        MENUITEM "‘—Ìÿ  Õﬂ„ «·Œ—Ìÿ…",             ID_VIEW_MAP
+        MENUITEM "‘—Ìÿ  Õﬂ„ «·ﬂ«∆‰« ",         ID_VIEW_OBJECT
+        MENUITEM "‘—Ìÿ  Õﬂ„ «· √ÀÌ—",          ID_VIEW_EFFECT
+        MENUITEM SEPARATOR
+        MENUITEM "÷»ÿ «·„‰ŸÊ—",          ID_VIEW_DLG_PERSPECTIVE
+    END
+    POPUP "„⁄·Ê„« "
+    BEGIN
+        MENUITEM "ÕÊ· WorldEditor...",        ID_APP_ABOUT
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
 // Dialog
 //
 

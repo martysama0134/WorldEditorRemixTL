@@ -29,19 +29,27 @@
 | unselect | unselect | Deseleziona | Desel. | ui | Use for deselection actions. | Use compact only if control is constrained and EN is shorter. |
 | hierarchy_current_area | Hierarchy (Current Area) | Gerarchia (area corrente) | Gerarchia (area corr.) | dialog | Keep area qualifier in parentheses. | Use compact only if control is constrained and EN is shorter. |
 | rmouse_teleport_object | RMouseClick = Teleport to Object | Click destro = teletrasporta all'oggetto | Click dx = teletrasp. all'ogg. | dialog | Preserve equation-style hint format. | Use compact only if control is constrained and EN is shorter. |
-| scan_new_obj | Scan New Obj | Scansiona nuovo oggetto | Scans. nuovo ogg. | tool | Expand `Obj` to `oggetto` in full form. | Use compact only if control is constrained and EN is shorter. |
-| water_output | Water Output | Output acqua | Out. acqua | ui | Keep `Output` as accepted technical noun. | Use compact only if control is constrained and EN is shorter. |
+| scan_new_obj | Scan New Obj | Scansiona nuovo oggetto | Scan nuovo ogg | tool | Expand `Obj` to `oggetto` in full form. | Use compact only if control is constrained and EN is shorter. |
+| water_output | Water Output | Output acqua | Acqua Out. | ui | Keep `Output` as accepted technical noun. | Use compact only if control is constrained and EN is shorter. |
 | picking | picking | picking | picking | tool | Keep in English by default as domain term. | Compact not needed by default. |
 | rotation | rotation | rotazione | rotaz. | ui | Use for rotation labels in controls and hints. | Use compact only if control is constrained and EN is shorter. |
 | object | object | oggetto | ogg. | ui | Use for object labels and actions. | Use compact only if control is constrained and EN is shorter. |
-| height | height | altezza | alt. | ui | Translate `Height` to `Altezza` as default. | Use compact only if control is constrained and EN is shorter. |
+| height | height | altezza | altezza | ui | Translate `Height` to `Altezza` as default; use `Reimp. altezza` in constrained reset labels. | Use compact only if control is constrained and EN is shorter. |
+| add_texture | Add texture | Aggiungi texture | Agg. texture | tool | Texture add action label. | Use compact only if control is constrained and EN is shorter. |
+| terrain_output | Terrain Output | Output terreno | Terreno Out. | ui | Future-facing mapping if `Terrain Output` appears in UI. | Use compact only if control is constrained and EN is shorter. |
+| light_position_edit | Modif.LucePos | Modifica posizione luce | Mod. Luce Pos | tool | Legacy token preserved in EN source; use spaced compact IT in constrained controls. | Use compact only if control is constrained and EN is shorter. |
+| brush_shape | Brush Shape | Forma Pennello | Forma Penn. | ui | Brush form label; full form preferred unless constrained. | Use compact only if control is constrained and EN is shorter. |
+| meter | Meter | Metri | Metri | status | Unit label in coordinate/size panels. | Compact not needed. |
 
 ## Do / Don't Examples
 - Do: `Reimposta rotazione`
-- Do: `Reimposta altezza`
+- Do: `Reimp. altezza` on constrained reset controls
 - Do: `Deseleziona picking`
 - Don't: `Gomma` for the erase tool label
 - Don't: mixed-language phrasing when a canonical mapping exists
+
+## Override Note
+- Explicit per-term overrides can supersede generic compact style rules when requested for UI fit or product consistency.
 
 ## Extending To New Languages
 - Add one column per language (for example `de`, `fr`, `es`) without changing existing `term_id`.

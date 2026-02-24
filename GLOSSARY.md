@@ -73,6 +73,19 @@
 | apply_without_texture_area | Apply to the area w/o texture | Applica a area senza texture | Applica area no tex | Nur auf Bereich ohne Textur | Nur Bereich ohne Tex | Appliquer zone sans texture | Appl. zone sans tex | ui | Tile/paint option; keep meaning explicit even in compact forms. | Use compact only if control is constrained and EN is shorter. |
 | patch_grid | Patch Grid | Griglia patch | Griglia patch | Patch-Raster | Patch-Raster | Grille patch | Grille patch | ui | Option checkbox for patch overlay grid. | Compact not needed by default. |
 | compass | Compass | Bussola | Bussola | Kompass | Kompass | Boussole | Boussole | ui | Option checkbox for compass overlay. | Compact not needed by default. |
+| merge_action | Merge | TODO | TODO | TODO | TODO | Fusionner | Fusion | ui | Fly/effect merge action. | Use compact only if control is constrained and EN is shorter. |
+| interval | Interval | TODO | TODO | TODO | TODO | Intervalle | Interv. | ui | Timing interval label in fly/effect settings. | Use compact only if control is constrained and EN is shorter. |
+| interval_variation | Interval Variation | TODO | TODO | TODO | TODO | Variation intervalle | Var. interv. | ui | Timing randomization/variation label. | Use compact only if control is constrained and EN is shorter. |
+| play_type | Play Type | TODO | TODO | TODO | TODO | Type lecture | Type lect. | ui | Playback mode selector label. | Use compact only if control is constrained and EN is shorter. |
+| warp | Warp | TODO | TODO | TODO | TODO | Téléportation | Téléport. | ui | Fly/event warp behavior label. | Use compact only if control is constrained and EN is shorter. |
+| collision_background | when collision w/ background | TODO | TODO | TODO | TODO | si collision avec le fond | collision fond | ui | Collision rule text in fly tab. | Use compact only if control is constrained and EN is shorter. |
+| collision_non_target_monster | when collision w/ non-targeted other monster | TODO | TODO | TODO | TODO | si collision avec autre monstre non ciblé | collision autre monstre | ui | Collision rule text for non-target monsters. | Use compact only if control is constrained and EN is shorter. |
+| monster_petr_freq | Monster petr. freq. | TODO | TODO | TODO | TODO | Fréq. pétrif. monstre | Fréq. pétrif. | ui | Keep in-game abbreviation style for petrification frequency. | Use compact only if control is constrained and EN is shorter. |
+| exceptional_sphere_size | Expectional sphere size | TODO | TODO | TODO | TODO | Taille sphère except. | Sphère except. | ui | Source has typo (`Expectional`); preserve meaning in translation. | Use compact only if control is constrained and EN is shorter. |
+| u_offset | UOffset | TODO | TODO | TODO | TODO | Décalage U | Décal. U | ui | UV offset label. | Use compact only if control is constrained and EN is shorter. |
+| v_offset | VOffset | TODO | TODO | TODO | TODO | Décalage V | Décal. V | ui | UV offset label. | Use compact only if control is constrained and EN is shorter. |
+| u_scale | UScale | TODO | TODO | TODO | TODO | Échelle U | Éch. U | ui | UV scale label. | Use compact only if control is constrained and EN is shorter. |
+| v_scale | VScale | TODO | TODO | TODO | TODO | Échelle V | Éch. V | ui | UV scale label. | Use compact only if control is constrained and EN is shorter. |
 
 ## Do / Don't Examples
 - Do: `Reimposta rotazione`

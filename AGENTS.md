@@ -95,6 +95,16 @@ Warnings:
   - suspicious `?` inside alphabetic words (e.g., `H?he`, `L?schen`, `Zur?ck`)
 - If any corruption markers are found, fix them before completion.
 
+## Bootstrap And Credits Sync Gates (Mandatory)
+- Treat everything before the target language block (`LANGUAGE LANG_XX`) as bootstrap context.
+- In bootstrap sections under `#pragma code_page(949)`, do not use non-ASCII localized glyphs.
+- If a localized bootstrap label is required, use an ASCII-safe form by default to avoid runtime corruption.
+- On each language rebase from `Sample`, explicitly refresh About/Credits factual metadata from latest `Sample`:
+  - version string
+  - copyright year range
+  - author/credits baseline text
+- Do not rely on old translation memory for About/Credits metadata fields.
+
 ## Common Pitfalls
 - Mixed path escaping (`"..\Sample\res\\..."`) causing RC/path errors.
 - Over-aggressive control text reuse by non-unique IDs (`IDC_STATIC`) causing repeated labels.

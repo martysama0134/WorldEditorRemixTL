@@ -1,3 +1,5 @@
+# REPOSITORY MOVED TO https://github.com/WorldEditorRemix/Translations
+
 # WorldEditorRemixTL
 
 The .dll is created with vs2022 using this [tutorial](https://docs.microsoft.com/en-us/cpp/build/creating-a-resource-only-dll).
